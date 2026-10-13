@@ -3,8 +3,7 @@
 For app users, start with [README](../README.md) and the
 [Dropship workflow](COMMERCE-GUIDE.vi.html#dropship). This page covers standalone
 skills and private scheduled kits, not prerequisites for the app. They do not
-activate new schedules. Read the [precommercial review](../plans/reports/commercial-readiness-260922.md)
-before using business data or enabling scheduled work.
+activate new schedules. Use your own data only with a named reviewer and file-only rehearsal first.
 
 ## Start here
 
@@ -154,5 +153,5 @@ creator/wholesale operations as needed; Web Dev stays on reviewable code branche
 
 No built-in cloud UGC generation connector, supplier purchasing connector, automated returns,
 store publishing gateway or ad-spend gateway. Human visual/rights/compliance review remains
-necessary. Test approval does not prove commercial results. See DROPSHIP-SOURCES.md and the
+necessary. Test approval does not prove live-store results. See DROPSHIP-SOURCES.md and the
 skill references for evidence requirements and changing platform policies.

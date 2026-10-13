@@ -1,7 +1,7 @@
 ---
 name: pod-workbench
 metadata:
-  version: "1.0.1"
+  version: "1.0.0"
 description: Build source-backed POD Ecommerce niche research, production-design briefs, technical print-file QA, contribution calculations and local Shopify listing packages. Use for POD product ideas, print-master review, unit economics or preparing a product launch. Produces local artifacts for human review, never live products, sends, supplier orders or ad changes.
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: commerce-creative-studio
 metadata:
-  version: "1.0.1"
+  version: "1.0.0"
 description: Produce ecommerce creative briefs, UGC scripts, storyboards, creator shot lists, AI-presenter production plans, ad-banner layouts, local video draft assemblies and creative test plans for POD or dropshipping products. Use for UGC video, product demo, ad banner, creative batching, hook testing or creative QA. Preserve exact product fidelity, usage rights and truthful claims. Distinguish production plans from rendered files; never publish or change spend.
 ---
 

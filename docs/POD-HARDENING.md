@@ -1,6 +1,6 @@
 # Runtime and upgrade hardening
 
-**Historical scope note (2026-09-22):** the dated bundle observations below describe an earlier development environment. References to a fork/upstream are historical, not this repository's identity or installation path. This repository is canonical. Use the source checkout and consult the [repair verification](../plans/260922-commercial-readiness-fixes/plan.md) for current local evidence and acceptance limits. Do not read the table below as proof all concurrency or recovery paths are safe.
+**Historical scope note (2026-09-22):** the dated bundle observations below describe an earlier development environment. References to a fork/upstream are historical, not this repository's identity or installation path. This repository is the public source. Do not read the table below as proof all concurrency or recovery paths are safe.
 
 ## Scope and verification boundary
 

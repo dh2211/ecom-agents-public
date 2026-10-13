@@ -1,6 +1,6 @@
 # Scheduled kit prerequisites
 
-For the local POD/Dropship app, start with [README](../README.md). This is a legacy-kit reference, not the app's installation checklist. Vendor commands, entitlements and harness compatibility below were not reverified in the precommercial review. Confirm with the selected vendor and a file-only rehearsal before scheduling.
+For the local POD/Dropship app, start with [README](../README.md). This is a kit reference, not the app's installation checklist. Confirm vendor commands, entitlements and harness compatibility with the selected vendor, then run a file-only rehearsal before scheduling.
 
 Ten things, and one optional eleventh. Every line here was either measured on my own machine or read from the vendor's own page, and the install prompt checks the ones it can. Read this before using the source-checkout kit installer, because the one thing that fails silently is the login, and it fails after everything else looks fine.
 

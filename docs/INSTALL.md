@@ -3,8 +3,7 @@
 For the local POD/Dropship app, use [README](../README.md); do not install a kit first.
 For scheduled execution, follow [POD-HARDENING.md](POD-HARDENING.md). Direct native
 model-prompt schedules below are reference material only and do not receive the external
-supervisor locks/timeouts. Prove the actual process entrypoint. Current known runtime
-limitations are in the [precommercial review](../plans/reports/commercial-readiness-260922.md).
+supervisor locks/timeouts. Prove the actual process entrypoint.
 
 # Install
 
@@ -34,8 +33,8 @@ node installer/cli.mjs hire gtm-engineer --to D:\AgentOps\gtm-engineer
 
 Run it from the checkout. Always give a destination outside the source tree and cloud sync.
 Check the exit status and test output before opening the kit. A failed installation is
-not trusted. The package manifest is currently private; `npx ecom-agents` is not a
-verified distribution path for this checkout. Publication is an owner-only decision.
+not trusted. Install from this public GitHub checkout. `npx ecom-agents` is not a
+distribution path for this repository.
 
 **Path B, a clone:**
 

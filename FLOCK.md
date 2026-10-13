@@ -6,7 +6,7 @@
 
 | Type | Where | Answers |
 |---|---|---|
-| overview | README.md | Sản phẩm dành cho ai và bắt đầu ở đâu? |
+| overview | README.md | Who the product is for, and where to start. Vietnamese: README.vi.md |
 | instructions | AGENTS.md | Agent sửa repository phải tuân thủ điều gì? |
 | user-guide | docs/COMMERCE-GUIDE.vi.html | Người vận hành dùng app và duyệt workflow POD/Dropship thế nào? |
 | architecture | docs/COMMERCE-ARCHITECTURE.md | Ranh giới hệ thống, nguồn code và khôi phục nằm ở đâu? |
@@ -31,12 +31,12 @@
 
 `Design` | `Building` | `Review` | `Blocked` | `Done <date>` | `Parked`
 
-Kế hoạch cũ giữ nguyên nhãn lịch sử như `complete`; nhãn đó không chứng minh một bản hiện tại đủ điều kiện thương mại.
+Kế hoạch cũ giữ nguyên nhãn lịch sử như `complete`. Nhãn đó mô tả đợt làm việc đã đóng, không mô tả phiên bản public hiện tại.
 
 ## Conventions
 
 - Đọc AGENTS.md, bản đồ này, rồi chỉ các tài liệu liên quan. Kiểm tra Git và code hiện tại trước khi kế thừa kết luận cũ.
-- README là lối vào ngắn. Hướng dẫn HTML sở hữu quy trình cho người dùng app. Tài liệu nâng cao không được biến `hire` thành điều kiện chạy app.
+- README.md (English) và README.vi.md là lối vào ngắn. Hướng dẫn HTML sở hữu quy trình cho người dùng app. Tài liệu nâng cao không được biến `hire` thành điều kiện chạy app.
 - Code, schema và test sở hữu chi tiết thực thi; yêu cầu và hợp đồng sở hữu hành vi được chấp nhận. Không sửa yêu cầu để hợp thức hóa lỗi code.
 - Review ghi bằng chứng, giới hạn và PASS/FAIL/NOT-RUN. Test xanh không đồng nghĩa đã nghiệm thu store thật hoặc được phép publish/spend.
 - Quyết định có ngày. Đảo ngược quyết định phải giữ nội dung cũ và đánh dấu `SUPERSEDED <date>` tại chỗ, kèm lý do và quyết định thay thế.

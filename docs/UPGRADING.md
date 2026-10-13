@@ -18,7 +18,7 @@ An install old enough to predate the check does not have it, so that upgrade is 
 node installer/cli.mjs upgrade gtm-engineer --to /path/to/your/agent
 ```
 
-Run from a reviewed source checkout. The package is currently private; an unscoped npm command is not a verified delivery channel for this code. The command reports without applying changes. Read it before using `--apply`.
+Run from a reviewed source checkout of this public repository. An unscoped npm command is not a delivery channel for this code. The command reports without applying changes. Read it before using `--apply`.
 
 ```bash
 node installer/cli.mjs upgrade gtm-engineer --to /path/to/your/agent --apply

@@ -17,4 +17,4 @@
 ## What changed about me
 - cos-market-sweep: reads the pricing surface first now, because it is the only surface that has changed across five sweeps, improvements/CHANGELOG.md
 
-Updates and new agents: [github.com/thienduy2211/ecom-agents](https://github.com/thienduy2211/ecom-agents)
+Updates and new agents: [github.com/AoThunDao/ecom-agents-public](https://github.com/AoThunDao/ecom-agents-public)

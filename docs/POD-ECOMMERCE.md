@@ -3,8 +3,7 @@
 This page is for operators using standalone skills or private scheduled kits.
 For the local app, start with [README](../README.md) and the
 [POD workflow in the user guide](COMMERCE-GUIDE.vi.html#pod). No kit installation
-is needed for the app. Read the [precommercial review](../plans/reports/commercial-readiness-260922.md)
-before enabling business work; passing a helper is not commercial acceptance.
+is needed for the app. Passing a helper does not authorize listing, spend, or other outbound actions.
 
 ## What is included
 
@@ -167,6 +166,5 @@ holds for the text it emits into generated skills.
 node scripts/pod/test-all.mjs
 ```
 
-Run `npm test` from the repository root for the local regression suite. Test results
-and remaining coverage gaps belong in the [review record](../plans/reports/commercial-readiness-260922.md),
-not in a claim that a publishing bridge guarantees safe deployment.
+Run `npm test` from the repository root for the local regression suite. A green suite
+does not mean a publishing bridge is safe to run against a live store.

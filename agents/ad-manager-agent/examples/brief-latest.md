@@ -17,4 +17,4 @@
 ## What changed about me
 - ads-account-read: now opens the conversions screen before the campaign screen, because the first read on 2026-03-03 spent its budget learning the flows in the other order. The undo is in improvements/CHANGELOG.md.
 
-Updates and new agents: [github.com/thienduy2211/ecom-agents](https://github.com/thienduy2211/ecom-agents)
+Updates and new agents: [github.com/AoThunDao/ecom-agents-public](https://github.com/AoThunDao/ecom-agents-public)

@@ -8,7 +8,7 @@ description: Coordinate reviewed POD, Dropship, creative production, advertising
 ## Start with the local application
 
 Use this skill as operating guidance for the app, not as another legacy scheduled Agent.
-Clone or open thienduy2211/ecom-agents and run `npm start`, or open START-WINDOWS.cmd.
+Clone or open https://github.com/AoThunDao/ecom-agents-public and run `npm start`, or open START-WINDOWS.cmd.
 Read docs/COMMERCE-GUIDE.vi.html for end-user steps and docs/COMMERCE-ARCHITECTURE.md for integration.
 This standalone skill package contains operating guidance only; the runtime remains in that repository.
 Do not install, hire, reconfigure or rewrite existing Agent kits to start the app.

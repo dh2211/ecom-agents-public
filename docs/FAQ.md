@@ -40,6 +40,6 @@ are not a current compatibility certification; see the qualification in [HARNESS
 
 **Can my fixes go back into the kits?** Yes, and the agent helps. When a routine repairs its own instructions it logs the change. Once a month, on every kit, the agent picks out the repairs that would be just as right on any business, takes your business out of them, and writes a draft to `improvements/contribution-draft-YYYY-MM.md`. On pod-design-agent, whose routines never rewrite their own instructions, the pass reads the dated `## Suggestions` lines they recorded instead. The brief, or `intake-latest.md` on pod-design-agent, names it once. You read it, then paste it into an issue or delete it. No routine ever opens an issue or a pull request.
 
-**Where do updates come from?** This repository is canonical. Use the source-checkout procedure in [UPGRADING.md](UPGRADING.md). The current private package is not evidence that `npx ecom-agents` serves this checkout.
+**Where do updates come from?** This public GitHub repository is the source. Use the checkout procedure in [UPGRADING.md](UPGRADING.md). `npx ecom-agents` is not a distribution path for this repository.
 
 **Where do I ask something not here?** Use the repository's available Issues or Discussions surface. No response-time commitment or paid support SLA is established by this documentation.

@@ -1,6 +1,6 @@
 {
   "name": "@thienduy2211/ecom-agents",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "description": "Local Commerce Orchestrator for reviewed POD, Dropship and creative workflows",
   "type": "module",
   "bin": {
@@ -56,18 +56,18 @@
   "license": "MIT",
   "private": true,
   "pod_overlay": {
-    "version": "1.0.1",
+    "version": "1.0.0",
     "base_commit": "edffe8f4afea467818988ce3ce9332e6d832e5ed",
     "mode": "opt-in-draft-only"
   },
   "dropship_overlay": {
-    "version": "1.0.1",
+    "version": "1.0.0",
     "base_commit": "1395bc4818c8325a8805d121bb12cb00cbaaf825",
     "mode": "opt-in-draft-only",
     "creative_media": "local-assembly-and-host-capabilities"
   },
   "commerce_app": {
-    "version": "1.0.3",
+    "version": "1.0.0",
     "mode": "local-single-user-draft-only",
     "workspace": "outside-source",
     "orchestration": "on-demand-role-adapters"

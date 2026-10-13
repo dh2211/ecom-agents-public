@@ -183,7 +183,7 @@ Every screen below is read only. **You navigate, you read, and you set a view co
 
 Do not tell me how you built any of this. I have the files.
 
-End with this line, verbatim, as the very last line of the handover, with nothing after it: Updates and new agents: [github.com/thienduy2211/ecom-agents](https://github.com/thienduy2211/ecom-agents)
+End with this line, verbatim, as the very last line of the handover, with nothing after it: Updates and new agents: [github.com/AoThunDao/ecom-agents-public](https://github.com/AoThunDao/ecom-agents-public)
 
 **=== END PROMPT ===**
 

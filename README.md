@@ -1,3 +1,5 @@
+<p align="right"><strong>English</strong> · <a href="README.vi.md">Tiếng Việt</a></p>
+
 <h1 align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.png">
@@ -5,81 +7,83 @@
   </picture>
 </h1>
 
-<p align="center"><img src="assets/banner.png" alt="Bán POD và Dropship. AI soạn, bạn duyệt: Mục tiêu, AI soạn nháp, Code kiểm tra, Bạn duyệt. Kèm chín kit Agent chạy theo lịch."></p>
+<p align="center"><img src="assets/banner.png" alt="Sell POD and Dropship. AI drafts, you review: Goal, AI draft, Code checks, You approve. Plus nine scheduled Agent kits."></p>
 
-Bộ công cụ AI cho một người vận hành shop **POD (in theo yêu cầu) hoặc Dropship**, gồm hai phần độc lập trong cùng một repository:
+Open source AI tools for one person running a **POD (print on demand)** or **Dropship** shop. Two independent parts live in this repository:
 
-- **App Commerce chạy local**: nghiên cứu sản phẩm, chuẩn bị thiết kế, kiểm tra dữ liệu, tính lãi và soạn nội dung bán hàng. Bạn giao việc, AI chuẩn bị hồ sơ, bạn kiểm tra và duyệt từng bước.
-- **Chín kit Agent chạy theo lịch**: mỗi kit đảm nhận một vai trò công việc, cài riêng trên máy bạn và chạy vào giờ cố định.
+- **Local Commerce app**: research products, prepare designs, check data, calculate margin, and draft selling copy. You assign work, AI prepares the file, you review and approve each step.
+- **Nine scheduled Agent kits**: each kit owns one job, installs on your machine, and runs at a fixed time.
 
-App không tự đăng sản phẩm, đặt hàng, gửi tin hay chi tiền quảng cáo. Kit cũng giữ nguyên tắc đó: hành động ra ngoài chỉ được hoàn tất trên kênh bạn tự mở trong `RELEASES.md`.
+The app does not list products, place orders, send messages, or spend ad money on its own. Kits follow the same rule: an outbound action completes only on a channel you opened in `RELEASES.md`.
 
-> Hiện phù hợp để thử nghiệm có giám sát, chưa phải chứng nhận sẵn sàng thương mại. Xem [kế hoạch sửa và bằng chứng kiểm thử](plans/260922-commercial-readiness-fixes/plan.md); vẫn cần nghiệm thu với dữ liệu thực được phép dùng.
+This is a public MIT repository. Use it, fork it, and run it locally. There is no hosted SaaS and no paid product tier in this checkout.
 
-## Bắt đầu với app
+## Start the app
 
-Cài Node.js 22 trở lên. Clone hoặc tải ZIP của repository, mở terminal tại thư mục có `package.json` rồi chạy:
+Install Node.js 22 or newer. Clone or download the ZIP, open a terminal in the folder that contains `package.json`, then run:
 
 ```sh
+git clone https://github.com/AoThunDao/ecom-agents-public.git
+cd ecom-agents-public
 npm start
 ```
 
-Trên Windows có thể nhấp đúp `START-WINDOWS.cmd`. Không cần `npm install`, `hire` hay cài profile để dùng app. Giữ terminal mở khi làm việc.
+On Windows you can double-click `START-WINDOWS.cmd`. You do not need `npm install`, `hire`, or a profile to use the app. Keep the terminal open while you work.
 
-Bấm **Thử demo không dùng AI** để làm quen. Demo là dữ liệu mô phỏng, không phải hồ sơ sản phẩm dùng để bán.
+Click **Try the demo without AI** to learn the loop. Demo data is simulated. It is not a product file you should sell.
 
-## Hai quy trình chính trong app
+## Two main app workflows
 
-| Mô hình | Công việc |
+| Model | Work |
 |---|---|
-| POD | Niche → brief thiết kế → kiểm tra PNG thật theo nhà in → tính lãi → listing nháp → bộ nội dung ra mắt. |
-| Dropship | Sản phẩm → kiểm tra nhà cung cấp, hàng mẫu và tuyến giao hàng → tính lãi → listing nháp → creative → đề xuất test. |
+| POD | Niche → design brief → real printer PNG checks → margin → listing draft → launch copy set. |
+| Dropship | Product → supplier, sample, and shipping checks → margin → listing draft → creative → test proposal. |
 
-Workflow Creative dùng chung để chuẩn bị UGC/banner và kiểm tra file xuất thật. Kịch bản chưa phải video; app không kèm dịch vụ tạo ảnh, video hay giọng nói. Công cụ đo/ghép media cần FFmpeg/ffprobe riêng.
+The Creative workflow is shared: prepare UGC or banners and check real export files. Scripts are not video. The app does not ship an image, video, or voice service. Measuring or assembling media needs FFmpeg and ffprobe on the machine.
 
-## Chín kit Agent chạy theo lịch
+## Nine scheduled Agent kits
 
-Cài riêng từng kit, không bắt buộc để dùng app. Mỗi kit là một thư mục routine chạy vào giờ cố định trên máy bạn và trả kết quả dạng file để bạn duyệt:
+Install kits one at a time. They are optional for the app. Each kit is a folder of routines that fire on a schedule and write files for you to review:
 
-| Kit | Đảm nhận |
+| Kit | Owns |
 |---|---|
-| GTM Engineer | Nghiên cứu và ra mắt sản phẩm |
-| SEO/AEO Agent | Hiện diện trên tìm kiếm và câu trả lời |
-| Web Dev Agent | Kỹ thuật và bảo trì web |
-| Social Media Agent | Khán giả và phân phối nội dung |
-| Ad Manager Agent | Quảng cáo trả phí |
-| Sales Agent | Pipeline và tiếp cận khách hàng |
-| Customer Satisfaction Agent | Hỗ trợ và giữ chân khách |
-| Chief of Staff | Giám sát các agent còn lại |
-| POD Design Agent | File in POD: tự tạo skill thiết kế theo niche, PNG trong suốt đã kiểm tra, kèm biên nhận |
+| GTM Engineer | Product research and launch |
+| SEO/AEO Agent | Search and answer presence |
+| Web Dev Agent | Site engineering and upkeep |
+| Social Media Agent | Audience and content distribution |
+| Ad Manager Agent | Paid ads |
+| Sales Agent | Pipeline and outreach |
+| Customer Satisfaction Agent | Support and retention |
+| Chief of Staff | Oversight of the other agents |
+| POD Design Agent | POD print files: niche design skills, checked transparent PNGs, and receipts |
 
-Cài một kit từ checkout này:
+Install a kit from this checkout:
 
 ```sh
 node installer/cli.mjs hire pod-design-agent --to ~/ecom-agents/pod-design-agent
 ```
 
-rồi mở một phiên agent trong thư mục đó và nói "install the POD Design Agent from this folder" (hoặc dán `INSTALL-PROMPT.md` trong thư mục). Kit nào cũng theo quy trình đó; chi tiết từng bước ở [docs/INSTALL.md](docs/INSTALL.md).
+Then open an agent session in that folder and say "install the POD Design Agent from this folder" (or paste `INSTALL-PROMPT.md` from the folder). Every kit follows that path. Step by step detail is in [docs/INSTALL.md](docs/INSTALL.md).
 
-**POD Design Agent** đảm nhận file in POD: thả một file yêu cầu vào `requests/inbox/` và routine `design-request` chạy hằng ngày sẽ xử lý. Niche chưa có skill thiết kế thì kit tự tạo một skill qua `pod-design-skill-builder` đi kèm, kiểm tra gói sinh ra theo ngưỡng của builder rồi commit vào repository bạn chỉ định, rồi dùng skill đó để dựng PNG trong suốt và chạy kiểm tra alpha cùng kiểm tra in trên file thật. Không có vòng duyệt tay trong bước sinh skill; kit không mở trình duyệt và không đăng gì ra ngoài. Cần Node 18+, Python 3.10+ và git; thiếu image runtime thì yêu cầu vẫn được xử lý thành gói prompt giữ chờ. Xem [README của kit](agents/pod-design-agent/README.md).
+**POD Design Agent** owns print files: drop a request into `requests/inbox/` and the daily `design-request` routine handles it. If the niche has no design skill yet, the kit builds one through the bundled `pod-design-skill-builder`, checks the package against the builder thresholds, commits it to the repository you name, then uses that skill to produce a transparent PNG and run alpha plus print checks on the real file. There is no manual approval loop in skill generation. The kit does not open a browser and does not post anything. You need Node 18+, Python 3.10+, and git. If the image runtime is missing, the request still becomes a held prompt pack. See the [kit README](agents/pod-design-agent/README.md).
 
-## Dùng AI của bạn
+## Use your own AI
 
-- **Thủ công:** sao chép yêu cầu sang trợ lý bạn đang dùng, rồi dán kết quả JSON vào app.
-- **Claude Code:** dùng CLI đã cài và đăng nhập; chỉ soạn từ dữ liệu được cấp, không tự duyệt web hoặc tạo media.
-- **ChatGPT (Codex CLI):** dùng `codex` đã cài và đăng nhập bằng tài khoản ChatGPT; cùng giới hạn như Claude Code, dùng được khi hết hạn mức Claude.
-- **Worker riêng:** dành cho người kỹ thuật kết nối công cụ khác và giới hạn quyền của nó.
+- **Manual:** copy the request into the assistant you already use, then paste the JSON result into the app.
+- **Claude Code:** use an installed, signed-in CLI. Draft only from supplied data. Do not browse the web or generate media on your own.
+- **ChatGPT (Codex CLI):** use installed `codex` signed in with a ChatGPT account. Same limits as Claude Code. Useful when a Claude quota is exhausted.
+- **Your own worker:** for operators who wire another tool and keep its permissions tight.
 
-Không bao gồm thuê bao AI. Dữ liệu gửi cho trợ lý có thể đi đến nhà cung cấp AI đó.
+No AI subscription is included. Data you send to an assistant may go to that AI provider.
 
-## Hướng dẫn
+## Guides
 
-- [Hướng dẫn sử dụng đầy đủ](docs/COMMERCE-GUIDE.vi.html): cài đặt, chọn và cài trợ lý AI, mẫu kết quả JSON và dữ liệu cho từng bước kiểm tra, workflow POD/Dropship/Creative, giới hạn, xử lý lỗi theo thông báo, thuật ngữ và FAQ. Mở bằng trình duyệt hoặc bấm **Hướng dẫn sử dụng** trong app.
-- [Cài và vận hành kit theo lịch](docs/INSTALL.md) và [cách một Agent hoạt động](docs/HOW-AGENTS-WORK.md): phần dành cho kit, độc lập với app.
-- [POD nâng cao](docs/POD-ECOMMERCE.md) và [Dropship/Creative nâng cao](docs/DROPSHIP-CREATIVE.md): skill độc lập và kit chạy theo lịch, không bắt buộc để dùng app.
-- [Kiến trúc và khôi phục dữ liệu](docs/COMMERCE-ARCHITECTURE.md).
-- [Bản đồ tài liệu Flock](FLOCK.md): tài liệu chính, kế hoạch và bằng chứng review.
+- [Full user guide (Vietnamese)](docs/COMMERCE-GUIDE.vi.html): install, choose and install an AI assistant, JSON result samples and data for each check, POD/Dropship/Creative workflows, limits, error-message troubleshooting, glossary, and FAQ. Open it in a browser or click **User guide** in the app.
+- [Install and run scheduled kits](docs/INSTALL.md) and [how an Agent works](docs/HOW-AGENTS-WORK.md): kit docs, independent of the app.
+- [Advanced POD](docs/POD-ECOMMERCE.md) and [advanced Dropship/Creative](docs/DROPSHIP-CREATIVE.md): standalone skills and scheduled kits. Optional for the app.
+- [Architecture and data recovery](docs/COMMERCE-ARCHITECTURE.md).
+- [Flock docs map](FLOCK.md): primary documents, plans, and review evidence.
 
-App dành cho một người trên một máy, không phải SaaS nhiều khách hàng. Dữ liệu nằm ngoài source repo; xem đường dẫn trong giao diện và sao lưu trước khi cập nhật. Kit chạy theo lịch là luồng riêng, không được app tự di chuyển hoặc dừng.
+The app is for one person on one machine. Data lives outside the source repo. Check the paths in the UI and back up before you update. Scheduled kits are a separate flow. The app does not move or stop them.
 
-Mã nguồn theo [MIT](LICENSE); quyền sử dụng ảnh, video, nhạc và dữ liệu phải kiểm tra riêng. Không có cam kết doanh thu hoặc SLA. Xem [SECURITY.md](SECURITY.md) và [CREDITS.md](CREDITS.md).
+Source is [MIT](LICENSE). Image, video, music, and data rights need their own review. There is no revenue or SLA promise. See [SECURITY.md](SECURITY.md) and [CREDITS.md](CREDITS.md).

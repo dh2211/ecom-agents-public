@@ -490,7 +490,7 @@ one line per inventory or policy change since your last run
 ## Blocked
 one line per open blocker, oldest first
 
-Updates and new agents: [github.com/thienduy2211/ecom-agents](https://github.com/thienduy2211/ecom-agents)
+Updates and new agents: [github.com/AoThunDao/ecom-agents-public](https://github.com/AoThunDao/ecom-agents-public)
 ```
 
 The pointer line at the foot is fixed text, written verbatim on every brief, one blank line under the last section, and it is not one of the thirty.

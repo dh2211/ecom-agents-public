@@ -125,7 +125,7 @@ Every kit models two actors: the scheduled routines and the member by hand. Live
 description below remains the historical rationale for the inner kit lane. The current
 external supervisor also takes a shared `local-browser` resource and serializes browser
 work across kits. Do not infer permission to run disjoint-platform workers concurrently.
-See `scripts/runtime/run-routine.mjs` for enforcement and the [repair verification](../plans/260922-commercial-readiness-fixes/plan.md) for tested boundaries and remaining acceptance gaps.
+See `scripts/runtime/run-routine.mjs` for enforcement of the current supervisor lock.
 
 The original mutex serialized the whole browser: one routine at a time, fire times spaced by full budgets. That modeled a constraint the harness no longer has; agent sessions run in isolated tab groups and concurrent browser work across different sites is supported and observed working. What still needs serializing is **the member's identity on a single platform**: a site sees one logged-in account, not tab groups, and two automations crawling the same platform at once doubles the automation signature on exactly the surfaces with the strictest rules.
 

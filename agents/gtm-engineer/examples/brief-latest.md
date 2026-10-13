@@ -16,4 +16,4 @@
 - gtm-signal-sweep, open since 2026-02-26: the review platform asked for a sign in, nothing entered
 - one more open blocker, listed in gtm-latest.md
 
-Updates and new agents: [github.com/thienduy2211/ecom-agents](https://github.com/thienduy2211/ecom-agents)
+Updates and new agents: [github.com/AoThunDao/ecom-agents-public](https://github.com/AoThunDao/ecom-agents-public)

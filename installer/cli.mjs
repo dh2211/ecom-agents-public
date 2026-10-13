@@ -23,7 +23,7 @@ import { upgrade as runUpgrade, contribute as runContribute, writeReceipt } from
 
 const SELF = fileURLToPath(import.meta.url);
 const HERE = path.dirname(SELF);
-const REPO = "thienduy2211/ecom-agents";
+const REPO = "AoThunDao/ecom-agents-public";
 const VERSION = readVersion();
 
 const AGENTS = {
@@ -213,7 +213,7 @@ async function hire(args) {
   out("");
   out(prompt.trim());
   out("");
-  out("Updates and new agents: github.com/thienduy2211/ecom-agents (https://github.com/thienduy2211/ecom-agents)");
+  out("Updates and new agents: github.com/AoThunDao/ecom-agents-public (https://github.com/AoThunDao/ecom-agents-public)");
 }
 
 

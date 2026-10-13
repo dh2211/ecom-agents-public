@@ -3,10 +3,8 @@
 End users start with [README](../README.md) and the [user guide](COMMERCE-GUIDE.vi.html).
 The source and app versions live in [package.json](../package.json).
 
-Read the [baseline repair verification](../plans/260922-commercial-readiness-fixes/plan.md)
-and [follow-up repair verification and delivery status](../plans/260922-review-followup-fixes/plan.md)
-alongside the historical reviews. Local regression evidence does not certify a real
-business deployment. Document ownership is in [FLOCK.md](../FLOCK.md).
+Local regression evidence does not certify a live-store deployment. Document ownership
+is in [FLOCK.md](../FLOCK.md).
 
 Executable owners: [workflow plans](../app/commerce/workflows.mjs),
 [state transitions and gates](../app/commerce/engine.mjs),
