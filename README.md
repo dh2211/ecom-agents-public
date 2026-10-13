@@ -7,7 +7,7 @@
   </picture>
 </h1>
 
-<p align="center"><img src="assets/banner.png" alt="Sell POD and Dropship. AI drafts, you review: Goal, AI draft, Code checks, You approve. Plus nine scheduled Agent kits."></p>
+<p align="center"><img src="assets/banner-en.png" alt="Sell POD and Dropship. AI drafts, you review: Goal, AI draft, Code checks, You approve. Plus nine scheduled Agent kits."></p>
 
 Open source AI tools for one person running a **POD (print on demand)** or **Dropship** shop. Two independent parts live in this repository:
 

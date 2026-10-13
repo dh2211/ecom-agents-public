@@ -12,7 +12,8 @@ Three more images live in this folder:
 
 | File | What it is | Where it goes |
 |---|---|---|
-| `banner.png` | 1600 by 400. The Vietnamese promise on the left; on the right the app's four step loop (Mục tiêu, AI soạn nháp, Code kiểm tra, Bạn duyệt, the last one lit) above all nine kits as named monogram tiles. | The README header, under the wordmark, and social posts. |
+| `banner.png` | 1600 by 400. The Vietnamese promise on the left; on the right the app's four step loop (Mục tiêu, AI soạn nháp, Code kiểm tra, Bạn duyệt, the last one lit) above all nine kits as named monogram tiles. | `README.vi.md`, under the wordmark. |
+| `banner-en.png` | 1600 by 400. The English promise on the left; on the right the same four step loop (Goal, AI draft, Code checks, You approve, the last one lit) above all nine kits as named monogram tiles. Renders from `src/banner-en.html`. | `README.md`, under the wordmark. |
 | `social-preview.png` | 1280 by 640. The repo name and one line promise, the same four step loop and nine kits, with the GitHub URL. | The repository settings, under Social preview. GitHub does not read it from the tree, so upload it by hand after a change. |
 | `cta-install-prompt.png` | 660 by 104, the project's primary button at two times scale. Shown at `width="330"`, so it stays crisp on a retina screen. | The README, in the install prompt block above What sets these Ecom Agents apart. |
 
@@ -20,6 +21,7 @@ The agent tiles in `banner.png` and `social-preview.png` are monograms rendered 
 
 ```
 chrome --headless=new --hide-scrollbars --force-device-scale-factor=2 --window-size=1600,400 --virtual-time-budget=8000 --default-background-color=00000000 --screenshot=banner@2x.png assets/src/banner.html
+chrome --headless=new --hide-scrollbars --force-device-scale-factor=2 --window-size=1600,400 --virtual-time-budget=8000 --default-background-color=00000000 --screenshot=banner-en@2x.png assets/src/banner-en.html
 ```
 
 then downsample to 1600 by 400. Headless Chrome can clip the bottom of the page at the exact window size, so it is safer to render with a window about 200 px taller and crop the top 3200 by 800 before downsampling (`convert banner@2x.png -crop 3200x800+0+0 +repage -resize 1600x400 assets/banner.png`). The same applies to the logo: render at `840,400` and crop to 1680 by 400. The social preview is the same with `--window-size=1280,640`, no transparent background, and 1280 by 640 at the end. The button is `--window-size=330,52` and keeps its two times pixels rather than being downsampled, because GitHub renders an `img` at `height: auto` and will only ever scale one down:
