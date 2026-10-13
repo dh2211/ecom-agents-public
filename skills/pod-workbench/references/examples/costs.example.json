@@ -1,0 +1,13 @@
+{
+  "currency": "USD",
+  "merchandise_revenue_minor": 2999,
+  "shipping_revenue_minor": 500,
+  "customer_paid_minor": 3849,
+  "production_cost_minor": 1200,
+  "supplier_shipping_minor": 500,
+  "other_variable_cost_minor": 50,
+  "payment_fixed_minor": 30,
+  "payment_rate_bps": 290,
+  "refund_reserve_bps": 500,
+  "ad_cost_minor": 800
+}

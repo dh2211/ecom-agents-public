@@ -1,0 +1,182 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openai.local/schemas/pod-design-brief-receipt-1.0.json",
+  "title": "POD Design Brief Binding Receipt 1.0",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "binding_receipt",
+    "bindings",
+    "market_context",
+    "idea_archetype",
+    "production_method",
+    "output_profile",
+    "copy",
+    "product_surface",
+    "personalization_contracts",
+    "combination_reviews",
+    "sensitivity",
+    "alpha_route",
+    "variants",
+    "qa_contract"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "binding_receipt": {
+      "type": "object",
+      "required": ["data_sha256", "request_sha256", "niche_slug"],
+      "properties": {
+        "data_sha256": {"$ref": "#/$defs/sha256"},
+        "request_sha256": {"$ref": "#/$defs/sha256"},
+        "niche_slug": {"$ref": "#/$defs/id"}
+      },
+      "additionalProperties": false
+    },
+    "bindings": {
+      "type": "object",
+      "required": [
+        "market_context_id",
+        "persona_id",
+        "buyer_recipient_pair_id",
+        "occasion_id",
+        "emotion_id",
+        "product",
+        "production_method_id",
+        "output_profile_id",
+        "idea_archetype_id",
+        "hook_pattern_id",
+        "style_variant_ids",
+        "personalization_keys"
+      ],
+      "properties": {
+        "market_context_id": {"$ref": "#/$defs/id"},
+        "persona_id": {"$ref": "#/$defs/id"},
+        "buyer_recipient_pair_id": {"$ref": "#/$defs/id"},
+        "occasion_id": {"$ref": "#/$defs/id"},
+        "emotion_id": {"$ref": "#/$defs/id"},
+        "product": {"type": "string", "minLength": 1},
+        "production_method_id": {"$ref": "#/$defs/id"},
+        "output_profile_id": {"$ref": "#/$defs/id"},
+        "idea_archetype_id": {"$ref": "#/$defs/id"},
+        "hook_pattern_id": {"$ref": "#/$defs/id"},
+        "style_variant_ids": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/id"}
+        },
+        "personalization_keys": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/id"}
+        }
+      },
+      "additionalProperties": false
+    },
+    "copy": {
+      "type": "object",
+      "required": ["mode", "text", "language"],
+      "properties": {
+        "mode": {"enum": ["exact", "proposed", "none"]},
+        "text": {"type": "string"},
+        "language": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": true
+    },
+    "sensitivity": {
+      "type": "object",
+      "required": ["status", "matches"],
+      "properties": {
+        "status": {"enum": ["clear", "constrained", "human-review"]},
+        "matches": {"type": "array"}
+      },
+      "additionalProperties": false
+    },
+    "combination_reviews": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["rule_id", "reason"],
+        "properties": {
+          "rule_id": {"$ref": "#/$defs/id"},
+          "reason": {"type": "string", "minLength": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "alpha_route": {
+      "type": "object",
+      "required": [
+        "provider",
+        "model",
+        "capability",
+        "capability_evidence",
+        "decision",
+        "allow_solid_fallback",
+        "final_output_requirement"
+      ],
+      "properties": {
+        "allow_solid_fallback": {"type": "boolean"},
+        "final_output_requirement": {"const": "transparent-png-alpha-qa-pass"}
+      },
+      "additionalProperties": true
+    },
+    "variants": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "style_variant_id",
+          "commercial_role",
+          "typography",
+          "motifs",
+          "palette_options",
+          "distinct_from_previous"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "qa_contract": {
+      "type": "object",
+      "required": [
+        "minimum_stroke_mm",
+        "minimum_gap_mm",
+        "minimum_text_height_mm",
+        "max_colors",
+        "template_required",
+        "final_output_requirement"
+      ],
+      "properties": {
+        "minimum_stroke_mm": {"type": "number", "exclusiveMinimum": 0},
+        "minimum_gap_mm": {"type": "number", "exclusiveMinimum": 0},
+        "minimum_text_height_mm": {"type": "number", "exclusiveMinimum": 0},
+        "max_colors": {"type": "integer", "minimum": 1},
+        "template_required": {"type": "boolean"},
+        "final_output_requirement": {"const": "transparent-png-alpha-qa-pass"}
+      },
+      "additionalProperties": false
+    },
+    "market_context": {"type": "object"},
+    "idea_archetype": {"type": "object"},
+    "production_method": {"type": "object"},
+    "output_profile": {"type": "object"},
+    "product_surface": {"type": ["object", "null"]},
+    "personalization_contracts": {"type": "array"}
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "additionalProperties": false
+}

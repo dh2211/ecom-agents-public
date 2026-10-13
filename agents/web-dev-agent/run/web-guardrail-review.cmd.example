@@ -1,0 +1,6 @@
+:: Replace the root token and verify executable paths before scheduling.
+:: Configure narrowly scoped noninteractive tool permissions yourself; never auto-bypass.
+@echo off
+cd /d "«WEB_ROOT»"
+node "«WEB_ROOT»\scripts\run-routine.mjs" web-guardrail-review --root "«WEB_ROOT»" -- "%USERPROFILE%\.local\bin\claude.exe" -p "Read «WEB_ROOT»/routines/web-guardrail-review/SKILL.md and follow it." --permission-mode acceptEdits --output-format json < nul > nul
+exit /b %errorlevel%

@@ -1,0 +1,11 @@
+{
+  "schema": "pod-store/1",
+  "store_id": "demo-store",
+  "shop_domain": "example.myshopify.com",
+  "currency": "USD",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "mode": "draft-only",
+  "niches": ["farmer"],
+  "max_data_age_hours": 24,
+  "max_pages": 2
+}

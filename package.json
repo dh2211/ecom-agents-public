@@ -1,0 +1,75 @@
+{
+  "name": "@thienduy2211/ecom-agents",
+  "version": "1.1.0",
+  "description": "Local Commerce Orchestrator for reviewed POD, Dropship and creative workflows",
+  "type": "module",
+  "bin": {
+    "ecom-agents": "installer/cli.mjs"
+  },
+  "files": [
+    "installer/",
+    "agents/",
+    "skills/",
+    "docs/",
+    "README.md",
+    "LICENSE",
+    "scripts/",
+    "profiles/",
+    "app/",
+    "START-WINDOWS.cmd",
+    "START-MAC.command"
+  ],
+  "scripts": {
+    "test": "node .github/scripts/selftests.mjs && node .github/scripts/no-dashes.mjs && node scripts/pod/test-all.mjs && node scripts/dropship/test-all.mjs && node --test tests/commerce/commerce.test.mjs tests/commerce/review-media.test.mjs",
+    "hire": "node installer/cli.mjs hire",
+    "test:pod": "node scripts/pod/test-all.mjs",
+    "test:dropship": "node scripts/dropship/test-all.mjs",
+    "test:commerce": "node --test tests/commerce/commerce.test.mjs tests/commerce/review-media.test.mjs",
+    "start": "node app/commerce/server.mjs",
+    "commerce:audit": "node app/commerce/observer.mjs",
+    "commerce:recover": "node app/commerce/recover.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AoThunDao/ecom-agents-public.git"
+  },
+  "homepage": "https://github.com/AoThunDao/ecom-agents-public",
+  "bugs": {
+    "url": "https://github.com/AoThunDao/ecom-agents-public/issues"
+  },
+  "keywords": [
+    "ecom-agents",
+    "ai-agents",
+    "claude-code",
+    "scheduled-tasks",
+    "automation",
+    "small-business",
+    "dropshipping",
+    "ugc",
+    "ad-creative",
+    "commerce-orchestrator"
+  ],
+  "author": "thienduy2211 (https://github.com/thienduy2211)",
+  "license": "MIT",
+  "private": true,
+  "pod_overlay": {
+    "version": "1.0.1",
+    "base_commit": "edffe8f4afea467818988ce3ce9332e6d832e5ed",
+    "mode": "opt-in-draft-only"
+  },
+  "dropship_overlay": {
+    "version": "1.0.1",
+    "base_commit": "1395bc4818c8325a8805d121bb12cb00cbaaf825",
+    "mode": "opt-in-draft-only",
+    "creative_media": "local-assembly-and-host-capabilities"
+  },
+  "commerce_app": {
+    "version": "1.0.3",
+    "mode": "local-single-user-draft-only",
+    "workspace": "outside-source",
+    "orchestration": "on-demand-role-adapters"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "schema": "ecom-agent/1",
+  "slug": "pod-design-agent",
+  "name": "POD Design Agent",
+  "role": "Print artwork and niche design skills",
+  "version": "1.0.0",
+  "standard": "1.3",
+  "repository": "https://github.com/thienduy2211/ecom-agents",
+  "license": "MIT",
+  "requires": {
+    "node": ">=18",
+    "python": ">=3.10",
+    "python_packages": ["Pillow"],
+    "harness": [
+      "claude-code",
+      "openclaw",
+      "hermes",
+      "opencode",
+      "grok-bot",
+      "codex",
+      "antigravity",
+      "pi",
+      "cline",
+      "qwen-code",
+      "deepseek"
+    ]
+  },
+  "connections": [
+    {
+      "capability": "image.generate",
+      "providers": [
+        "harness-image-tool",
+        "member-configured-image-runtime"
+      ],
+      "required": false,
+      "readonly": false
+    },
+    {
+      "capability": "vcs.local",
+      "providers": [
+        "git-cli"
+      ],
+      "required": true,
+      "readonly": false
+    }
+  ],
+  "routines": [
+    {
+      "id": "design-intake",
+      "days": "first-weekday",
+      "fire": "11:30",
+      "window_start": "11:15",
+      "window_end": "15:00",
+      "period_key": "YYYY-MM",
+      "budget": "30 min",
+      "browser": "never"
+    },
+    {
+      "id": "design-request",
+      "days": "daily",
+      "fire": "09:00",
+      "window_start": "08:45",
+      "window_end": "21:00",
+      "period_key": "YYYY-MM-DD",
+      "budget": "45 min",
+      "browser": "never"
+    }
+  ],
+  "files": {
+    "kit": [
+      "AGENTS.md",
+      "CAPABILITIES.md",
+      "CHANGELOG.md",
+      "CONTRACT.md",
+      "INSTALL-PROMPT.md",
+      "README.md",
+      "ROLE.md",
+      "VERSION",
+      ".gitignore",
+      "agent.json",
+      "routines/**",
+      "run/**",
+      "scripts/**",
+      "examples/**"
+    ],
+    "merge": [
+      "SCHEDULE.md"
+    ],
+    "member": [
+      "RELEASES.md",
+      "state/**",
+      "requests/**",
+      "generated/**",
+      "out/**",
+      "ledger/**",
+      "config/**",
+      "builder/**",
+      "improvements/**",
+      "run/*.log",
+      "runlog.jsonl",
+      "*-latest.md",
+      "install-report.md",
+      ".installed.json",
+      "PAUSED",
+      "schedule-commands.txt",
+      "POD.md",
+      "DROPSHIP.md",
+      "pod/**",
+      ".upgrade-lock/**",
+      "run/*.last.json"
+    ]
+  },
+  "notes": {
+    "merge": "SCHEDULE.md carries the shape the kit ships and the days, windows and budgets the member owns. An upgrade reports a changed shape and never rewrites the row values.",
+    "member": "Everything under member is the design business this Agent has been running: its request queue, its generated skills staged for commit, its receipts and artwork, its bound repo path and its own field repairs. An upgrade that overwrites any of it has destroyed work that exists nowhere else.",
+    "builder": "builder/ is a verified private copy of the vendored pod-design-skill-builder tree. It is machine-owned: the intake refreshes it from the bound repo checkout, and no routine or member edits inside it."
+  },
+  "pod_overlay": {
+    "version": "1.0.0",
+    "mode": "opt-in-draft-only",
+    "runtime_entrypoint": "scripts/run-routine.mjs"
+  }
+}

@@ -1,0 +1,1995 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openai.local/schemas/pod-niche-data-3.2.json",
+  "title": "POD Niche Master Data 3.2",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "niche_slug",
+    "niche_display",
+    "locale",
+    "niche_profile",
+    "data_provenance",
+    "personas",
+    "buyer_recipient_pairs",
+    "occasions",
+    "emotions",
+    "buyer_language",
+    "visual_vocabulary",
+    "product_fit",
+    "personalization_fields",
+    "hook_patterns",
+    "style_variants",
+    "concept_fit_calibration",
+    "ip_safety",
+    "output_profiles",
+    "output_defaults",
+    "qa_rules",
+    "sample_briefs",
+    "market_contexts",
+    "evidence_claims",
+    "production_methods",
+    "idea_archetypes",
+    "creative_controls",
+    "combination_rules",
+    "sensitivity_rules"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "3.2"
+    },
+    "niche_slug": {
+      "$ref": "#/$defs/id"
+    },
+    "niche_display": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "locale": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 35,
+      "not": {"pattern": "\\s"}
+    },
+    "niche_profile": {
+      "type": "object",
+      "required": [
+        "audience_summary",
+        "primary_buyers",
+        "primary_recipients",
+        "identity_signals",
+        "niche_boundaries",
+        "excluded_segments"
+      ],
+      "properties": {
+        "audience_summary": {
+          "type": "string",
+          "minLength": 1
+        },
+        "primary_buyers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "primary_recipients": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "identity_signals": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "niche_boundaries": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "excluded_segments": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "data_provenance": {
+      "type": "object",
+      "required": [
+        "evidence_status",
+        "legal_status",
+        "last_updated",
+        "marketplaces",
+        "sources",
+        "assumptions"
+      ],
+      "properties": {
+        "evidence_status": {
+          "enum": [
+            "curated-draft",
+            "researched",
+            "validated"
+          ]
+        },
+        "legal_status": {
+          "enum": [
+            "unchecked",
+            "screened-not-cleared",
+            "human-review-required"
+          ]
+        },
+        "last_updated": {
+          "type": "string",
+          "format": "date"
+        },
+        "marketplaces": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/source"
+          }
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "validation_owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_reviewed_at": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "additionalProperties": true
+    },
+    "personas": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "$ref": "#/$defs/persona"
+      }
+    },
+    "buyer_recipient_pairs": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "$ref": "#/$defs/pair"
+      }
+    },
+    "occasions": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "$ref": "#/$defs/occasion"
+      }
+    },
+    "emotions": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "$ref": "#/$defs/emotion"
+      }
+    },
+    "buyer_language": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "$ref": "#/$defs/buyerLanguage"
+      }
+    },
+    "visual_vocabulary": {
+      "type": "object",
+      "required": [
+        "motifs",
+        "palettes",
+        "typography",
+        "compositions"
+      ],
+      "properties": {
+        "motifs": {
+          "type": "array",
+          "minItems": 6,
+          "items": {
+            "$ref": "#/$defs/motif"
+          }
+        },
+        "palettes": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "$ref": "#/$defs/palette"
+          }
+        },
+        "typography": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "$ref": "#/$defs/typography"
+          }
+        },
+        "compositions": {
+          "type": "array",
+          "minItems": 4,
+          "items": {
+            "$ref": "#/$defs/composition"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "product_fit": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "$ref": "#/$defs/product"
+      }
+    },
+    "personalization_fields": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "$ref": "#/$defs/personalization"
+      }
+    },
+    "hook_patterns": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "$ref": "#/$defs/hook"
+      }
+    },
+    "style_variants": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 8,
+      "items": {
+        "$ref": "#/$defs/style"
+      }
+    },
+    "concept_fit_calibration": {
+      "type": "object",
+      "required": [
+        "go_score",
+        "refine_score",
+        "rework_score",
+        "replace_score",
+        "high_fit_signals",
+        "weak_fit_signals"
+      ],
+      "properties": {
+        "go_score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 25
+        },
+        "refine_score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 25
+        },
+        "rework_score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 25
+        },
+        "replace_score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 25
+        },
+        "high_fit_signals": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "weak_fit_signals": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "ip_safety": {
+      "type": "object",
+      "required": [
+        "niche_specific_avoid",
+        "safe_substitutions",
+        "human_review_triggers"
+      ],
+      "properties": {
+        "niche_specific_avoid": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "safe_substitutions": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "required": [
+              "risky",
+              "replace_with"
+            ],
+            "properties": {
+              "risky": {
+                "type": "string",
+                "minLength": 1
+              },
+              "replace_with": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "human_review_triggers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "output_profiles": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/outputProfile"
+      }
+    },
+    "output_defaults": {
+      "type": "object",
+      "required": [
+        "background",
+        "product_contrast",
+        "variant_count_default",
+        "variant_count_min",
+        "variant_count_max",
+        "copy_mode_default"
+      ],
+      "properties": {
+        "background": {
+          "type": "object",
+          "required": [
+            "preferred_mode",
+            "transparent_format",
+            "require_real_alpha",
+            "capability_policy",
+            "supported_model_route",
+            "unknown_model_route",
+            "unsupported_model_route",
+            "max_transparent_attempts",
+            "unknown_probe_attempts",
+            "fallback_condition",
+            "require_native_transparency_option_when_available",
+            "hard_fail_supported_after_attempts",
+            "final_output_must_have_alpha",
+            "fallback_enabled",
+            "safe_palette",
+            "selection_method",
+            "mandatory_prompt",
+            "forbidden"
+          ],
+          "properties": {
+            "preferred_mode": {
+              "const": "transparent"
+            },
+            "transparent_format": {
+              "const": "PNG"
+            },
+            "require_real_alpha": {
+              "const": true
+            },
+            "fallback_enabled": {
+              "const": true
+            },
+            "safe_palette": {
+              "type": "array",
+              "minItems": 5,
+              "maxItems": 5,
+              "uniqueItems": true,
+              "items": {
+                "$ref": "#/$defs/hexColor"
+              }
+            },
+            "selection_method": {
+              "const": "max-color-distance-from-artwork"
+            },
+            "mandatory_prompt": {
+              "type": "string",
+              "minLength": 1
+            },
+            "forbidden": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "capability_policy": {
+              "const": "capability-gated"
+            },
+            "supported_model_route": {
+              "const": "transparent-required-no-fallback"
+            },
+            "unknown_model_route": {
+              "const": "probe-then-fallback"
+            },
+            "unsupported_model_route": {
+              "const": "flat-solid-remove-to-alpha"
+            },
+            "max_transparent_attempts": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5
+            },
+            "unknown_probe_attempts": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 3
+            },
+            "fallback_condition": {
+              "const": "confirmed-transparent-unavailable-only"
+            },
+            "require_native_transparency_option_when_available": {
+              "const": true
+            },
+            "hard_fail_supported_after_attempts": {
+              "const": true
+            },
+            "final_output_must_have_alpha": {
+              "const": true
+            }
+          },
+          "additionalProperties": true
+        },
+        "product_contrast": {
+          "type": "object",
+          "required": [
+            "dark_surface_use",
+            "light_surface_use",
+            "mid_surface_use",
+            "minimum_contrast_ratio",
+            "unknown_surface_action"
+          ],
+          "properties": {
+            "dark_surface_use": {
+              "const": "light"
+            },
+            "light_surface_use": {
+              "const": "dark"
+            },
+            "mid_surface_use": {
+              "const": "high-contrast-dual-tone"
+            },
+            "minimum_contrast_ratio": {
+              "type": "number",
+              "minimum": 3,
+              "maximum": 21
+            },
+            "unknown_surface_action": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": true
+        },
+        "variant_count_default": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "variant_count_min": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "variant_count_max": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "copy_mode_default": {
+          "enum": [
+            "exact",
+            "proposed",
+            "none"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "qa_rules": {
+      "type": "object",
+      "required": [
+        "max_colors",
+        "min_text_legibility",
+        "copy_modes",
+        "alpha_validation_required",
+        "rerender_on_alpha_failure",
+        "fallback_on_supported_alpha_failure",
+        "minimum_fully_transparent_ratio",
+        "minimum_transparent_border_ratio",
+        "minimum_visible_ratio",
+        "maximum_significant_visible_ratio",
+        "maximum_significant_bbox_fill_ratio",
+        "minimum_significant_margin_ratio",
+        "significant_alpha_threshold",
+        "isolated_artwork",
+        "no_shadows",
+        "product_contrast_required",
+        "minimum_contrast_ratio",
+        "background_edge_rule"
+      ],
+      "properties": {
+        "max_colors": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 12
+        },
+        "min_text_legibility": {
+          "type": "string",
+          "minLength": 1
+        },
+        "copy_modes": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "exact",
+              "proposed",
+              "none"
+            ]
+          }
+        },
+        "alpha_validation_required": {
+          "const": true
+        },
+        "isolated_artwork": {
+          "const": true
+        },
+        "no_shadows": {
+          "const": true
+        },
+        "product_contrast_required": {
+          "const": true
+        },
+        "minimum_contrast_ratio": {
+          "type": "number",
+          "minimum": 3,
+          "maximum": 21
+        },
+        "background_edge_rule": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rerender_on_alpha_failure": {
+          "const": true
+        },
+        "fallback_on_supported_alpha_failure": {
+          "const": false
+        },
+        "minimum_fully_transparent_ratio": {
+          "type": "number",
+          "minimum": 0.001,
+          "maximum": 0.95
+        },
+        "minimum_transparent_border_ratio": {
+          "type": "number",
+          "minimum": 0.9,
+          "maximum": 1.0
+        },
+        "minimum_visible_ratio": {
+          "type": "number",
+          "minimum": 0.0001,
+          "maximum": 0.25
+        },
+        "maximum_significant_visible_ratio": {
+          "type": "number",
+          "minimum": 0.25,
+          "maximum": 0.99
+        },
+        "maximum_significant_bbox_fill_ratio": {
+          "type": "number",
+          "minimum": 0.5,
+          "maximum": 0.99
+        },
+        "minimum_significant_margin_ratio": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 0.25
+        },
+        "significant_alpha_threshold": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 254
+        }
+      },
+      "additionalProperties": true
+    },
+    "sample_briefs": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "$ref": "#/$defs/brief"
+      }
+    },
+    "market_contexts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/marketContext"
+      }
+    },
+    "evidence_claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/evidenceClaim"
+      }
+    },
+    "production_methods": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/productionMethod"
+      }
+    },
+    "idea_archetypes": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "$ref": "#/$defs/ideaArchetype"
+      }
+    },
+    "creative_controls": {
+      "$ref": "#/$defs/creativeControls"
+    },
+    "combination_rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/combinationRule"
+      }
+    },
+    "sensitivity_rules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/sensitivityRule"
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "maxLength": 64
+    },
+    "nonemptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stringArray": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "hexColor": {
+      "type": "string",
+      "pattern": "^#[0-9A-Fa-f]{6}$"
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "id",
+        "type",
+        "note"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "note": {
+          "type": "string",
+          "minLength": 1
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "retrieved_at": {
+          "type": "string",
+          "format": "date"
+        },
+        "supports": {
+          "type": "string",
+          "minLength": 1
+        },
+        "id": {
+          "$ref": "#/$defs/id"
+        }
+      },
+      "additionalProperties": true
+    },
+    "persona": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "identity_stage",
+        "buyer_intents",
+        "recipient_relationships",
+        "emotional_triggers",
+        "insider_language",
+        "safe_visual_cues",
+        "product_fit",
+        "avoid"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "identity_stage": {
+          "type": "string",
+          "minLength": 1
+        },
+        "buyer_intents": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "recipient_relationships": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "emotional_triggers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "insider_language": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "safe_visual_cues": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "product_fit": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "avoid": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "pair": {
+      "type": "object",
+      "required": [
+        "id",
+        "buyer",
+        "recipient",
+        "purchase_reason",
+        "strong_occasions",
+        "preferred_products"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "buyer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recipient": {
+          "type": "string",
+          "minLength": 1
+        },
+        "purchase_reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "strong_occasions": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "preferred_products": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "occasion": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "type",
+        "seasonality",
+        "lead_time_days",
+        "strong_angles",
+        "common_products",
+        "personalization",
+        "avoid"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "seasonality": {
+          "type": "string",
+          "minLength": 1
+        },
+        "lead_time_days": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 365
+        },
+        "strong_angles": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "common_products": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "personalization": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "avoid": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "emotion": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "job_to_be_done",
+        "use_when",
+        "design_direction",
+        "copy_tone",
+        "avoid"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "job_to_be_done": {
+          "type": "string",
+          "minLength": 1
+        },
+        "use_when": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "design_direction": {
+          "type": "string",
+          "minLength": 1
+        },
+        "copy_tone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "avoid": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "buyerLanguage": {
+      "type": "object",
+      "required": [
+        "theme",
+        "phrases",
+        "meaning",
+        "use_for",
+        "avoid"
+      ],
+      "properties": {
+        "theme": {
+          "type": "string",
+          "minLength": 1
+        },
+        "phrases": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "meaning": {
+          "type": "string",
+          "minLength": 1
+        },
+        "use_for": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "avoid": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "motif": {
+      "type": "object",
+      "required": [
+        "name",
+        "meaning",
+        "use_with",
+        "avoid_with"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "meaning": {
+          "type": "string",
+          "minLength": 1
+        },
+        "use_with": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "avoid_with": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "palette": {
+      "type": "object",
+      "required": [
+        "name",
+        "colors",
+        "use_when",
+        "contrast_rule"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "colors": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 12,
+          "items": {
+            "$ref": "#/$defs/hexColor"
+          }
+        },
+        "use_when": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contrast_rule": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "typography": {
+      "type": "object",
+      "required": [
+        "name",
+        "direction",
+        "use_when",
+        "avoid"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "direction": {
+          "type": "string",
+          "minLength": 1
+        },
+        "use_when": {
+          "type": "string",
+          "minLength": 1
+        },
+        "avoid": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "composition": {
+      "type": "object",
+      "required": [
+        "name",
+        "hierarchy",
+        "use_when",
+        "avoid"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hierarchy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "use_when": {
+          "type": "string",
+          "minLength": 1
+        },
+        "avoid": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "product": {
+      "type": "object",
+      "required": [
+        "product",
+        "priority",
+        "works_best_with",
+        "max_words",
+        "personalization",
+        "output_profile_id",
+        "production_method_id",
+        "print_notes",
+        "avoid"
+      ],
+      "properties": {
+        "product": {
+          "type": "string",
+          "minLength": 1
+        },
+        "priority": {
+          "enum": [
+            "high",
+            "medium",
+            "low"
+          ]
+        },
+        "works_best_with": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "max_words": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 60
+        },
+        "personalization": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "output_profile_id": {
+          "$ref": "#/$defs/id"
+        },
+        "print_notes": {
+          "type": "string",
+          "minLength": 1
+        },
+        "avoid": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "production_method_id": {
+          "$ref": "#/$defs/id"
+        }
+      },
+      "additionalProperties": true
+    },
+    "personalization": {
+      "type": "object",
+      "required": [
+        "key",
+        "label",
+        "example",
+        "validation",
+        "products"
+      ],
+      "properties": {
+        "key": {
+          "$ref": "#/$defs/id"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "example": {
+          "type": "string",
+          "minLength": 1
+        },
+        "validation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "products": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "hook": {
+      "type": "object",
+      "required": [
+        "id",
+        "template",
+        "use_when",
+        "example",
+        "avoid"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "template": {
+          "type": "string",
+          "minLength": 1
+        },
+        "use_when": {
+          "type": "string",
+          "minLength": 1
+        },
+        "example": {
+          "type": "string",
+          "minLength": 1
+        },
+        "avoid": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "style": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "commercial_role",
+        "description",
+        "typography",
+        "motifs",
+        "palette_options",
+        "avoid"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "commercial_role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "typography": {
+          "type": "string",
+          "minLength": 1
+        },
+        "motifs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "palette_options": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "avoid": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "outputProfile": {
+      "type": "object",
+      "required": [
+        "id",
+        "products",
+        "aspect_ratio",
+        "file_format",
+        "dpi",
+        "width_px",
+        "height_px",
+        "alpha_preferred",
+        "safe_zone",
+        "bleed",
+        "marketplace_template_required"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "products": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "aspect_ratio": {
+          "type": "string",
+          "pattern": "^[1-9][0-9]*:[1-9][0-9]*$"
+        },
+        "file_format": {
+          "enum": [
+            "PNG",
+            "SVG",
+            "PDF"
+          ]
+        },
+        "dpi": {
+          "type": "integer",
+          "minimum": 72,
+          "maximum": 1200
+        },
+        "width_px": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 256,
+          "maximum": 50000
+        },
+        "height_px": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 256,
+          "maximum": 50000
+        },
+        "alpha_preferred": {
+          "const": true
+        },
+        "safe_zone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "bleed": {
+          "type": "string",
+          "minLength": 1
+        },
+        "marketplace_template_required": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": true
+    },
+    "copy": {
+      "type": "object",
+      "required": [
+        "mode",
+        "text",
+        "language"
+      ],
+      "properties": {
+        "mode": {
+          "enum": [
+            "exact",
+            "proposed",
+            "none"
+          ]
+        },
+        "text": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "surface": {
+      "type": "object",
+      "required": [
+        "tone",
+        "color"
+      ],
+      "properties": {
+        "tone": {
+          "enum": [
+            "dark",
+            "light",
+            "mid",
+            "unknown"
+          ]
+        },
+        "color": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/hexColor"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "brief": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "persona_id",
+        "buyer_recipient_pair_id",
+        "buyer",
+        "recipient",
+        "occasion_id",
+        "emotion_id",
+        "style_variant_id",
+        "product",
+        "output_profile_id",
+        "copy",
+        "product_surface",
+        "visual_direction",
+        "personalization",
+        "why_it_fits",
+        "ip_notes"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "persona_id": {
+          "$ref": "#/$defs/id"
+        },
+        "buyer_recipient_pair_id": {
+          "$ref": "#/$defs/id"
+        },
+        "buyer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "recipient": {
+          "type": "string",
+          "minLength": 1
+        },
+        "occasion_id": {
+          "$ref": "#/$defs/id"
+        },
+        "emotion_id": {
+          "$ref": "#/$defs/id"
+        },
+        "style_variant_id": {
+          "$ref": "#/$defs/id"
+        },
+        "product": {
+          "type": "string",
+          "minLength": 1
+        },
+        "output_profile_id": {
+          "$ref": "#/$defs/id"
+        },
+        "copy": {
+          "$ref": "#/$defs/copy"
+        },
+        "product_surface": {
+          "$ref": "#/$defs/surface"
+        },
+        "visual_direction": {
+          "type": "string",
+          "minLength": 1
+        },
+        "personalization": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "why_it_fits": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ip_notes": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "marketContext": {
+      "type": "object",
+      "required": [
+        "id",
+        "marketplace",
+        "locale",
+        "region",
+        "measurement_system",
+        "restricted_claims",
+        "output_notes",
+        "review_by"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "marketplace": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locale": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 35,
+          "not": {"pattern": "\\s"}
+        },
+        "region": {
+          "type": "string",
+          "minLength": 1
+        },
+        "measurement_system": {
+          "enum": [
+            "metric",
+            "imperial",
+            "mixed",
+            "unspecified"
+          ]
+        },
+        "restricted_claims": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "output_notes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "review_by": {
+          "type": "string",
+          "format": "date"
+        }
+      },
+      "additionalProperties": true
+    },
+    "evidenceClaim": {
+      "type": "object",
+      "required": [
+        "id",
+        "claim_type",
+        "statement",
+        "status",
+        "source_ids",
+        "market_context_ids",
+        "review_by",
+        "confidence"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "claim_type": {
+          "enum": [
+            "market-hypothesis",
+            "buyer-language",
+            "seasonality",
+            "production",
+            "policy"
+          ]
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "status": {
+          "enum": [
+            "hypothesis",
+            "supported",
+            "validated"
+          ]
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "market_context_ids": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "review_by": {
+          "type": "string",
+          "format": "date"
+        },
+        "confidence": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "productionMethod": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "process",
+        "products",
+        "minimum_stroke_mm",
+        "minimum_gap_mm",
+        "minimum_text_height_mm",
+        "max_colors",
+        "distress_allowed",
+        "halftones_allowed",
+        "substrate_notes",
+        "ink_notes",
+        "template_required",
+        "uncertainty"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "process": {
+          "type": "string",
+          "minLength": 1
+        },
+        "products": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "minimum_stroke_mm": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 50
+        },
+        "minimum_gap_mm": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 50
+        },
+        "minimum_text_height_mm": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 50
+        },
+        "max_colors": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 64
+        },
+        "distress_allowed": {
+          "type": "boolean"
+        },
+        "halftones_allowed": {
+          "type": "boolean"
+        },
+        "substrate_notes": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ink_notes": {
+          "type": "string",
+          "minLength": 1
+        },
+        "template_required": {
+          "type": "boolean"
+        },
+        "uncertainty": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "ideaArchetype": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "purchase_logic",
+        "persona_ids",
+        "occasion_ids",
+        "product_names",
+        "hook_ids",
+        "required_variation_axes",
+        "avoid"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "purchase_logic": {
+          "type": "string",
+          "minLength": 1
+        },
+        "persona_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "occasion_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "product_names": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "hook_ids": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "required_variation_axes": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "composition",
+              "typography",
+              "motif",
+              "palette",
+              "hook",
+              "personalization"
+            ]
+          }
+        },
+        "avoid": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "creativeControls": {
+      "type": "object",
+      "required": [
+        "required_variation_axes",
+        "minimum_distinct_axes_per_variant",
+        "anti_generic_phrases"
+      ],
+      "properties": {
+        "required_variation_axes": {
+          "type": "array",
+          "minItems": 3,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "composition",
+              "typography",
+              "motif",
+              "palette",
+              "hook",
+              "personalization"
+            ]
+          }
+        },
+        "minimum_distinct_axes_per_variant": {
+          "type": "integer",
+          "minimum": 2,
+          "maximum": 6
+        },
+        "anti_generic_phrases": {
+          "type": "array",
+          "minItems": 3,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "combinationRule": {
+      "type": "object",
+      "required": [
+        "id",
+        "persona_ids",
+        "occasion_ids",
+        "product_names",
+        "style_variant_ids",
+        "idea_archetype_ids",
+        "outcome",
+        "reason"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "persona_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "occasion_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "product_names": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "style_variant_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "idea_archetype_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "outcome": {
+          "enum": [
+            "forbid",
+            "review"
+          ]
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "sensitivityRule": {
+      "type": "object",
+      "required": [
+        "id",
+        "trigger_terms",
+        "persona_ids",
+        "occasion_ids",
+        "action",
+        "constraints",
+        "rationale"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "trigger_terms": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "persona_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "occasion_ids": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "action": {
+          "enum": [
+            "refuse",
+            "constrain",
+            "human-review"
+          ]
+        },
+        "constraints": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

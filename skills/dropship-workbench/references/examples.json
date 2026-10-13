@@ -1,0 +1,114 @@
+{
+  "note": "Schema examples only. Replace market/currency; unknown numbers intentionally stay null. Split store, costs and product into separate private JSON files before running the CLI.",
+  "store": {
+    "schema": "dropship-store/1",
+    "store_id": "replace-store",
+    "currency": "USD",
+    "timezone": "Asia/Ho_Chi_Minh",
+    "mode": "draft-only",
+    "markets": [
+      "US"
+    ],
+    "max_source_age_hours": 24
+  },
+  "costs": {
+    "currency": "USD",
+    "basis": "planning",
+    "merchandise_revenue_minor": null,
+    "shipping_revenue_minor": null,
+    "customer_paid_minor": null,
+    "supplier_cost_minor": null,
+    "supplier_shipping_minor": null,
+    "merchant_duties_minor": null,
+    "other_variable_minor": null,
+    "payment_fixed_minor": null,
+    "payment_rate_bps": null,
+    "expected_refund_loss_minor": null,
+    "expected_replacement_loss_minor": null,
+    "ad_cost_minor": null,
+    "target_contribution_minor": null
+  },
+  "product": {
+    "schema": "dropship-product/1",
+    "store_id": "replace-store",
+    "product_id": "replace-product",
+    "variant_id": "replace-variant",
+    "supplier_id": "replace-supplier",
+    "market": "US",
+    "currency": "USD",
+    "stock": {
+      "variant_id": "replace-variant",
+      "supplier_id": "replace-supplier",
+      "source_ref": null,
+      "observed_at": null,
+      "available": null
+    },
+    "quote": {
+      "variant_id": "replace-variant",
+      "supplier_id": "replace-supplier",
+      "source_ref": null,
+      "observed_at": null,
+      "currency": "USD",
+      "unit_cost_minor": null
+    },
+    "shipping": {
+      "variant_id": "replace-variant",
+      "supplier_id": "replace-supplier",
+      "source_ref": null,
+      "observed_at": null,
+      "market": "US",
+      "day_basis": "calendar",
+      "origin_country": null,
+      "handling_min_days": null,
+      "handling_max_days": null,
+      "transit_min_days": null,
+      "transit_max_days": null,
+      "cost_minor": null,
+      "duties_disclosure": null
+    },
+    "sample_review": {
+      "status": "pending",
+      "reviewer": null,
+      "variant_id": "replace-variant",
+      "supplier_id": "replace-supplier",
+      "market": "US",
+      "source_ref": null,
+      "observed_at": null
+    },
+    "safety_review": {
+      "status": "pending",
+      "reviewer": null,
+      "variant_id": "replace-variant",
+      "supplier_id": "replace-supplier",
+      "market": "US",
+      "source_ref": null,
+      "observed_at": null
+    },
+    "returns_review": {
+      "status": "pending",
+      "reviewer": null,
+      "variant_id": "replace-variant",
+      "supplier_id": "replace-supplier",
+      "market": "US",
+      "source_ref": null,
+      "observed_at": null
+    },
+    "costs": {
+      "currency": "USD",
+      "basis": "planning",
+      "merchandise_revenue_minor": null,
+      "shipping_revenue_minor": null,
+      "customer_paid_minor": null,
+      "supplier_cost_minor": null,
+      "supplier_shipping_minor": null,
+      "merchant_duties_minor": null,
+      "other_variable_minor": null,
+      "payment_fixed_minor": null,
+      "payment_rate_bps": null,
+      "expected_refund_loss_minor": null,
+      "expected_replacement_loss_minor": null,
+      "ad_cost_minor": null,
+      "target_contribution_minor": null
+    }
+  }
+}

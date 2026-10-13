@@ -1,0 +1,6 @@
+:: Replace the root token and verify executable paths before scheduling.
+:: Configure narrowly scoped noninteractive tool permissions yourself; never auto-bypass.
+@echo off
+cd /d "«DESIGN_ROOT»"
+node "«DESIGN_ROOT»\scripts\run-routine.mjs" design-intake --root "«DESIGN_ROOT»" -- "%USERPROFILE%\.local\bin\claude.exe" -p "Read «DESIGN_ROOT»/routines/design-intake/SKILL.md and follow it." --permission-mode acceptEdits --output-format json < nul > nul
+exit /b %errorlevel%

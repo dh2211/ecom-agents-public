@@ -1,0 +1,2687 @@
+{
+  "schema_version": "3.2",
+  "niche_display": "Teacher",
+  "locale": "en-US",
+  "niche_profile": {
+    "audience_summary": "Print-on-demand designs for classroom teachers, selected school staff, educator self-purchases, and buyers giving appreciation or milestone gifts.",
+    "primary_buyers": [
+      "teacher self-purchase",
+      "parents of current students",
+      "students and former students",
+      "teacher coworkers and school staff",
+      "spouses, children, and family members"
+    ],
+    "primary_recipients": [
+      "early-childhood teacher",
+      "elementary classroom teacher",
+      "subject teacher",
+      "special education teacher",
+      "first-year teacher",
+      "retiring teacher",
+      "school counselor",
+      "teacher mom"
+    ],
+    "identity_signals": [
+      "grade level",
+      "subject taught",
+      "career stage",
+      "classroom role",
+      "school-year milestone",
+      "teacher and parent dual identity"
+    ],
+    "niche_boundaries": [
+      "education-role identity and school-life humor",
+      "teacher appreciation and end-of-year gifts",
+      "back-to-school and first-year teaching milestones",
+      "teacher retirement and career legacy",
+      "safe grade-level and subject-specific pride"
+    ],
+    "excluded_segments": [
+      "student-only spirit wear",
+      "official school or district merchandise",
+      "licensed book and movie characters",
+      "sports team branding",
+      "political or culture-war classroom messaging"
+    ]
+  },
+  "data_provenance": {
+    "last_updated": "2026-08-09",
+    "marketplaces": [
+      "Etsy",
+      "Shopify",
+      "Amazon"
+    ],
+    "sources": [
+      {
+        "type": "project-framework",
+        "note": "Structured from the POD x AI x Idea Engine persona, occasion, emotion, product-fit, and market-fit framework.",
+        "id": "project-framework"
+      },
+      {
+        "type": "internal-domain-knowledge",
+        "note": "Curated teacher gift and educator identity patterns; no live marketplace demand or trademark verification was performed.",
+        "id": "internal-domain-knowledge"
+      }
+    ],
+    "assumptions": [
+      "Primary language is English.",
+      "Primary commercial context is the US gift market.",
+      "Designs are intended for common POD apparel and gift products.",
+      "Seasonal dates and trademark status require live verification before launch."
+    ],
+    "evidence_status": "curated-draft",
+    "legal_status": "screened-not-cleared"
+  },
+  "personas": [
+    {
+      "id": "kindergarten-teacher",
+      "name": "Kindergarten teacher",
+      "identity_stage": "active early-elementary classroom educator",
+      "buyer_intents": [
+        "self-purchase",
+        "parent appreciation gift",
+        "student keepsake gift"
+      ],
+      "recipient_relationships": [
+        "parent to teacher",
+        "student to teacher",
+        "teacher self-identity"
+      ],
+      "emotional_triggers": [
+        "patience",
+        "tiny learners",
+        "classroom impact",
+        "playful chaos"
+      ],
+      "insider_language": [
+        "tiny humans",
+        "little learners",
+        "kindergarten crew",
+        "big feelings"
+      ],
+      "safe_visual_cues": [
+        "crayons",
+        "pencils",
+        "stars",
+        "books",
+        "simple rainbow"
+      ],
+      "product_fit": [
+        "sweatshirt",
+        "t-shirt",
+        "tote",
+        "mug"
+      ],
+      "avoid": [
+        "infantilizing the teacher",
+        "licensed classroom characters",
+        "overly busy childlike scenes"
+      ]
+    },
+    {
+      "id": "preschool-teacher",
+      "name": "Preschool teacher",
+      "identity_stage": "early-childhood educator",
+      "buyer_intents": [
+        "parent thank-you gift",
+        "self-purchase",
+        "coworker gift"
+      ],
+      "recipient_relationships": [
+        "parent to preschool teacher",
+        "coworker to educator"
+      ],
+      "emotional_triggers": [
+        "nurturing care",
+        "messy learning",
+        "first milestones",
+        "play-based growth"
+      ],
+      "insider_language": [
+        "little learners",
+        "play learn grow",
+        "tiny hands",
+        "big imaginations"
+      ],
+      "safe_visual_cues": [
+        "building blocks",
+        "handprint-inspired shapes",
+        "crayons",
+        "small stars"
+      ],
+      "product_fit": [
+        "sweatshirt",
+        "tote",
+        "mug",
+        "t-shirt"
+      ],
+      "avoid": [
+        "daycare stereotypes",
+        "copied handprint art",
+        "baby-character branding"
+      ]
+    },
+    {
+      "id": "special-education-teacher",
+      "name": "Special education teacher",
+      "identity_stage": "specialized educator and student advocate",
+      "buyer_intents": [
+        "staff appreciation gift",
+        "parent gratitude gift",
+        "self-purchase"
+      ],
+      "recipient_relationships": [
+        "parent to teacher",
+        "school team to teacher",
+        "teacher self-identity"
+      ],
+      "emotional_triggers": [
+        "advocacy",
+        "patience",
+        "individual progress",
+        "inclusive support"
+      ],
+      "insider_language": [
+        "every learner matters",
+        "progress over perfection",
+        "small steps",
+        "meet them where they are"
+      ],
+      "safe_visual_cues": [
+        "open hands",
+        "pathway stars",
+        "books",
+        "speech bubbles",
+        "heart"
+      ],
+      "product_fit": [
+        "sweatshirt",
+        "tote",
+        "mug",
+        "poster"
+      ],
+      "avoid": [
+        "puzzle-piece symbolism",
+        "diagnosis labels",
+        "inspiration stereotypes",
+        "medical claims"
+      ]
+    },
+    {
+      "id": "first-year-teacher",
+      "name": "First-year teacher",
+      "identity_stage": "newly qualified educator entering a first classroom",
+      "buyer_intents": [
+        "graduation gift",
+        "new-job gift",
+        "self-purchase"
+      ],
+      "recipient_relationships": [
+        "family to new teacher",
+        "friend to new teacher",
+        "mentor to mentee"
+      ],
+      "emotional_triggers": [
+        "new beginning",
+        "earned pride",
+        "nervous excitement",
+        "classroom ownership"
+      ],
+      "insider_language": [
+        "first year energy",
+        "my first classroom",
+        "lesson plan and learn",
+        "teacher era"
+      ],
+      "safe_visual_cues": [
+        "classroom door",
+        "planner",
+        "pencil",
+        "coffee cup",
+        "small stars"
+      ],
+      "product_fit": [
+        "sweatshirt",
+        "mug",
+        "tote",
+        "poster"
+      ],
+      "avoid": [
+        "failure jokes",
+        "burnout as the only message",
+        "unsupported certification claims"
+      ]
+    },
+    {
+      "id": "retired-teacher",
+      "name": "Retired teacher",
+      "identity_stage": "educator closing a teaching career",
+      "buyer_intents": [
+        "coworker retirement gift",
+        "family tribute gift",
+        "self-purchase"
+      ],
+      "recipient_relationships": [
+        "staff to retiring teacher",
+        "family to retiring teacher",
+        "former student to teacher"
+      ],
+      "emotional_triggers": [
+        "legacy",
+        "years of service",
+        "gratitude",
+        "new freedom"
+      ],
+      "insider_language": [
+        "lifetime difference maker",
+        "lesson plans complete",
+        "last bell",
+        "next chapter"
+      ],
+      "safe_visual_cues": [
+        "open book",
+        "subtle florals",
+        "bell",
+        "year marker",
+        "elegant stars"
+      ],
+      "product_fit": [
+        "blanket",
+        "mug",
+        "ornament",
+        "sweatshirt",
+        "poster"
+      ],
+      "avoid": [
+        "age jokes unless requested",
+        "invented years of service",
+        "childlike styling for premium tribute gifts"
+      ]
+    },
+    {
+      "id": "math-teacher",
+      "name": "Math teacher",
+      "identity_stage": "active subject specialist",
+      "buyer_intents": [
+        "self-purchase",
+        "student appreciation gift",
+        "coworker gift"
+      ],
+      "recipient_relationships": [
+        "student to teacher",
+        "coworker to teacher",
+        "teacher self-identity"
+      ],
+      "emotional_triggers": [
+        "subject pride",
+        "clever precision",
+        "problem-solving confidence",
+        "classroom humor"
+      ],
+      "insider_language": [
+        "show your work",
+        "find the why",
+        "math mode",
+        "problem solved"
+      ],
+      "safe_visual_cues": [
+        "geometric shapes",
+        "ruler",
+        "generic equations",
+        "coordinate grid",
+        "number forms"
+      ],
+      "product_fit": [
+        "t-shirt",
+        "sweatshirt",
+        "mug",
+        "sticker"
+      ],
+      "avoid": [
+        "copied equation jokes",
+        "incorrect math",
+        "licensed educational characters"
+      ]
+    },
+    {
+      "id": "reading-teacher",
+      "name": "Reading teacher",
+      "identity_stage": "literacy-focused educator",
+      "buyer_intents": [
+        "self-purchase",
+        "parent appreciation gift",
+        "coworker gift"
+      ],
+      "recipient_relationships": [
+        "parent to teacher",
+        "coworker to teacher",
+        "teacher self-identity"
+      ],
+      "emotional_triggers": [
+        "love of reading",
+        "student confidence",
+        "cozy classroom",
+        "literacy growth"
+      ],
+      "insider_language": [
+        "growing readers",
+        "one more chapter",
+        "reading changes everything",
+        "bookish classroom"
+      ],
+      "safe_visual_cues": [
+        "open book",
+        "bookmark",
+        "bookshelf",
+        "reading lamp",
+        "small stars"
+      ],
+      "product_fit": [
+        "sweatshirt",
+        "tote",
+        "mug",
+        "poster"
+      ],
+      "avoid": [
+        "book-cover copies",
+        "famous character art",
+        "quoted lines from copyrighted books"
+      ]
+    },
+    {
+      "id": "science-teacher",
+      "name": "Science teacher",
+      "identity_stage": "active subject specialist",
+      "buyer_intents": [
+        "self-purchase",
+        "student gift",
+        "staff appreciation gift"
+      ],
+      "recipient_relationships": [
+        "student to teacher",
+        "coworker to teacher",
+        "teacher self-identity"
+      ],
+      "emotional_triggers": [
+        "curiosity",
+        "discovery",
+        "experiment humor",
+        "subject pride"
+      ],
+      "insider_language": [
+        "stay curious",
+        "ask test learn",
+        "science mode",
+        "classroom lab"
+      ],
+      "safe_visual_cues": [
+        "generic beaker",
+        "microscope line art",
+        "atom-inspired dots",
+        "stars",
+        "leaf"
+      ],
+      "product_fit": [
+        "t-shirt",
+        "sweatshirt",
+        "mug",
+        "sticker"
+      ],
+      "avoid": [
+        "unsafe experiment instructions",
+        "incorrect scientific diagrams",
+        "institution logos"
+      ]
+    },
+    {
+      "id": "school-counselor",
+      "name": "School counselor",
+      "identity_stage": "student-support professional",
+      "buyer_intents": [
+        "staff appreciation gift",
+        "parent gratitude gift",
+        "self-purchase"
+      ],
+      "recipient_relationships": [
+        "school staff to counselor",
+        "parent to counselor",
+        "counselor self-identity"
+      ],
+      "emotional_triggers": [
+        "being heard",
+        "calm support",
+        "trusted guidance",
+        "student wellbeing"
+      ],
+      "insider_language": [
+        "here to listen",
+        "safe space",
+        "one conversation at a time",
+        "you are heard"
+      ],
+      "safe_visual_cues": [
+        "speech bubbles",
+        "open door",
+        "heart",
+        "pathway",
+        "soft florals"
+      ],
+      "product_fit": [
+        "mug",
+        "tote",
+        "sweatshirt",
+        "poster"
+      ],
+      "avoid": [
+        "therapy claims",
+        "diagnostic language",
+        "guaranteed mental-health outcomes"
+      ]
+    },
+    {
+      "id": "teacher-mom",
+      "name": "Teacher mom",
+      "identity_stage": "educator balancing classroom and family identities",
+      "buyer_intents": [
+        "Mother's Day gift",
+        "birthday gift",
+        "self-purchase"
+      ],
+      "recipient_relationships": [
+        "spouse to teacher mom",
+        "children to mother",
+        "teacher mom self-identity"
+      ],
+      "emotional_triggers": [
+        "dual caregiving identity",
+        "family pride",
+        "classroom love",
+        "personal recognition"
+      ],
+      "insider_language": [
+        "teaching little minds",
+        "raising my world",
+        "mom and teacher",
+        "two kinds of homework"
+      ],
+      "safe_visual_cues": [
+        "pencil heart",
+        "small flowers",
+        "books",
+        "name leaves",
+        "simple home and school icons"
+      ],
+      "product_fit": [
+        "sweatshirt",
+        "mug",
+        "blanket",
+        "tote"
+      ],
+      "avoid": [
+        "gender-role stereotypes",
+        "unrequested children's names",
+        "overcrowded family layouts"
+      ]
+    }
+  ],
+  "buyer_recipient_pairs": [
+    {
+      "buyer": "parent",
+      "recipient": "classroom teacher",
+      "purchase_reason": "express gratitude for patience, care, and classroom impact",
+      "strong_occasions": [
+        "teacher-appreciation",
+        "end-of-school-year"
+      ],
+      "preferred_products": [
+        "mug",
+        "tote",
+        "sweatshirt",
+        "ornament"
+      ],
+      "id": "parent-to-classroom-teacher"
+    },
+    {
+      "buyer": "student or former student",
+      "recipient": "teacher or mentor",
+      "purchase_reason": "recognize a memorable teacher relationship",
+      "strong_occasions": [
+        "teacher-appreciation",
+        "end-of-school-year",
+        "teacher-retirement"
+      ],
+      "preferred_products": [
+        "mug",
+        "poster",
+        "ornament",
+        "tote"
+      ],
+      "id": "student-or-former-student-to-teacher-or-mentor"
+    },
+    {
+      "buyer": "coworker or school team",
+      "recipient": "teacher or school counselor",
+      "purchase_reason": "celebrate a staff milestone or shared school experience",
+      "strong_occasions": [
+        "staff-appreciation",
+        "teacher-birthday",
+        "teacher-retirement"
+      ],
+      "preferred_products": [
+        "mug",
+        "sweatshirt",
+        "blanket",
+        "tote"
+      ],
+      "id": "coworker-or-school-team-to-teacher-or-school-counselor"
+    },
+    {
+      "buyer": "family member or friend",
+      "recipient": "first-year teacher",
+      "purchase_reason": "celebrate graduation, certification, or a first classroom",
+      "strong_occasions": [
+        "first-year-teaching",
+        "graduation-into-teaching",
+        "back-to-school"
+      ],
+      "preferred_products": [
+        "sweatshirt",
+        "mug",
+        "tote",
+        "poster"
+      ],
+      "id": "family-member-or-friend-to-first-year-teacher"
+    },
+    {
+      "buyer": "spouse or children",
+      "recipient": "teacher mom",
+      "purchase_reason": "recognize both educator and family-care identities",
+      "strong_occasions": [
+        "mothers-day",
+        "teacher-birthday",
+        "christmas-gift"
+      ],
+      "preferred_products": [
+        "sweatshirt",
+        "mug",
+        "blanket"
+      ],
+      "id": "spouse-or-children-to-teacher-mom"
+    },
+    {
+      "buyer": "teacher",
+      "recipient": "self",
+      "purchase_reason": "express role, subject, grade-level, or career-stage identity",
+      "strong_occasions": [
+        "back-to-school",
+        "first-year-teaching",
+        "teacher-birthday"
+      ],
+      "preferred_products": [
+        "t-shirt",
+        "sweatshirt",
+        "tote",
+        "sticker"
+      ],
+      "id": "teacher-to-self"
+    },
+    {
+      "id": "coworker-or-school-team-to-retiring-teacher",
+      "buyer": "coworker or school team",
+      "recipient": "retiring teacher",
+      "purchase_reason": "Honor a long teaching career with a personalized team keepsake.",
+      "strong_occasions": [
+        "teacher-retirement"
+      ],
+      "preferred_products": [
+        "blanket",
+        "poster",
+        "ornament"
+      ]
+    },
+    {
+      "id": "parent-to-special-education-teacher",
+      "buyer": "parent",
+      "recipient": "special education teacher",
+      "purchase_reason": "Recognize inclusive support and individualized care without medical claims.",
+      "strong_occasions": [
+        "teacher-appreciation",
+        "staff-appreciation",
+        "end-of-school-year"
+      ],
+      "preferred_products": [
+        "tote",
+        "mug",
+        "sweatshirt"
+      ]
+    }
+  ],
+  "occasions": [
+    {
+      "id": "teacher-appreciation",
+      "name": "Teacher Appreciation Week",
+      "type": "appreciation",
+      "seasonality": "US: typically the first full week of May; verify for target market",
+      "lead_time_days": 35,
+      "strong_angles": [
+        "specific gratitude",
+        "classroom impact",
+        "student or parent gift"
+      ],
+      "common_products": [
+        "mug",
+        "tote",
+        "sweatshirt",
+        "ornament"
+      ],
+      "personalization": [
+        "teacher-name",
+        "class-name",
+        "school-year"
+      ],
+      "avoid": [
+        "generic best-teacher claim without recipient detail",
+        "unverified date claims outside the US"
+      ]
+    },
+    {
+      "id": "back-to-school",
+      "name": "Back to school",
+      "type": "seasonal",
+      "seasonality": "late summer through early fall; varies by district and country",
+      "lead_time_days": 45,
+      "strong_angles": [
+        "fresh start",
+        "grade-level pride",
+        "classroom setup",
+        "teacher self-purchase"
+      ],
+      "common_products": [
+        "sweatshirt",
+        "t-shirt",
+        "tote",
+        "sticker"
+      ],
+      "personalization": [
+        "teacher-name",
+        "grade-level",
+        "school-year"
+      ],
+      "avoid": [
+        "one universal school start date",
+        "too much supply-list copy"
+      ]
+    },
+    {
+      "id": "end-of-school-year",
+      "name": "End of school year",
+      "type": "milestone",
+      "seasonality": "late spring or early summer; verify local school calendar",
+      "lead_time_days": 30,
+      "strong_angles": [
+        "class memory",
+        "gratitude",
+        "shared progress",
+        "last-day humor"
+      ],
+      "common_products": [
+        "mug",
+        "tote",
+        "poster",
+        "ornament"
+      ],
+      "personalization": [
+        "teacher-name",
+        "class-name",
+        "school-year",
+        "student-names"
+      ],
+      "avoid": [
+        "large unreadable lists of names",
+        "implying all calendars end together"
+      ]
+    },
+    {
+      "id": "christmas-gift",
+      "name": "Christmas teacher gift",
+      "type": "seasonal-gift",
+      "seasonality": "Q4 holiday season",
+      "lead_time_days": 60,
+      "strong_angles": [
+        "cozy classroom identity",
+        "small appreciation gift",
+        "year keepsake"
+      ],
+      "common_products": [
+        "ornament",
+        "mug",
+        "sweatshirt"
+      ],
+      "personalization": [
+        "teacher-name",
+        "school-year"
+      ],
+      "avoid": [
+        "religious assumptions when buyer intent is unknown",
+        "overcrowded holiday motifs"
+      ]
+    },
+    {
+      "id": "teacher-birthday",
+      "name": "Teacher birthday",
+      "type": "personal-milestone",
+      "seasonality": "evergreen",
+      "lead_time_days": 14,
+      "strong_angles": [
+        "role humor",
+        "subject pride",
+        "name personalization"
+      ],
+      "common_products": [
+        "mug",
+        "sweatshirt",
+        "t-shirt"
+      ],
+      "personalization": [
+        "teacher-name",
+        "subject"
+      ],
+      "avoid": [
+        "age jokes unless requested",
+        "generic birthday graphics disconnected from teaching"
+      ]
+    },
+    {
+      "id": "teacher-retirement",
+      "name": "Teacher retirement",
+      "type": "career-milestone",
+      "seasonality": "evergreen with end-of-year concentration",
+      "lead_time_days": 45,
+      "strong_angles": [
+        "legacy",
+        "years of service",
+        "gratitude",
+        "next chapter"
+      ],
+      "common_products": [
+        "blanket",
+        "mug",
+        "poster",
+        "ornament",
+        "sweatshirt"
+      ],
+      "personalization": [
+        "teacher-name",
+        "retirement-year",
+        "years-taught"
+      ],
+      "avoid": [
+        "invented service years",
+        "age-focused humor",
+        "overly casual styling for tribute gifts"
+      ]
+    },
+    {
+      "id": "first-year-teaching",
+      "name": "First year teaching",
+      "type": "career-milestone",
+      "seasonality": "graduation through back-to-school season",
+      "lead_time_days": 30,
+      "strong_angles": [
+        "new-teacher pride",
+        "first classroom",
+        "encouragement",
+        "survival humor"
+      ],
+      "common_products": [
+        "sweatshirt",
+        "mug",
+        "tote",
+        "poster"
+      ],
+      "personalization": [
+        "teacher-name",
+        "grade-level",
+        "school-year"
+      ],
+      "avoid": [
+        "burnout-only messaging",
+        "negative claims about students"
+      ]
+    },
+    {
+      "id": "graduation-into-teaching",
+      "name": "Graduation into teaching",
+      "type": "education-milestone",
+      "seasonality": "spring and winter graduation cycles",
+      "lead_time_days": 40,
+      "strong_angles": [
+        "earned credential",
+        "future teacher",
+        "career beginning"
+      ],
+      "common_products": [
+        "sweatshirt",
+        "mug",
+        "poster",
+        "tote"
+      ],
+      "personalization": [
+        "teacher-name",
+        "graduation-year",
+        "subject"
+      ],
+      "avoid": [
+        "claiming a credential not supplied",
+        "using university marks"
+      ]
+    },
+    {
+      "id": "mothers-day",
+      "name": "Mother's Day for a teacher mom",
+      "type": "family-gift",
+      "seasonality": "market-specific Mother's Day; verify date",
+      "lead_time_days": 35,
+      "strong_angles": [
+        "teacher and mother identity",
+        "children's names",
+        "family pride"
+      ],
+      "common_products": [
+        "sweatshirt",
+        "mug",
+        "blanket"
+      ],
+      "personalization": [
+        "teacher-name",
+        "childrens-names"
+      ],
+      "avoid": [
+        "assuming every teacher is a parent",
+        "unrequested family information"
+      ]
+    },
+    {
+      "id": "staff-appreciation",
+      "name": "School staff appreciation",
+      "type": "appreciation",
+      "seasonality": "evergreen with school-calendar peaks",
+      "lead_time_days": 25,
+      "strong_angles": [
+        "team gratitude",
+        "role-specific recognition",
+        "support work"
+      ],
+      "common_products": [
+        "mug",
+        "tote",
+        "sweatshirt"
+      ],
+      "personalization": [
+        "teacher-name",
+        "role-title",
+        "school-year"
+      ],
+      "avoid": [
+        "calling every staff role teacher",
+        "official school branding"
+      ]
+    }
+  ],
+  "emotions": [
+    {
+      "id": "funny-classroom-chaos",
+      "name": "Funny classroom chaos",
+      "job_to_be_done": "Help educators recognize daily classroom pressure with affectionate insider humor.",
+      "use_when": [
+        "kindergarten",
+        "preschool",
+        "first-year teaching",
+        "coworker gifts"
+      ],
+      "design_direction": "Short bold phrase, one classroom prop, and a controlled playful composition.",
+      "copy_tone": "knowing, warm, self-aware",
+      "avoid": "mocking students, cruelty, profanity, or burnout as the only identity"
+    },
+    {
+      "id": "warm-appreciation",
+      "name": "Warm appreciation",
+      "job_to_be_done": "Help a buyer express sincere gratitude for a teacher's impact.",
+      "use_when": [
+        "teacher appreciation",
+        "end of year",
+        "staff appreciation"
+      ],
+      "design_direction": "Readable gratitude message with one or two meaningful education motifs.",
+      "copy_tone": "specific, warm, concise",
+      "avoid": "long generic thank-you paragraphs or unsupported superlatives"
+    },
+    {
+      "id": "proud-educator-identity",
+      "name": "Proud educator identity",
+      "job_to_be_done": "Let educators display role, grade, subject, or career-stage pride.",
+      "use_when": [
+        "self-purchase",
+        "back to school",
+        "first year",
+        "subject teacher"
+      ],
+      "design_direction": "Role-first hierarchy, compact badge or statement layout, high thumbnail clarity.",
+      "copy_tone": "confident, specific, positive",
+      "avoid": "broad teacher-life slogans with no subniche signal"
+    },
+    {
+      "id": "cozy-bookish",
+      "name": "Cozy bookish warmth",
+      "job_to_be_done": "Connect literacy identity with a calm, giftable classroom mood.",
+      "use_when": [
+        "reading teacher",
+        "holiday gift",
+        "tote",
+        "sweatshirt"
+      ],
+      "design_direction": "Books, soft stars, reading light, restrained warm palette, and clear type.",
+      "copy_tone": "warm, curious, inviting",
+      "avoid": "copied book quotes, book-cover art, or visual clutter"
+    },
+    {
+      "id": "premium-retirement",
+      "name": "Premium retirement tribute",
+      "job_to_be_done": "Honor a long teaching career with dignity and personalization.",
+      "use_when": [
+        "retirement",
+        "staff tribute",
+        "family gift"
+      ],
+      "design_direction": "Refined serif hierarchy, subtle floral or book motif, name and year emphasis.",
+      "copy_tone": "grateful, dignified, specific",
+      "avoid": "juvenile icons, age jokes, and excessive distressed effects"
+    },
+    {
+      "id": "cute-playful-classroom",
+      "name": "Cute playful classroom",
+      "job_to_be_done": "Express approachable early-learning energy without losing readability.",
+      "use_when": [
+        "preschool",
+        "kindergarten",
+        "elementary",
+        "sticker"
+      ],
+      "design_direction": "Rounded lettering, simple smiling objects if original, stars, crayons, and limited colors.",
+      "copy_tone": "light, friendly, encouraging",
+      "avoid": "licensed characters, babyish treatment, or too many tiny decorations"
+    },
+    {
+      "id": "calm-support",
+      "name": "Calm supportive presence",
+      "job_to_be_done": "Recognize school-support roles through trust, listening, and reassurance.",
+      "use_when": [
+        "school counselor",
+        "special education teacher",
+        "staff appreciation"
+      ],
+      "design_direction": "Clean modern composition with soft shapes, speech or pathway motifs, and generous spacing.",
+      "copy_tone": "steady, inclusive, respectful",
+      "avoid": "medical promises, diagnostic labels, and savior narratives"
+    }
+  ],
+  "buyer_language": [
+    {
+      "theme": "classroom impact",
+      "phrases": [
+        "big impact",
+        "growing little minds",
+        "difference maker",
+        "future builders"
+      ],
+      "meaning": "Buyers value a teacher's influence beyond daily instruction.",
+      "use_for": [
+        "appreciation hooks",
+        "gift messages",
+        "listing first lines"
+      ],
+      "avoid": "claiming measurable outcomes the buyer did not provide"
+    },
+    {
+      "theme": "small learners",
+      "phrases": [
+        "tiny humans",
+        "little learners",
+        "small steps",
+        "big feelings"
+      ],
+      "meaning": "Early-childhood buyers respond to the contrast between small children and meaningful work.",
+      "use_for": [
+        "kindergarten hooks",
+        "preschool concepts",
+        "playful typography"
+      ],
+      "avoid": "using child-focused language for secondary or adult educators"
+    },
+    {
+      "theme": "teacher survival humor",
+      "phrases": [
+        "classroom chaos",
+        "one coffee at a time",
+        "lesson plan changed",
+        "recess powered"
+      ],
+      "meaning": "Educators recognize unpredictable classroom routines and shared coping rituals.",
+      "use_for": [
+        "coworker gifts",
+        "mugs",
+        "casual apparel"
+      ],
+      "avoid": "demeaning students, glorifying exhaustion, or copying known slogans"
+    },
+    {
+      "theme": "first classroom",
+      "phrases": [
+        "first year energy",
+        "my first classroom",
+        "new teacher era",
+        "ready to teach"
+      ],
+      "meaning": "New teachers want identity markers for an earned career milestone.",
+      "use_for": [
+        "graduation gifts",
+        "back-to-school apparel",
+        "name and year personalization"
+      ],
+      "avoid": "unsupported credential or school claims"
+    },
+    {
+      "theme": "retirement legacy",
+      "phrases": [
+        "lifetime difference maker",
+        "last bell",
+        "next chapter",
+        "years of lessons and love"
+      ],
+      "meaning": "Retirement buyers emphasize contribution, memory, and a transition into a new stage.",
+      "use_for": [
+        "blankets",
+        "posters",
+        "ornaments",
+        "tribute messages"
+      ],
+      "avoid": "invented service dates or age-based jokes"
+    },
+    {
+      "theme": "subject pride",
+      "phrases": [
+        "math mode",
+        "stay curious",
+        "growing readers",
+        "art room energy"
+      ],
+      "meaning": "Subject teachers prefer specific language over a broad teacher label.",
+      "use_for": [
+        "self-purchase",
+        "student gifts",
+        "subject collections"
+      ],
+      "avoid": "incorrect formulas, copied puns, or trademarked program names"
+    },
+    {
+      "theme": "support and listening",
+      "phrases": [
+        "here to listen",
+        "you are heard",
+        "safe space",
+        "one conversation at a time"
+      ],
+      "meaning": "Support-role gifts value trust and emotional availability.",
+      "use_for": [
+        "school counselor appreciation",
+        "special education gratitude",
+        "staff gifts"
+      ],
+      "avoid": "therapy claims or guaranteed wellbeing outcomes"
+    },
+    {
+      "theme": "teacher mom identity",
+      "phrases": [
+        "teaching little minds",
+        "raising my world",
+        "mom and teacher",
+        "love at home and school"
+      ],
+      "meaning": "Family buyers want both identities recognized in one personal gift.",
+      "use_for": [
+        "Mother's Day",
+        "birthday",
+        "family personalization"
+      ],
+      "avoid": "assuming parenthood or adding names without explicit input"
+    }
+  ],
+  "visual_vocabulary": {
+    "motifs": [
+      {
+        "name": "pencil",
+        "meaning": "teaching and classroom identity",
+        "use_with": [
+          "appreciation",
+          "grade-level pride",
+          "first year"
+        ],
+        "avoid_with": [
+          "formal retirement when a refined symbol is preferable"
+        ]
+      },
+      {
+        "name": "open book",
+        "meaning": "learning, literacy, and long-term influence",
+        "use_with": [
+          "reading teacher",
+          "retirement",
+          "appreciation"
+        ],
+        "avoid_with": [
+          "dense compositions with multiple large objects"
+        ]
+      },
+      {
+        "name": "apple",
+        "meaning": "widely recognized generic teacher cue",
+        "use_with": [
+          "teacher appreciation",
+          "elementary identity"
+        ],
+        "avoid_with": [
+          "premium minimalist work when it feels generic"
+        ]
+      },
+      {
+        "name": "crayon",
+        "meaning": "early-childhood creativity and classroom play",
+        "use_with": [
+          "preschool",
+          "kindergarten",
+          "cute playful style"
+        ],
+        "avoid_with": [
+          "secondary subject teachers",
+          "premium retirement"
+        ]
+      },
+      {
+        "name": "small stars",
+        "meaning": "progress, encouragement, and positive classroom energy",
+        "use_with": [
+          "first year",
+          "appreciation",
+          "school counselor"
+        ],
+        "avoid_with": [
+          "overcrowded decorative borders"
+        ]
+      },
+      {
+        "name": "simple rainbow",
+        "meaning": "playful optimism and color",
+        "use_with": [
+          "preschool",
+          "kindergarten",
+          "elementary"
+        ],
+        "avoid_with": [
+          "using it as a political or identity symbol without user intent"
+        ]
+      },
+      {
+        "name": "coffee cup",
+        "meaning": "educator routine and coworker humor",
+        "use_with": [
+          "classroom chaos",
+          "first year",
+          "mug"
+        ],
+        "avoid_with": [
+          "student-to-teacher sentimental gifts"
+        ]
+      },
+      {
+        "name": "classroom door",
+        "meaning": "ownership of a new classroom and welcome",
+        "use_with": [
+          "first-year teacher",
+          "back to school"
+        ],
+        "avoid_with": [
+          "tiny sticker designs"
+        ]
+      },
+      {
+        "name": "speech bubbles",
+        "meaning": "listening, communication, and support",
+        "use_with": [
+          "school counselor",
+          "special education"
+        ],
+        "avoid_with": [
+          "crowded quote-heavy layouts"
+        ]
+      },
+      {
+        "name": "subtle florals",
+        "meaning": "tribute, warmth, and premium gifting",
+        "use_with": [
+          "retirement",
+          "teacher mom",
+          "appreciation"
+        ],
+        "avoid_with": [
+          "subject humor",
+          "small stickers"
+        ]
+      },
+      {
+        "name": "geometric shapes",
+        "meaning": "math, structure, and subject specificity",
+        "use_with": [
+          "math teacher",
+          "minimal modern"
+        ],
+        "avoid_with": [
+          "early-childhood sentimental concepts"
+        ]
+      },
+      {
+        "name": "generic beaker",
+        "meaning": "science instruction and curiosity",
+        "use_with": [
+          "science teacher",
+          "subject pride"
+        ],
+        "avoid_with": [
+          "unsafe experiment imagery",
+          "official institution symbols"
+        ]
+      },
+      {
+        "name": "bookmark",
+        "meaning": "reading habit and literacy identity",
+        "use_with": [
+          "reading teacher",
+          "tote",
+          "bookish style"
+        ],
+        "avoid_with": [
+          "non-literacy subject concepts"
+        ]
+      },
+      {
+        "name": "bell",
+        "meaning": "school-day rhythm and final career milestone",
+        "use_with": [
+          "retirement",
+          "last-day concepts"
+        ],
+        "avoid_with": [
+          "alarm or emergency styling"
+        ]
+      }
+    ],
+    "palettes": [
+      {
+        "name": "classroom primary",
+        "colors": [
+          "#F04E30",
+          "#F4C542",
+          "#2E6F95",
+          "#FFF4D6"
+        ],
+        "use_when": "elementary, playful, and high-energy classroom concepts",
+        "contrast_rule": "Use dark outlines and keep all artwork colors visually distant from #00FF00."
+      },
+      {
+        "name": "warm retro classroom",
+        "colors": [
+          "#D95D39",
+          "#E9B44C",
+          "#5B6B4F",
+          "#F6E7CB"
+        ],
+        "use_when": "retro apparel, subject pride, and cozy self-purchase designs",
+        "contrast_rule": "Use cream or dark contours; replace bright green with muted olive."
+      },
+      {
+        "name": "premium appreciation",
+        "colors": [
+          "#1E2A36",
+          "#D6A84B",
+          "#F7F1E3",
+          "#A34F5F"
+        ],
+        "use_when": "retirement, formal appreciation, and premium gifts",
+        "contrast_rule": "Keep gold and cream details thick enough for print; no neon accents."
+      },
+      {
+        "name": "calm support",
+        "colors": [
+          "#315B63",
+          "#8B6F9D",
+          "#F1D9C6",
+          "#F7F4EC"
+        ],
+        "use_when": "school counselor and inclusive support concepts",
+        "contrast_rule": "Use deep teal rather than bright green to preserve chroma separation."
+      }
+    ],
+    "typography": [
+      {
+        "name": "friendly bold sans",
+        "direction": "rounded, heavy, and readable at thumbnail size",
+        "use_when": "early-childhood, funny, and casual appreciation",
+        "avoid": "thin counters, bubble letters with malformed text, and phrases over 12 words"
+      },
+      {
+        "name": "collegiate slab",
+        "direction": "strong role-first lettering with restrained retro treatment",
+        "use_when": "subject pride, first year, and badge concepts",
+        "avoid": "official university resemblance and excessive distress"
+      },
+      {
+        "name": "refined serif",
+        "direction": "high-contrast but print-safe serif paired with a clean small sans",
+        "use_when": "retirement, premium appreciation, and personalized tributes",
+        "avoid": "hairline strokes and ornate scripts for long names"
+      },
+      {
+        "name": "clean humanist sans",
+        "direction": "calm, balanced, and accessible with generous spacing",
+        "use_when": "school counselor, special education, and modern minimal concepts",
+        "avoid": "clinical visual tone and low contrast"
+      }
+    ],
+    "compositions": [
+      {
+        "name": "central-statement",
+        "hierarchy": "main hook first, role or subject second, one motif cluster last",
+        "use_when": "apparel and totes",
+        "avoid": "more than three competing focal points"
+      },
+      {
+        "name": "arched-role-badge",
+        "hierarchy": "role or grade on top arc, central symbol, short supporting line below",
+        "use_when": "identity, subject pride, and series designs",
+        "avoid": "copying official seals or school badges"
+      },
+      {
+        "name": "personalized-keepsake",
+        "hierarchy": "recipient name first, milestone message second, year or class detail last",
+        "use_when": "retirement, ornament, blanket, and graduation gifts",
+        "avoid": "unvalidated long names and dense student lists"
+      },
+      {
+        "name": "minimal-symbol-line",
+        "hierarchy": "short phrase, one small symbolic mark, generous negative space",
+        "use_when": "premium mugs, counselor gifts, and modern totes",
+        "avoid": "thin lines and tiny secondary copy"
+      }
+    ]
+  },
+  "product_fit": [
+    {
+      "product": "t-shirt",
+      "priority": "high",
+      "works_best_with": [
+        "short humor",
+        "subject pride",
+        "grade-level identity"
+      ],
+      "max_words": 10,
+      "personalization": [
+        "teacher-name",
+        "grade-level",
+        "subject"
+      ],
+      "print_notes": "Use a strong central hierarchy and thick strokes for front-chest printing.",
+      "avoid": [
+        "sentimental paragraphs",
+        "thin script",
+        "small edge details"
+      ],
+      "output_profile_id": "apparel-front",
+      "production_method_id": "apparel-dtg"
+    },
+    {
+      "product": "sweatshirt",
+      "priority": "high",
+      "works_best_with": [
+        "cozy identity",
+        "appreciation",
+        "first-year milestone",
+        "teacher mom"
+      ],
+      "max_words": 14,
+      "personalization": [
+        "teacher-name",
+        "grade-level",
+        "school-year",
+        "childrens-names"
+      ],
+      "print_notes": "Use a compact medium-to-large composition with robust lettering.",
+      "avoid": [
+        "hairline art",
+        "overly wide layout",
+        "small personalized text"
+      ],
+      "output_profile_id": "apparel-front",
+      "production_method_id": "apparel-dtg"
+    },
+    {
+      "product": "mug",
+      "priority": "high",
+      "works_best_with": [
+        "short joke",
+        "name gift",
+        "coworker appreciation",
+        "support role"
+      ],
+      "max_words": 12,
+      "personalization": [
+        "teacher-name",
+        "subject",
+        "role-title"
+      ],
+      "print_notes": "Keep primary copy large and avoid details that become tiny on a wrap area.",
+      "avoid": [
+        "dense scenes",
+        "very pale type",
+        "more than two message blocks"
+      ],
+      "output_profile_id": "drinkware-wrap",
+      "production_method_id": "sublimation-hard-goods"
+    },
+    {
+      "product": "tote",
+      "priority": "high",
+      "works_best_with": [
+        "bookish identity",
+        "classroom supplies",
+        "appreciation"
+      ],
+      "max_words": 12,
+      "personalization": [
+        "teacher-name",
+        "grade-level"
+      ],
+      "print_notes": "Use a tall central design with bold contours and enough spacing around handles and seams.",
+      "avoid": [
+        "wide compositions",
+        "micro-text",
+        "fragile line art"
+      ],
+      "output_profile_id": "tote-portrait",
+      "production_method_id": "apparel-dtg"
+    },
+    {
+      "product": "ornament",
+      "priority": "medium",
+      "works_best_with": [
+        "Christmas gift",
+        "school-year keepsake",
+        "first-year milestone"
+      ],
+      "max_words": 8,
+      "personalization": [
+        "teacher-name",
+        "school-year",
+        "class-name"
+      ],
+      "print_notes": "Prioritize name and year; simplify motifs for a small circular or shaped print area.",
+      "avoid": [
+        "long quotes",
+        "many student names",
+        "complex classroom scenes"
+      ],
+      "output_profile_id": "keepsake-square",
+      "production_method_id": "sublimation-hard-goods"
+    },
+    {
+      "product": "blanket",
+      "priority": "medium",
+      "works_best_with": [
+        "retirement tribute",
+        "teacher mom",
+        "sentimental class gift"
+      ],
+      "max_words": 24,
+      "personalization": [
+        "teacher-name",
+        "retirement-year",
+        "years-taught",
+        "childrens-names"
+      ],
+      "print_notes": "Use large type and grouped personalization that remains legible at viewing distance.",
+      "avoid": [
+        "repeating micro-text",
+        "thin decorative frames",
+        "unverified service dates"
+      ],
+      "output_profile_id": "large-format-portrait",
+      "production_method_id": "sublimation-hard-goods"
+    },
+    {
+      "product": "poster",
+      "priority": "medium",
+      "works_best_with": [
+        "classroom decor",
+        "retirement tribute",
+        "support message"
+      ],
+      "max_words": 30,
+      "personalization": [
+        "teacher-name",
+        "class-name",
+        "school-year"
+      ],
+      "print_notes": "Use deliberate spacing and a clear reading order; retain print-safe margins.",
+      "avoid": [
+        "casual jokes for formal tribute contexts",
+        "copyrighted quotations"
+      ],
+      "output_profile_id": "wall-art-portrait",
+      "production_method_id": "printed-flat-goods"
+    },
+    {
+      "product": "sticker",
+      "priority": "medium",
+      "works_best_with": [
+        "subject icon",
+        "short identity phrase",
+        "cute classroom motif"
+      ],
+      "max_words": 5,
+      "personalization": [
+        "teacher-name",
+        "subject"
+      ],
+      "print_notes": "Use a closed silhouette, thick outline, and minimal text.",
+      "avoid": [
+        "thin script",
+        "multi-line quotes",
+        "tiny details"
+      ],
+      "output_profile_id": "keepsake-square",
+      "production_method_id": "printed-flat-goods"
+    }
+  ],
+  "personalization_fields": [
+    {
+      "key": "teacher-name",
+      "label": "Teacher name",
+      "example": "Ms. Carter",
+      "validation": "1-24 visible characters; preserve supplied capitalization; no emoji",
+      "products": [
+        "sweatshirt",
+        "mug",
+        "tote",
+        "ornament",
+        "blanket",
+        "poster"
+      ]
+    },
+    {
+      "key": "grade-level",
+      "label": "Grade level",
+      "example": "Kindergarten",
+      "validation": "Use a recognized grade label supplied by the buyer; maximum 20 characters",
+      "products": [
+        "t-shirt",
+        "sweatshirt",
+        "tote"
+      ]
+    },
+    {
+      "key": "subject",
+      "label": "Subject taught",
+      "example": "Math",
+      "validation": "1-20 characters; verify spelling and intended capitalization",
+      "products": [
+        "t-shirt",
+        "sweatshirt",
+        "mug",
+        "sticker"
+      ]
+    },
+    {
+      "key": "school-year",
+      "label": "School year",
+      "example": "2026-2027",
+      "validation": "Accept YYYY or YYYY-YYYY; confirm dash format before production",
+      "products": [
+        "sweatshirt",
+        "ornament",
+        "poster",
+        "tote"
+      ]
+    },
+    {
+      "key": "class-name",
+      "label": "Class name",
+      "example": "Room 12",
+      "validation": "1-24 characters; do not add a school name unless rights and intent are confirmed",
+      "products": [
+        "mug",
+        "tote",
+        "ornament",
+        "poster"
+      ]
+    },
+    {
+      "key": "retirement-year",
+      "label": "Retirement year",
+      "example": "2026",
+      "validation": "Four-digit year supplied by the buyer",
+      "products": [
+        "blanket",
+        "mug",
+        "ornament",
+        "poster",
+        "sweatshirt"
+      ]
+    },
+    {
+      "key": "years-taught",
+      "label": "Years taught",
+      "example": "32 Years",
+      "validation": "Positive whole number supplied by the buyer; never infer from dates",
+      "products": [
+        "blanket",
+        "mug",
+        "poster"
+      ]
+    },
+    {
+      "key": "student-names",
+      "label": "Student names",
+      "example": "Ava, Liam, Mia",
+      "validation": "Require final approved spelling; apply product-specific name-count limit",
+      "products": [
+        "poster",
+        "blanket"
+      ]
+    },
+    {
+      "key": "childrens-names",
+      "label": "Children's names",
+      "example": "Emma and Noah",
+      "validation": "Require explicit buyer input and final spelling approval",
+      "products": [
+        "sweatshirt",
+        "mug",
+        "blanket"
+      ]
+    },
+    {
+      "key": "role-title",
+      "label": "School role title",
+      "example": "School Counselor",
+      "validation": "Use the exact role supplied by the buyer; maximum 28 characters",
+      "products": [
+        "mug",
+        "tote",
+        "sweatshirt",
+        "poster"
+      ]
+    },
+    {
+      "key": "graduation-year",
+      "label": "Graduation year",
+      "example": "Class of 2026",
+      "validation": "Four-digit year; do not add institution or credential without confirmation",
+      "products": [
+        "sweatshirt",
+        "mug",
+        "poster",
+        "tote"
+      ]
+    }
+  ],
+  "hook_patterns": [
+    {
+      "id": "impact-contrast",
+      "template": "[small learners], [big impact]",
+      "use_when": "early-childhood appreciation gifts",
+      "example": "Tiny Humans, Big Impact",
+      "avoid": "secondary-school or adult-education segments"
+    },
+    {
+      "id": "role-with-trait",
+      "template": "[role] with [emotion or trait]",
+      "use_when": "self-purchase and role pride",
+      "example": "Math Teacher with Infinite Patience",
+      "avoid": "traits that could demean students"
+    },
+    {
+      "id": "powered-by-routine",
+      "template": "Powered by [routine] and [positive value]",
+      "use_when": "coworker humor and casual gifts",
+      "example": "Powered by Coffee and Classroom Kindness",
+      "avoid": "substance jokes or burnout-only messaging"
+    },
+    {
+      "id": "one-step-at-a-time",
+      "template": "[teaching task], one [routine] at a time",
+      "use_when": "classroom humor",
+      "example": "Growing Readers, One Chapter at a Time",
+      "avoid": "copied famous slogans"
+    },
+    {
+      "id": "name-role-year",
+      "template": "[name] / [role or grade] / [year]",
+      "use_when": "personalized apparel and keepsakes",
+      "example": "Ms. Carter / Kindergarten / 2026-2027",
+      "avoid": "unapproved school or district names"
+    },
+    {
+      "id": "career-legacy",
+      "template": "[career status], [lasting impact]",
+      "use_when": "retirement tribute",
+      "example": "Retired Teacher, Lifetime Difference Maker",
+      "avoid": "invented years, age jokes, or unsupported claims"
+    },
+    {
+      "id": "classroom-role-humor",
+      "template": "[playful classroom role]",
+      "use_when": "teacher self-purchase and coworker gifts",
+      "example": "Classroom Chaos Coordinator",
+      "avoid": "official-sounding credentials or student insults"
+    },
+    {
+      "id": "support-promise",
+      "template": "Here to [support action], here to [support outcome]",
+      "use_when": "school counselor and support staff",
+      "example": "Here to Listen, Here to Help",
+      "avoid": "medical or guaranteed outcome claims"
+    },
+    {
+      "id": "dual-identity",
+      "template": "[educator action], [family action]",
+      "use_when": "teacher mom gifts",
+      "example": "Teaching Little Minds, Raising My World",
+      "avoid": "assuming parent status without explicit buyer context"
+    }
+  ],
+  "style_variants": [
+    {
+      "id": "bold-retro",
+      "label": "Bold typographic / retro",
+      "commercial_role": "maximize thumbnail clarity and role recognition",
+      "description": "Large role-first phrase with restrained retro treatment and two small classroom accents.",
+      "typography": "collegiate slab or heavy serif paired with a compact sans",
+      "motifs": [
+        "pencil",
+        "apple",
+        "open book",
+        "small stars"
+      ],
+      "avoid": "heavy distress, official school styling, and more than two supporting motifs",
+      "palette_options": [
+        "warm retro classroom"
+      ]
+    },
+    {
+      "id": "cute-playful",
+      "label": "Cute playful illustrated",
+      "commercial_role": "create approachable early-learning and casual gift appeal",
+      "description": "Rounded lettering with original simple classroom objects, stars, and a controlled playful rhythm.",
+      "typography": "friendly bold sans with one short handwritten-style accent",
+      "motifs": [
+        "crayon",
+        "simple rainbow",
+        "pencil",
+        "small stars"
+      ],
+      "avoid": "licensed characters, babyish teacher portrayal, and tiny decorative clutter",
+      "palette_options": [
+        "classroom primary"
+      ]
+    },
+    {
+      "id": "minimal-premium",
+      "label": "Minimal premium / clean modern",
+      "commercial_role": "support premium gifts and professional role recognition",
+      "description": "One concise phrase, one meaningful symbol, generous spacing, and a polished hierarchy.",
+      "typography": "refined serif or clean humanist sans",
+      "motifs": [
+        "open book",
+        "speech bubbles",
+        "bookmark",
+        "subtle florals"
+      ],
+      "avoid": "hairline strokes, low contrast, decorative filler, and long copy",
+      "palette_options": [
+        "premium appreciation",
+        "calm support"
+      ]
+    },
+    {
+      "id": "badge-keepsake",
+      "label": "Badge / emblem / sentimental keepsake",
+      "commercial_role": "support personalization, milestones, and expandable series",
+      "description": "Original non-official emblem with role, central motif, recipient name, and year or milestone detail.",
+      "typography": "collegiate slab for role plus refined serif or clean sans for personalization",
+      "motifs": [
+        "open book",
+        "pencil",
+        "bell",
+        "subtle florals"
+      ],
+      "avoid": "school-seal resemblance, official crests, cramped text, and unverified dates",
+      "palette_options": [
+        "premium appreciation",
+        "warm retro classroom"
+      ]
+    }
+  ],
+  "ip_safety": {
+    "niche_specific_avoid": [
+      "school logos and district seals",
+      "official mascots and sports-team marks",
+      "university names and branded graduation marks",
+      "licensed children's book or movie characters",
+      "copied classroom clipart and competitor layouts",
+      "song lyrics and long book quotations",
+      "brand names for supplies, coffee, or technology",
+      "trademarked education programs and certification names",
+      "real school, district, or institution names without owner confirmation"
+    ],
+    "safe_substitutions": [
+      {
+        "risky": "official school mascot or seal",
+        "replace_with": "generic schoolhouse, pencil, book, star, or original non-official emblem"
+      },
+      {
+        "risky": "licensed book character",
+        "replace_with": "original open-book, bookmark, reading lamp, or abstract literacy motif"
+      },
+      {
+        "risky": "brand-name classroom product",
+        "replace_with": "generic pencil, crayon, planner, mug, or classroom tool"
+      },
+      {
+        "risky": "famous quote or lyric",
+        "replace_with": "new concise phrase built from the same broad emotion and buyer intent"
+      },
+      {
+        "risky": "university or district name",
+        "replace_with": "role, grade, subject, recipient name, and year supplied by the buyer"
+      }
+    ],
+    "human_review_triggers": [
+      "any school, district, university, or institution name",
+      "a phrase presented as a known slogan",
+      "a reference image from a competitor listing",
+      "a certification, program, or curriculum name",
+      "a requested quote from a song, book, movie, or public figure"
+    ]
+  },
+  "qa_rules": {
+    "max_colors": 7,
+    "min_text_legibility": "Main phrase remains readable at a 300 px thumbnail and personalized text remains readable at intended product size.",
+    "copy_modes": [
+      "exact",
+      "none",
+      "proposed"
+    ],
+    "alpha_validation_required": true,
+    "isolated_artwork": true,
+    "no_shadows": true,
+    "product_contrast_required": true,
+    "minimum_contrast_ratio": 4.5,
+    "background_edge_rule": "Final delivery edges must be transparent; a solid fallback is only a temporary removal canvas.",
+    "rerender_on_alpha_failure": true,
+    "fallback_on_supported_alpha_failure": false,
+    "minimum_fully_transparent_ratio": 0.01,
+    "minimum_transparent_border_ratio": 0.99,
+    "minimum_visible_ratio": 0.001,
+    "maximum_significant_visible_ratio": 0.9,
+    "maximum_significant_bbox_fill_ratio": 0.92,
+    "minimum_significant_margin_ratio": 0.005,
+    "significant_alpha_threshold": 8
+  },
+  "sample_briefs": [
+    {
+      "id": "kindergarten-appreciation-sweatshirt",
+      "title": "Kindergarten teacher appreciation sweatshirt",
+      "persona_id": "kindergarten-teacher",
+      "buyer": "parent",
+      "recipient": "classroom teacher",
+      "occasion_id": "teacher-appreciation",
+      "emotion_id": "warm-appreciation",
+      "style_variant_id": "cute-playful",
+      "product": "sweatshirt",
+      "visual_direction": "Bold rounded phrase with crayon stars, one pencil, and a simple original rainbow.",
+      "personalization": [
+        "teacher-name"
+      ],
+      "why_it_fits": "The concept connects a clear parent-to-teacher gift occasion with an early-learning phrase and sweatshirt-safe hierarchy.",
+      "ip_notes": "Use only generic classroom motifs and original lettering.",
+      "copy": {
+        "mode": "exact",
+        "text": "Tiny Humans, Big Impact",
+        "language": "en-US"
+      },
+      "buyer_recipient_pair_id": "parent-to-classroom-teacher",
+      "output_profile_id": "apparel-front",
+      "product_surface": {
+        "tone": "dark",
+        "color": "#111111"
+      }
+    },
+    {
+      "id": "first-year-teacher-mug",
+      "title": "First-year teacher milestone mug",
+      "persona_id": "first-year-teacher",
+      "buyer": "family member or friend",
+      "recipient": "first-year teacher",
+      "occasion_id": "first-year-teaching",
+      "emotion_id": "proud-educator-identity",
+      "style_variant_id": "bold-retro",
+      "product": "mug",
+      "visual_direction": "Large role-first typography with one pencil, a small coffee cup, and restrained stars.",
+      "personalization": [
+        "teacher-name",
+        "school-year"
+      ],
+      "why_it_fits": "The phrase marks a specific career stage and remains short enough for a mug.",
+      "ip_notes": "Do not add a school, university, or certification mark.",
+      "copy": {
+        "mode": "exact",
+        "text": "First Year Teacher Energy",
+        "language": "en-US"
+      },
+      "buyer_recipient_pair_id": "family-member-or-friend-to-first-year-teacher",
+      "output_profile_id": "drinkware-wrap",
+      "product_surface": {
+        "tone": "light",
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "retired-teacher-blanket",
+      "title": "Personalized retired teacher blanket",
+      "persona_id": "retired-teacher",
+      "buyer": "coworker or school team",
+      "recipient": "retiring teacher",
+      "occasion_id": "teacher-retirement",
+      "emotion_id": "premium-retirement",
+      "style_variant_id": "badge-keepsake",
+      "product": "blanket",
+      "visual_direction": "Original open-book emblem with subtle florals, recipient name, retirement year, and strong central typography.",
+      "personalization": [
+        "teacher-name",
+        "retirement-year",
+        "years-taught"
+      ],
+      "why_it_fits": "A blanket supports a sentimental message and larger personalization while matching a team tribute purchase.",
+      "ip_notes": "Require buyer confirmation for every year and avoid school seals.",
+      "copy": {
+        "mode": "exact",
+        "text": "Retired Teacher, Lifetime Difference Maker",
+        "language": "en-US"
+      },
+      "buyer_recipient_pair_id": "coworker-or-school-team-to-retiring-teacher",
+      "output_profile_id": "large-format-portrait",
+      "product_surface": {
+        "tone": "mid",
+        "color": "#808080"
+      }
+    },
+    {
+      "id": "reading-teacher-tote",
+      "title": "Cozy reading teacher tote",
+      "persona_id": "reading-teacher",
+      "buyer": "teacher",
+      "recipient": "self",
+      "occasion_id": "back-to-school",
+      "emotion_id": "cozy-bookish",
+      "style_variant_id": "minimal-premium",
+      "product": "tote",
+      "visual_direction": "Open book and bookmark beneath clean readable text with restrained warm accents.",
+      "personalization": [
+        "teacher-name"
+      ],
+      "why_it_fits": "The concept speaks to literacy identity and uses a vertical tote-friendly composition.",
+      "ip_notes": "Use original text and no book-cover or character references.",
+      "copy": {
+        "mode": "proposed",
+        "text": "Growing Readers, One Chapter at a Time",
+        "language": "en-US"
+      },
+      "buyer_recipient_pair_id": "teacher-to-self",
+      "output_profile_id": "tote-portrait",
+      "product_surface": {
+        "tone": "light",
+        "color": "#F5F0E8"
+      }
+    },
+    {
+      "id": "school-counselor-mug",
+      "title": "School counselor appreciation mug",
+      "persona_id": "school-counselor",
+      "buyer": "coworker or school team",
+      "recipient": "school counselor",
+      "occasion_id": "staff-appreciation",
+      "emotion_id": "calm-support",
+      "style_variant_id": "minimal-premium",
+      "product": "mug",
+      "visual_direction": "Clean humanist type with one original speech-bubble heart and generous spacing.",
+      "personalization": [
+        "teacher-name",
+        "role-title"
+      ],
+      "why_it_fits": "The message recognizes a specific support job without making a medical claim.",
+      "ip_notes": "Avoid therapy promises, diagnostic terms, and official school marks.",
+      "copy": {
+        "mode": "exact",
+        "text": "Here to Listen, Here to Help",
+        "language": "en-US"
+      },
+      "buyer_recipient_pair_id": "coworker-or-school-team-to-teacher-or-school-counselor",
+      "output_profile_id": "drinkware-wrap",
+      "product_surface": {
+        "tone": "light",
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "teacher-mom-sweatshirt",
+      "title": "Personalized teacher mom sweatshirt",
+      "persona_id": "teacher-mom",
+      "buyer": "spouse or children",
+      "recipient": "teacher mom",
+      "occasion_id": "mothers-day",
+      "emotion_id": "warm-appreciation",
+      "style_variant_id": "badge-keepsake",
+      "product": "sweatshirt",
+      "visual_direction": "Pencil-heart emblem with small floral name leaves and a compact sweatshirt-safe hierarchy.",
+      "personalization": [
+        "childrens-names"
+      ],
+      "why_it_fits": "The buyer-recipient relationship and dual identity create a personal reason to purchase.",
+      "ip_notes": "Use only names supplied by the buyer and avoid assumptions about family structure.",
+      "copy": {
+        "mode": "exact",
+        "text": "Teaching Little Minds, Raising My World",
+        "language": "en-US"
+      },
+      "buyer_recipient_pair_id": "spouse-or-children-to-teacher-mom",
+      "output_profile_id": "apparel-front",
+      "product_surface": {
+        "tone": "dark",
+        "color": "#1F2937"
+      }
+    },
+    {
+      "id": "math-teacher-shirt",
+      "title": "Math teacher subject-pride t-shirt",
+      "persona_id": "math-teacher",
+      "buyer": "teacher",
+      "recipient": "self",
+      "occasion_id": "back-to-school",
+      "emotion_id": "proud-educator-identity",
+      "style_variant_id": "bold-retro",
+      "product": "t-shirt",
+      "visual_direction": "Collegiate role typography with original geometric shapes and one small coordinate-grid accent.",
+      "personalization": [
+        "teacher-name",
+        "school-year"
+      ],
+      "why_it_fits": "A short subject-specific phrase reads quickly and supports a repeatable teacher-subject series.",
+      "ip_notes": "Verify any equation used and avoid copied math puns or program names.",
+      "copy": {
+        "mode": "exact",
+        "text": "Math Teacher Mode",
+        "language": "en-US"
+      },
+      "buyer_recipient_pair_id": "teacher-to-self",
+      "output_profile_id": "apparel-front",
+      "product_surface": {
+        "tone": "light",
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "special-education-appreciation-tote",
+      "title": "Inclusive special education teacher appreciation tote",
+      "persona_id": "special-education-teacher",
+      "buyer": "parent",
+      "recipient": "special education teacher",
+      "occasion_id": "teacher-appreciation",
+      "emotion_id": "calm-support",
+      "style_variant_id": "minimal-premium",
+      "product": "tote",
+      "visual_direction": "Original pathway of small stars and open hands with strong light-on-dark contrast, centered for a tote print area; no text or pseudo-text.",
+      "personalization": [
+        "teacher-name"
+      ],
+      "why_it_fits": "The message connects parent gratitude with inclusive support while remaining concise and product appropriate.",
+      "ip_notes": "Avoid puzzle-piece symbolism, diagnostic labels, and medical claims.",
+      "copy": {
+        "mode": "none",
+        "text": "",
+        "language": "en-US"
+      },
+      "buyer_recipient_pair_id": "parent-to-special-education-teacher",
+      "output_profile_id": "tote-portrait",
+      "product_surface": {
+        "tone": "dark",
+        "color": "#111827"
+      }
+    }
+  ],
+  "niche_slug": "teacher",
+  "output_profiles": [
+    {
+      "id": "apparel-front",
+      "products": [
+        "sweatshirt",
+        "t-shirt"
+      ],
+      "aspect_ratio": "5:6",
+      "file_format": "PNG",
+      "dpi": 300,
+      "width_px": null,
+      "height_px": null,
+      "alpha_preferred": true,
+      "safe_zone": "Keep primary text and motifs inside the central 80% of the canvas.",
+      "bleed": "Confirm the marketplace print-area template before final export.",
+      "marketplace_template_required": true
+    },
+    {
+      "id": "drinkware-wrap",
+      "products": [
+        "mug"
+      ],
+      "aspect_ratio": "2:1",
+      "file_format": "PNG",
+      "dpi": 300,
+      "width_px": null,
+      "height_px": null,
+      "alpha_preferred": true,
+      "safe_zone": "Protect handle-adjacent margins and keep critical text in the visible center.",
+      "bleed": "Use the exact printer wrap template before final export.",
+      "marketplace_template_required": true
+    },
+    {
+      "id": "keepsake-square",
+      "products": [
+        "ornament",
+        "sticker"
+      ],
+      "aspect_ratio": "1:1",
+      "file_format": "PNG",
+      "dpi": 300,
+      "width_px": null,
+      "height_px": null,
+      "alpha_preferred": true,
+      "safe_zone": "Keep text and faces away from cut holes, trim edges, and rounded corners.",
+      "bleed": "Use the exact product template before final export.",
+      "marketplace_template_required": true
+    },
+    {
+      "id": "large-format-portrait",
+      "products": [
+        "blanket"
+      ],
+      "aspect_ratio": "4:5",
+      "file_format": "PNG",
+      "dpi": 300,
+      "width_px": null,
+      "height_px": null,
+      "alpha_preferred": true,
+      "safe_zone": "Keep personalization and small text inside the central 75%.",
+      "bleed": "Use the exact printer template and bleed specification before final export.",
+      "marketplace_template_required": true
+    },
+    {
+      "id": "tote-portrait",
+      "products": [
+        "tote"
+      ],
+      "aspect_ratio": "4:5",
+      "file_format": "PNG",
+      "dpi": 300,
+      "width_px": null,
+      "height_px": null,
+      "alpha_preferred": true,
+      "safe_zone": "Keep the main hierarchy inside the central 78% and away from seams.",
+      "bleed": "Confirm the marketplace print-area template before final export.",
+      "marketplace_template_required": true
+    },
+    {
+      "id": "wall-art-portrait",
+      "products": [
+        "poster"
+      ],
+      "aspect_ratio": "2:3",
+      "file_format": "PNG",
+      "dpi": 300,
+      "width_px": null,
+      "height_px": null,
+      "alpha_preferred": true,
+      "safe_zone": "Keep essential content inside the central 85% and allow trim-safe margins.",
+      "bleed": "Use the marketplace wall-art template before final export.",
+      "marketplace_template_required": true
+    }
+  ],
+  "concept_fit_calibration": {
+    "go_score": 21,
+    "refine_score": 17,
+    "rework_score": 13,
+    "replace_score": 12,
+    "high_fit_signals": [
+      "specific educator role or career stage",
+      "clear buyer-recipient relationship",
+      "recognized school-life or gift occasion",
+      "one primary emotional job",
+      "product-appropriate copy length",
+      "safe name, role, grade, subject, or year personalization",
+      "motifs that carry niche meaning rather than decoration"
+    ],
+    "weak_fit_signals": [
+      "broad teacher-life slogan with no subniche",
+      "best teacher claim without buyer or occasion detail",
+      "same artwork placed on every product",
+      "too many emotions in one concept",
+      "classroom icons with no purchase reason",
+      "official school cues or copied educational characters"
+    ]
+  },
+  "output_defaults": {
+    "background": {
+      "preferred_mode": "transparent",
+      "transparent_format": "PNG",
+      "require_real_alpha": true,
+      "capability_policy": "capability-gated",
+      "supported_model_route": "transparent-required-no-fallback",
+      "unknown_model_route": "probe-then-fallback",
+      "unsupported_model_route": "flat-solid-remove-to-alpha",
+      "max_transparent_attempts": 3,
+      "unknown_probe_attempts": 2,
+      "fallback_condition": "confirmed-transparent-unavailable-only",
+      "require_native_transparency_option_when_available": true,
+      "hard_fail_supported_after_attempts": true,
+      "final_output_must_have_alpha": true,
+      "fallback_enabled": true,
+      "safe_palette": [
+        "#000000",
+        "#FFFFFF",
+        "#808080",
+        "#3A3A3A",
+        "#C0C0C0"
+      ],
+      "selection_method": "max-color-distance-from-artwork",
+      "mandatory_prompt": "MANDATORY FLAT SOLID COLOR. NO SHADOWS.",
+      "forbidden": [
+        "green chroma key",
+        "neon background",
+        "gradient",
+        "texture",
+        "shadow",
+        "glow",
+        "vignette",
+        "checkerboard",
+        "fake transparency"
+      ]
+    },
+    "product_contrast": {
+      "dark_surface_use": "light",
+      "light_surface_use": "dark",
+      "mid_surface_use": "high-contrast-dual-tone",
+      "minimum_contrast_ratio": 4.5,
+      "unknown_surface_action": "request-color-or-use-dual-outline"
+    },
+    "variant_count_default": 4,
+    "variant_count_min": 1,
+    "variant_count_max": 4,
+    "copy_mode_default": "proposed"
+  },
+  "market_contexts": [
+    {
+      "id": "etsy-us",
+      "marketplace": "Etsy",
+      "locale": "en-US",
+      "region": "US",
+      "measurement_system": "imperial",
+      "restricted_claims": [
+        "guaranteed learning outcomes",
+        "officially certified teacher product"
+      ],
+      "output_notes": [
+        "Verify the current listing-image and production-partner requirements before launch.",
+        "Keep design copy concise, original, and appropriate for a gift marketplace."
+      ],
+      "review_by": "2026-11-21"
+    },
+    {
+      "id": "shopify-us",
+      "marketplace": "Shopify",
+      "locale": "en-US",
+      "region": "US",
+      "measurement_system": "imperial",
+      "restricted_claims": [
+        "guaranteed learning outcomes",
+        "official school endorsement"
+      ],
+      "output_notes": [
+        "Treat theme, app, and printer specifications as store-specific inputs.",
+        "Do not infer a marketplace canvas size without the active storefront template."
+      ],
+      "review_by": "2026-11-21"
+    },
+    {
+      "id": "amazon-us",
+      "marketplace": "Amazon",
+      "locale": "en-US",
+      "region": "US",
+      "measurement_system": "imperial",
+      "restricted_claims": [
+        "guaranteed learning outcomes",
+        "official district merchandise"
+      ],
+      "output_notes": [
+        "Verify the exact active Amazon program and product template before export.",
+        "Avoid unsupported superlatives, institutional affiliation, and certification claims."
+      ],
+      "review_by": "2026-11-21"
+    }
+  ],
+  "evidence_claims": [
+    {
+      "id": "teacher-appreciation-angle",
+      "claim_type": "market-hypothesis",
+      "statement": "Teacher appreciation, career milestones, and educator identity are plausible POD gift angles.",
+      "status": "hypothesis",
+      "source_ids": [
+        "project-framework",
+        "internal-domain-knowledge"
+      ],
+      "market_context_ids": [
+        "etsy-us",
+        "shopify-us",
+        "amazon-us"
+      ],
+      "review_by": "2026-11-21",
+      "confidence": "medium"
+    },
+    {
+      "id": "teacher-role-language",
+      "claim_type": "buyer-language",
+      "statement": "Grade, subject, career stage, classroom role, and recipient relationship can make teacher copy more specific.",
+      "status": "hypothesis",
+      "source_ids": [
+        "project-framework",
+        "internal-domain-knowledge"
+      ],
+      "market_context_ids": [
+        "etsy-us",
+        "shopify-us",
+        "amazon-us"
+      ],
+      "review_by": "2026-11-21",
+      "confidence": "medium"
+    },
+    {
+      "id": "teacher-seasonality",
+      "claim_type": "seasonality",
+      "statement": "Appreciation, back-to-school, end-of-year, graduation, and retirement timing may change buyer intent and lead time.",
+      "status": "hypothesis",
+      "source_ids": [
+        "project-framework"
+      ],
+      "market_context_ids": [
+        "etsy-us",
+        "shopify-us",
+        "amazon-us"
+      ],
+      "review_by": "2026-11-21",
+      "confidence": "low"
+    }
+  ],
+  "production_methods": [
+    {
+      "id": "apparel-dtg",
+      "label": "DTG apparel baseline",
+      "process": "direct-to-garment",
+      "products": [
+        "t-shirt",
+        "sweatshirt",
+        "tote"
+      ],
+      "minimum_stroke_mm": 0.8,
+      "minimum_gap_mm": 0.8,
+      "minimum_text_height_mm": 4.0,
+      "max_colors": 8,
+      "distress_allowed": true,
+      "halftones_allowed": true,
+      "substrate_notes": "Provider-dependent; verify the selected product blank.",
+      "ink_notes": "Use a provider-approved color profile and test print.",
+      "template_required": true,
+      "uncertainty": "baseline-provider-template-required"
+    },
+    {
+      "id": "sublimation-hard-goods",
+      "label": "Sublimation hard-goods baseline",
+      "process": "sublimation",
+      "products": [
+        "mug",
+        "ornament",
+        "blanket"
+      ],
+      "minimum_stroke_mm": 0.8,
+      "minimum_gap_mm": 0.8,
+      "minimum_text_height_mm": 4.0,
+      "max_colors": 8,
+      "distress_allowed": true,
+      "halftones_allowed": true,
+      "substrate_notes": "Provider-dependent; verify the selected product blank.",
+      "ink_notes": "Use a provider-approved color profile and test print.",
+      "template_required": true,
+      "uncertainty": "baseline-provider-template-required"
+    },
+    {
+      "id": "printed-flat-goods",
+      "label": "Printed flat-goods baseline",
+      "process": "digital-print",
+      "products": [
+        "poster",
+        "sticker"
+      ],
+      "minimum_stroke_mm": 0.8,
+      "minimum_gap_mm": 0.8,
+      "minimum_text_height_mm": 4.0,
+      "max_colors": 8,
+      "distress_allowed": true,
+      "halftones_allowed": true,
+      "substrate_notes": "Provider-dependent; verify the selected product blank.",
+      "ink_notes": "Use a provider-approved color profile and test print.",
+      "template_required": true,
+      "uncertainty": "baseline-provider-template-required"
+    }
+  ],
+  "idea_archetypes": [
+    {
+      "id": "identity-pride",
+      "label": "Identity pride",
+      "purchase_logic": "Self-purchase or peer gift rooted in a specific educator identity.",
+      "persona_ids": [
+        "kindergarten-teacher",
+        "math-teacher"
+      ],
+      "occasion_ids": [
+        "back-to-school"
+      ],
+      "product_names": [
+        "t-shirt",
+        "sweatshirt"
+      ],
+      "hook_ids": [
+        "role-with-trait",
+        "classroom-role-humor"
+      ],
+      "required_variation_axes": [
+        "composition",
+        "typography",
+        "motif"
+      ],
+      "avoid": [
+        "generic occupation badge without a recipient or occasion"
+      ]
+    },
+    {
+      "id": "appreciation-gift",
+      "label": "Appreciation gift",
+      "purchase_logic": "A buyer thanks an educator for a specific contribution.",
+      "persona_ids": [
+        "kindergarten-teacher",
+        "special-education-teacher"
+      ],
+      "occasion_ids": [
+        "teacher-appreciation",
+        "staff-appreciation"
+      ],
+      "product_names": [
+        "mug",
+        "tote",
+        "sweatshirt"
+      ],
+      "hook_ids": [
+        "impact-contrast",
+        "support-promise"
+      ],
+      "required_variation_axes": [
+        "hook",
+        "composition",
+        "palette"
+      ],
+      "avoid": [
+        "unsupported promises about student outcomes"
+      ]
+    },
+    {
+      "id": "personalized-milestone",
+      "label": "Personalized milestone",
+      "purchase_logic": "A dated or named keepsake marks a career transition.",
+      "persona_ids": [
+        "first-year-teacher",
+        "retired-teacher"
+      ],
+      "occasion_ids": [
+        "first-year-teaching",
+        "teacher-retirement"
+      ],
+      "product_names": [
+        "mug",
+        "blanket",
+        "ornament",
+        "poster"
+      ],
+      "hook_ids": [
+        "name-role-year",
+        "career-legacy"
+      ],
+      "required_variation_axes": [
+        "personalization",
+        "composition",
+        "typography"
+      ],
+      "avoid": [
+        "invented dates, names, or years of service"
+      ]
+    }
+  ],
+  "creative_controls": {
+    "required_variation_axes": [
+      "composition",
+      "typography",
+      "motif",
+      "palette",
+      "hook",
+      "personalization"
+    ],
+    "minimum_distinct_axes_per_variant": 2,
+    "anti_generic_phrases": [
+      "best ever",
+      "world's best",
+      "just a girl who loves"
+    ]
+  },
+  "combination_rules": [
+    {
+      "id": "retirement-no-childlike-style",
+      "persona_ids": [
+        "retired-teacher"
+      ],
+      "occasion_ids": [
+        "teacher-retirement"
+      ],
+      "product_names": [],
+      "style_variant_ids": [
+        "cute-playful"
+      ],
+      "idea_archetype_ids": [
+        "personalized-milestone"
+      ],
+      "outcome": "forbid",
+      "reason": "Formal retirement tributes should not default to a childlike treatment."
+    }
+  ],
+  "sensitivity_rules": [
+    {
+      "id": "ip-licensed-character-copy",
+      "trigger_terms": [
+        "mickey mouse",
+        "harry potter",
+        "disney"
+      ],
+      "persona_ids": [],
+      "occasion_ids": [],
+      "action": "refuse",
+      "constraints": [
+        "Replace named licensed characters or brands with original generic motifs and new wording. Do not infer legal clearance from a non-match."
+      ],
+      "rationale": "Conservative illustrative copy-risk screen, not a trademark registry or visual copyright check; human IP review remains mandatory."
+    },
+    {
+      "id": "no-medical-outcome-claims",
+      "trigger_terms": [
+        "cures",
+        "guarantees recovery",
+        "fixes disability"
+      ],
+      "persona_ids": [
+        "special-education-teacher",
+        "school-counselor"
+      ],
+      "occasion_ids": [],
+      "action": "refuse",
+      "constraints": [
+        "Remove medical or guaranteed-outcome language."
+      ],
+      "rationale": "POD copy must not make unsupported health or disability claims."
+    },
+    {
+      "id": "burnout-humor-review",
+      "trigger_terms": [
+        "burnout",
+        "surviving on caffeine"
+      ],
+      "persona_ids": [],
+      "occasion_ids": [
+        "teacher-appreciation"
+      ],
+      "action": "constrain",
+      "constraints": [
+        "Keep humor respectful and do not trivialize distress."
+      ],
+      "rationale": "Appreciation gifts should not reduce the recipient to exhaustion."
+    }
+  ]
+}

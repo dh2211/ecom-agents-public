@@ -1,0 +1,42 @@
+name: Dropship and creative checks
+on:
+  pull_request:
+  push:
+    branches: [main, 'dropship-creative-*']
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        node: [20, 22]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install local media test tools on Linux
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Original agent, POD and Dropship tests
+        run: npm test
+      - name: Original SEO/AEO integrity
+        run: node .github/scripts/aeo-check.mjs
+      - name: Whitespace integrity
+        run: git diff --check
+      - name: Archive committed source for reproducible review
+        if: always() && runner.os == 'Linux' && matrix.node == 22
+        run: git archive --format=zip --output=source-snapshot.zip HEAD
+      - name: Retain source snapshot
+        if: always() && runner.os == 'Linux' && matrix.node == 22
+        uses: actions/upload-artifact@v4
+        with:
+          name: dropship-creative-source
+          path: source-snapshot.zip
+          if-no-files-found: error
+          retention-days: 7

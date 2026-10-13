@@ -1,0 +1,1466 @@
+{
+  "schema_version": "3.2",
+  "niche_slug": "pet-memorial",
+  "niche_display": "Pet Memorial",
+  "locale": "en-US",
+  "niche_profile": {
+    "audience_summary": "Respectful pet-memorial POD designs for bereaved owners, households, and sympathy-gift buyers without medical, spiritual-certainty, or grief-trivializing claims.",
+    "primary_buyers": [
+      "bereaved pet owner",
+      "friend of a bereaved owner",
+      "family member creating a household keepsake"
+    ],
+    "primary_recipients": [
+      "dog owner remembering a companion",
+      "cat owner remembering a companion",
+      "household grieving a family pet"
+    ],
+    "identity_signals": [
+      "pet type",
+      "pet name",
+      "memorial date",
+      "recipient relationship",
+      "preferred remembrance tone"
+    ],
+    "niche_boundaries": [
+      "pet remembrance and sympathy gifts",
+      "personalized names, dates, or short dedications",
+      "gentle symbolic or portrait-led visual language",
+      "non-denominational continuing-bond themes"
+    ],
+    "excluded_segments": [
+      "human memorial products",
+      "veterinary medical advice",
+      "religious certainty claims",
+      "grief humor and blame",
+      "licensed pet characters or copied memorial listings"
+    ]
+  },
+  "data_provenance": {
+    "last_updated": "2026-08-23",
+    "marketplaces": [
+      "Etsy",
+      "Shopify"
+    ],
+    "sources": [
+      {
+        "id": "project-framework",
+        "type": "project-framework",
+        "note": "Structured from the POD buyer-recipient, occasion, emotion, product, and QA framework."
+      },
+      {
+        "id": "sensitivity-domain-review",
+        "type": "internal-domain-knowledge",
+        "note": "Curated grief-sensitivity and pet-memorial risk assumptions; no live demand, trademark, or clinical review was performed."
+      }
+    ],
+    "assumptions": [
+      "Primary language is English for a US gift context.",
+      "Every spiritual or afterlife interpretation requires explicit user direction and careful review.",
+      "Printer templates, image rights, pet-name spelling, dates, and trademark status require verification before launch."
+    ],
+    "evidence_status": "curated-draft",
+    "legal_status": "screened-not-cleared"
+  },
+  "market_contexts": [
+    {
+      "id": "etsy-us",
+      "marketplace": "Etsy",
+      "locale": "en-US",
+      "region": "US",
+      "measurement_system": "imperial",
+      "restricted_claims": [
+        "guaranteed grief relief",
+        "clinically proven comfort",
+        "official veterinary endorsement"
+      ],
+      "output_notes": [
+        "Verify current listing-image, personalization, and production-partner requirements.",
+        "Use original, respectful copy and avoid exploiting recent loss with urgency claims."
+      ],
+      "review_by": "2026-11-21"
+    },
+    {
+      "id": "shopify-us",
+      "marketplace": "Shopify",
+      "locale": "en-US",
+      "region": "US",
+      "measurement_system": "imperial",
+      "restricted_claims": [
+        "guaranteed grief relief",
+        "medical recovery promise",
+        "official rescue or clinic endorsement"
+      ],
+      "output_notes": [
+        "Treat storefront, theme, image, and printer requirements as store-specific inputs.",
+        "Do not infer a production canvas without the selected provider template."
+      ],
+      "review_by": "2026-11-21"
+    }
+  ],
+  "evidence_claims": [
+    {
+      "id": "personalized-remembrance-hypothesis",
+      "claim_type": "market-hypothesis",
+      "statement": "Names, dates, pet type, and relationship-specific remembrance are plausible differentiators for pet-memorial gifts.",
+      "status": "hypothesis",
+      "source_ids": [
+        "project-framework",
+        "sensitivity-domain-review"
+      ],
+      "market_context_ids": [
+        "etsy-us",
+        "shopify-us"
+      ],
+      "review_by": "2026-11-21",
+      "confidence": "medium"
+    },
+    {
+      "id": "gentle-language-hypothesis",
+      "claim_type": "buyer-language",
+      "statement": "Quiet gratitude, continuing bonds, and specific memories are safer starting points than spiritual certainty or grief promises.",
+      "status": "hypothesis",
+      "source_ids": [
+        "sensitivity-domain-review"
+      ],
+      "market_context_ids": [
+        "etsy-us",
+        "shopify-us"
+      ],
+      "review_by": "2026-11-21",
+      "confidence": "medium"
+    },
+    {
+      "id": "memorial-timing-hypothesis",
+      "claim_type": "seasonality",
+      "statement": "Recent loss, anniversaries, holidays, and sympathy moments may require different emotional intensity and production lead times.",
+      "status": "hypothesis",
+      "source_ids": [
+        "project-framework"
+      ],
+      "market_context_ids": [
+        "etsy-us",
+        "shopify-us"
+      ],
+      "review_by": "2026-11-21",
+      "confidence": "low"
+    }
+  ],
+  "personas": [
+    {
+      "id": "bereaved-dog-owner",
+      "name": "Bereaved dog owner",
+      "identity_stage": "owner preserving the memory of a dog companion",
+      "buyer_intents": [
+        "self-purchase",
+        "anniversary keepsake",
+        "household remembrance"
+      ],
+      "recipient_relationships": [
+        "self remembrance",
+        "family household"
+      ],
+      "emotional_triggers": [
+        "companionship",
+        "daily routines",
+        "gratitude",
+        "continuing bond"
+      ],
+      "insider_language": [
+        "faithful companion",
+        "always near",
+        "favorite walk",
+        "home in every memory"
+      ],
+      "safe_visual_cues": [
+        "dog paw silhouette",
+        "name ribbon",
+        "pathway",
+        "simple stars"
+      ],
+      "product_fit": [
+        "ornament",
+        "poster",
+        "mug",
+        "blanket"
+      ],
+      "avoid": [
+        "generic breed claims",
+        "copied rainbow-bridge art",
+        "spiritual certainty without user direction"
+      ]
+    },
+    {
+      "id": "bereaved-cat-owner",
+      "name": "Bereaved cat owner",
+      "identity_stage": "owner preserving the memory of a cat companion",
+      "buyer_intents": [
+        "self-purchase",
+        "sympathy keepsake",
+        "quiet wall memorial"
+      ],
+      "recipient_relationships": [
+        "self remembrance",
+        "friend to owner"
+      ],
+      "emotional_triggers": [
+        "home rituals",
+        "quiet presence",
+        "gratitude",
+        "continuing bond"
+      ],
+      "insider_language": [
+        "soft paws",
+        "favorite window",
+        "always part of home",
+        "quiet companion"
+      ],
+      "safe_visual_cues": [
+        "cat paw silhouette",
+        "portrait medallion",
+        "botanical sprig",
+        "small stars"
+      ],
+      "product_fit": [
+        "ornament",
+        "poster",
+        "mug",
+        "blanket"
+      ],
+      "avoid": [
+        "comic cat stereotypes",
+        "copied clip-art portraits",
+        "claims about an afterlife"
+      ]
+    },
+    {
+      "id": "family-pet-memorial-buyer",
+      "name": "Family pet memorial buyer",
+      "identity_stage": "family member creating a shared household tribute",
+      "buyer_intents": [
+        "family keepsake",
+        "sympathy gift",
+        "holiday remembrance"
+      ],
+      "recipient_relationships": [
+        "family to household",
+        "adult child to parent",
+        "partner to partner"
+      ],
+      "emotional_triggers": [
+        "shared routines",
+        "family history",
+        "gratitude",
+        "gentle comfort"
+      ],
+      "insider_language": [
+        "part of our family",
+        "loved in every room",
+        "shared adventures",
+        "always remembered"
+      ],
+      "safe_visual_cues": [
+        "name ribbon",
+        "home outline",
+        "pathway",
+        "botanical frame"
+      ],
+      "product_fit": [
+        "ornament",
+        "poster",
+        "mug",
+        "blanket"
+      ],
+      "avoid": [
+        "blame for the loss",
+        "forced positivity",
+        "graphic or clinical imagery"
+      ]
+    }
+  ],
+  "buyer_recipient_pairs": [
+    {
+      "id": "self-to-pet-memory",
+      "buyer": "bereaved pet owner",
+      "recipient": "self or household",
+      "purchase_reason": "Preserve a specific companion memory through a private or household keepsake.",
+      "strong_occasions": [
+        "recent-loss",
+        "pet-anniversary",
+        "holiday-remembrance"
+      ],
+      "preferred_products": [
+        "ornament",
+        "poster",
+        "mug",
+        "blanket"
+      ]
+    },
+    {
+      "id": "friend-to-bereaved-owner",
+      "buyer": "friend of bereaved owner",
+      "recipient": "bereaved pet owner",
+      "purchase_reason": "Offer a respectful sympathy gift without prescribing how the recipient should grieve.",
+      "strong_occasions": [
+        "recent-loss",
+        "sympathy-gift"
+      ],
+      "preferred_products": [
+        "ornament",
+        "poster",
+        "mug"
+      ]
+    },
+    {
+      "id": "family-to-household",
+      "buyer": "family member",
+      "recipient": "bereaved household",
+      "purchase_reason": "Create a shared tribute tied to family routines and a pet's place in the home.",
+      "strong_occasions": [
+        "recent-loss",
+        "pet-anniversary",
+        "holiday-remembrance"
+      ],
+      "preferred_products": [
+        "blanket",
+        "poster",
+        "ornament"
+      ]
+    }
+  ],
+  "occasions": [
+    {
+      "id": "recent-loss",
+      "name": "Recent pet loss",
+      "type": "sympathy",
+      "seasonality": "event-driven and emotionally time-sensitive",
+      "lead_time_days": 3,
+      "strong_angles": [
+        "gentle presence",
+        "specific gratitude",
+        "name-led remembrance"
+      ],
+      "common_products": [
+        "poster",
+        "ornament",
+        "mug",
+        "blanket"
+      ],
+      "personalization": [
+        "pet-name",
+        "memorial-date",
+        "short-dedication"
+      ],
+      "avoid": [
+        "urgency pressure",
+        "grief promises",
+        "forced positivity"
+      ]
+    },
+    {
+      "id": "pet-anniversary",
+      "name": "Pet memorial anniversary",
+      "type": "anniversary",
+      "seasonality": "personal annual date",
+      "lead_time_days": 14,
+      "strong_angles": [
+        "continuing bond",
+        "favorite routine",
+        "dates and name"
+      ],
+      "common_products": [
+        "ornament",
+        "poster",
+        "mug",
+        "blanket"
+      ],
+      "personalization": [
+        "pet-name",
+        "memorial-date",
+        "short-dedication"
+      ],
+      "avoid": [
+        "invented dates",
+        "unrequested spiritual language"
+      ]
+    },
+    {
+      "id": "holiday-remembrance",
+      "name": "Holiday remembrance",
+      "type": "seasonal remembrance",
+      "seasonality": "late-year holiday period",
+      "lead_time_days": 21,
+      "strong_angles": [
+        "family tradition",
+        "home memory",
+        "quiet ornament tribute"
+      ],
+      "common_products": [
+        "ornament",
+        "blanket",
+        "mug"
+      ],
+      "personalization": [
+        "pet-name",
+        "short-dedication"
+      ],
+      "avoid": [
+        "festive treatment that overwhelms the memorial tone",
+        "delivery guarantees"
+      ]
+    },
+    {
+      "id": "sympathy-gift",
+      "name": "Pet-loss sympathy gift",
+      "type": "relationship gift",
+      "seasonality": "event-driven",
+      "lead_time_days": 5,
+      "strong_angles": [
+        "I remember with you",
+        "specific companionship",
+        "quiet comfort"
+      ],
+      "common_products": [
+        "poster",
+        "mug",
+        "ornament"
+      ],
+      "personalization": [
+        "pet-name",
+        "short-dedication"
+      ],
+      "avoid": [
+        "telling the recipient how to feel",
+        "medical or spiritual promises"
+      ]
+    }
+  ],
+  "emotions": [
+    {
+      "id": "gentle-remembrance",
+      "name": "Gentle remembrance",
+      "job_to_be_done": "Keep a companion present through a calm visual memory.",
+      "design_direction": "Open space, one symbolic focal point, and quiet contrast.",
+      "copy_tone": "soft, specific, restrained",
+      "avoid": "dramatic grief language or forced closure",
+      "use_when": [
+        "recent loss",
+        "sympathy gift"
+      ]
+    },
+    {
+      "id": "gratitude-for-companionship",
+      "name": "Gratitude for companionship",
+      "job_to_be_done": "Express thanks for shared routines and affection.",
+      "design_direction": "Name-led hierarchy with one routine or home cue.",
+      "copy_tone": "warm, grateful, concrete",
+      "avoid": "generic superlatives detached from the pet",
+      "use_when": [
+        "anniversary",
+        "family keepsake"
+      ]
+    },
+    {
+      "id": "continuing-bond",
+      "name": "Continuing bond",
+      "job_to_be_done": "Acknowledge that the relationship continues through memory.",
+      "design_direction": "Pathway, stars, or home motif without religious certainty.",
+      "copy_tone": "steady, reflective, non-denominational",
+      "avoid": "guaranteed afterlife statements",
+      "use_when": [
+        "anniversary",
+        "holiday remembrance"
+      ]
+    },
+    {
+      "id": "quiet-comfort",
+      "name": "Quiet comfort",
+      "job_to_be_done": "Offer support without instructing or diagnosing grief.",
+      "design_direction": "Minimal composition, low visual noise, gentle palette.",
+      "copy_tone": "supportive, respectful, non-prescriptive",
+      "avoid": "clinical claims or grief timelines",
+      "use_when": [
+        "sympathy gift",
+        "recent loss"
+      ]
+    }
+  ],
+  "buyer_language": [
+    {
+      "theme": "specific companionship",
+      "phrases": [
+        "loved in every room",
+        "our favorite hello",
+        "always part of home"
+      ],
+      "meaning": "Connect remembrance to daily life rather than generic loss language.",
+      "use_for": [
+        "family keepsake",
+        "self-purchase"
+      ],
+      "avoid": "copied bestseller phrases or absolute claims"
+    },
+    {
+      "theme": "quiet presence",
+      "phrases": [
+        "always near in memory",
+        "soft paws, lasting love",
+        "still part of our story"
+      ],
+      "meaning": "Express continuing bonds without claiming certainty about an afterlife.",
+      "use_for": [
+        "cat owner",
+        "sympathy gift"
+      ],
+      "avoid": "religious certainty unless explicitly requested"
+    },
+    {
+      "theme": "gratitude",
+      "phrases": [
+        "thank you for every walk",
+        "for all the ordinary magic",
+        "a lifetime of small joys"
+      ],
+      "meaning": "Make the memorial specific to routines and companionship.",
+      "use_for": [
+        "dog owner",
+        "anniversary"
+      ],
+      "avoid": "forced positivity or minimizing pain"
+    },
+    {
+      "theme": "support without prescription",
+      "phrases": [
+        "remembering with you",
+        "holding this memory close",
+        "with you in the quiet moments"
+      ],
+      "meaning": "Support the recipient without telling them how to grieve.",
+      "use_for": [
+        "friend gift",
+        "recent loss"
+      ],
+      "avoid": "grief deadlines, clinical advice, or promises of recovery"
+    }
+  ],
+  "visual_vocabulary": {
+    "motifs": [
+      {
+        "name": "paw silhouette",
+        "meaning": "A restrained pet-identity symbol.",
+        "use_with": [
+          "minimal tributes",
+          "text-free designs"
+        ],
+        "avoid_with": [
+          "copied clip art",
+          "busy badge stacks"
+        ]
+      },
+      {
+        "name": "halo-free stars",
+        "meaning": "Memory and distance without religious certainty.",
+        "use_with": [
+          "night palettes",
+          "continuing bond"
+        ],
+        "avoid_with": [
+          "literal heaven claims",
+          "neon galaxy scenes"
+        ]
+      },
+      {
+        "name": "name ribbon",
+        "meaning": "A clean anchor for pet-name personalization.",
+        "use_with": [
+          "ornaments",
+          "posters"
+        ],
+        "avoid_with": [
+          "fake official seals",
+          "overloaded banners"
+        ]
+      },
+      {
+        "name": "botanical sprig",
+        "meaning": "Gentle growth and remembrance.",
+        "use_with": [
+          "sympathy gifts",
+          "warm palettes"
+        ],
+        "avoid_with": [
+          "funeral cliché overload",
+          "photo-real scenes"
+        ]
+      },
+      {
+        "name": "portrait medallion",
+        "meaning": "A controlled frame for a supplied pet portrait.",
+        "use_with": [
+          "poster",
+          "blanket"
+        ],
+        "avoid_with": [
+          "invented portrait details",
+          "copied competitor frames"
+        ]
+      },
+      {
+        "name": "pathway",
+        "meaning": "Shared journeys and remembered routines.",
+        "use_with": [
+          "dog memories",
+          "continuing bond"
+        ],
+        "avoid_with": [
+          "full landscape scenes",
+          "literal rainbow bridge copies"
+        ]
+      }
+    ],
+    "palettes": [
+      {
+        "name": "soft-neutral",
+        "colors": [
+          "#F4EFE8",
+          "#6E6259",
+          "#2F2B28"
+        ],
+        "use_when": "quiet sympathy and light products",
+        "contrast_rule": "Use the dark neutral for text on light products and the cream on dark products."
+      },
+      {
+        "name": "night-remembrance",
+        "colors": [
+          "#E8EAF6",
+          "#7C83B8",
+          "#24253A"
+        ],
+        "use_when": "stars, continuing bonds, and dark products",
+        "contrast_rule": "Keep primary text pale against dark products and deep navy against light products."
+      },
+      {
+        "name": "warm-keepsake",
+        "colors": [
+          "#F7E3C3",
+          "#C97A63",
+          "#4E342E"
+        ],
+        "use_when": "botanical and personalized keepsakes",
+        "contrast_rule": "Use dark brown for critical copy on light products and cream outlines on dark products."
+      }
+    ],
+    "typography": [
+      {
+        "name": "quiet-serif",
+        "direction": "Readable serif with restrained spacing and no ornamental grief clichés.",
+        "use_when": "formal memorial copy and dates",
+        "avoid": "ultra-thin strokes or funeral-program imitation"
+      },
+      {
+        "name": "clean-sans",
+        "direction": "Simple geometric sans with robust print-safe weight.",
+        "use_when": "minimal symbols and no-text-adjacent layouts",
+        "avoid": "cold corporate hierarchy"
+      },
+      {
+        "name": "hand-lettered-accent",
+        "direction": "One short hand-lettered accent paired with a readable supporting face.",
+        "use_when": "names or one intimate phrase",
+        "avoid": "long script paragraphs or illegible swashes"
+      }
+    ],
+    "compositions": [
+      {
+        "name": "central-medallion",
+        "hierarchy": "Portrait or symbol centered, name below, optional date last.",
+        "use_when": "poster and blanket",
+        "avoid": "crowded wreaths or copied frames"
+      },
+      {
+        "name": "name-and-dates",
+        "hierarchy": "Name first, one symbol second, date line third.",
+        "use_when": "ornament and mug",
+        "avoid": "invented dates or multiple competing phrases"
+      },
+      {
+        "name": "open-landscape",
+        "hierarchy": "Small pathway or stars with generous negative space and no scene realism.",
+        "use_when": "continuing-bond concepts",
+        "avoid": "full scenic backgrounds or horizons"
+      },
+      {
+        "name": "minimal-symbol",
+        "hierarchy": "One paw or botanical mark with optional short dedication.",
+        "use_when": "text-free or quiet sympathy designs",
+        "avoid": "generic icon packs and badge clutter"
+      }
+    ]
+  },
+  "product_fit": [
+    {
+      "product": "ornament",
+      "priority": "high",
+      "works_best_with": [
+        "pet name",
+        "date",
+        "one symbol"
+      ],
+      "max_words": 10,
+      "personalization": [
+        "pet-name",
+        "memorial-date",
+        "short-dedication"
+      ],
+      "output_profile_id": "keepsake-square",
+      "production_method_id": "sublimation-keepsakes",
+      "print_notes": "Protect the hanging-hole and trim-safe region; verify the exact ornament template.",
+      "avoid": [
+        "micro text",
+        "edge-touching frames"
+      ]
+    },
+    {
+      "product": "poster",
+      "priority": "high",
+      "works_best_with": [
+        "portrait tribute",
+        "name-led memorial",
+        "open space"
+      ],
+      "max_words": 24,
+      "personalization": [
+        "pet-name",
+        "memorial-date",
+        "short-dedication"
+      ],
+      "output_profile_id": "wall-art-portrait",
+      "production_method_id": "fine-art-print",
+      "print_notes": "Use the exact print size and bleed; inspect portrait rights and resolution.",
+      "avoid": [
+        "low-resolution portraits",
+        "thin gray text"
+      ]
+    },
+    {
+      "product": "mug",
+      "priority": "medium",
+      "works_best_with": [
+        "short gratitude",
+        "name",
+        "minimal symbol"
+      ],
+      "max_words": 14,
+      "personalization": [
+        "pet-name",
+        "memorial-date",
+        "short-dedication"
+      ],
+      "output_profile_id": "drinkware-wrap",
+      "production_method_id": "sublimation-keepsakes",
+      "print_notes": "Protect handle zones and verify the printer wrap template.",
+      "avoid": [
+        "critical copy near the handle",
+        "full scenic art"
+      ]
+    },
+    {
+      "product": "blanket",
+      "priority": "medium",
+      "works_best_with": [
+        "family tribute",
+        "portrait medallion",
+        "short dedication"
+      ],
+      "max_words": 24,
+      "personalization": [
+        "pet-name",
+        "memorial-date",
+        "short-dedication"
+      ],
+      "output_profile_id": "large-format-portrait",
+      "production_method_id": "sublimation-keepsakes",
+      "print_notes": "Verify fabric, pile, safe area, and large-format template; keep small text out.",
+      "avoid": [
+        "micro details",
+        "weak portrait contrast"
+      ]
+    }
+  ],
+  "production_methods": [
+    {
+      "id": "sublimation-keepsakes",
+      "label": "Sublimation keepsake baseline",
+      "process": "sublimation",
+      "products": [
+        "ornament",
+        "mug",
+        "blanket"
+      ],
+      "minimum_stroke_mm": 0.8,
+      "minimum_gap_mm": 0.8,
+      "minimum_text_height_mm": 4.0,
+      "max_colors": 8,
+      "distress_allowed": false,
+      "halftones_allowed": true,
+      "substrate_notes": "Product coating and fabric vary; verify the selected provider blank.",
+      "ink_notes": "Use the provider color profile and a physical test for memorial portraits.",
+      "template_required": true,
+      "uncertainty": "baseline-provider-template-required"
+    },
+    {
+      "id": "fine-art-print",
+      "label": "Fine-art print baseline",
+      "process": "giclee-or-digital-print",
+      "products": [
+        "poster"
+      ],
+      "minimum_stroke_mm": 0.5,
+      "minimum_gap_mm": 0.5,
+      "minimum_text_height_mm": 3.5,
+      "max_colors": 10,
+      "distress_allowed": true,
+      "halftones_allowed": true,
+      "substrate_notes": "Paper stock, coating, trim, and frame options are provider-specific.",
+      "ink_notes": "Use the printer ICC profile where available and inspect neutral grays.",
+      "template_required": true,
+      "uncertainty": "baseline-provider-template-required"
+    }
+  ],
+  "personalization_fields": [
+    {
+      "key": "pet-name",
+      "label": "Pet name",
+      "example": "Milo",
+      "validation": "1-24 characters; verify spelling and preserve approved capitalization.",
+      "products": [
+        "ornament",
+        "poster",
+        "mug",
+        "blanket"
+      ]
+    },
+    {
+      "key": "memorial-date",
+      "label": "Memorial or lifespan date",
+      "example": "2012-2026",
+      "validation": "Optional; accept only user-supplied dates and preserve the requested format.",
+      "products": [
+        "ornament",
+        "poster",
+        "mug",
+        "blanket"
+      ]
+    },
+    {
+      "key": "short-dedication",
+      "label": "Short dedication",
+      "example": "Loved in every room",
+      "validation": "0-60 characters; no medical, blame, or spiritual-certainty claims.",
+      "products": [
+        "ornament",
+        "poster",
+        "mug",
+        "blanket"
+      ]
+    }
+  ],
+  "hook_patterns": [
+    {
+      "id": "name-memory",
+      "template": "[PET NAME] - [SHORT MEMORY]",
+      "use_when": "name-led memorials",
+      "example": "Milo - Loved in Every Room",
+      "avoid": "invented memories"
+    },
+    {
+      "id": "forever-companion",
+      "template": "[SPECIFIC ROUTINE], ALWAYS REMEMBERED",
+      "use_when": "routine-based gratitude",
+      "example": "Every Walk, Always Remembered",
+      "avoid": "generic eternity claims"
+    },
+    {
+      "id": "gentle-thanks",
+      "template": "THANK YOU FOR [SPECIFIC JOY]",
+      "use_when": "gratitude-led concepts",
+      "example": "Thank You for Every Quiet Morning",
+      "avoid": "forced positivity"
+    },
+    {
+      "id": "dates-and-paw",
+      "template": "[PET NAME] • [DATES]",
+      "use_when": "ornaments and formal keepsakes",
+      "example": "Luna • 2014-2026",
+      "avoid": "invented dates"
+    },
+    {
+      "id": "text-free-symbol",
+      "template": "NO TEXT - [ONE SYMBOLIC MEMORY]",
+      "use_when": "no-text remembrance",
+      "example": "No text; one paw and a small pathway",
+      "avoid": "pseudo-text or decorative glyph clutter"
+    }
+  ],
+  "style_variants": [
+    {
+      "id": "minimal-symbolic",
+      "label": "Minimal symbolic",
+      "commercial_role": "quiet everyday remembrance",
+      "description": "One robust symbol, generous negative space, and optional short sans copy.",
+      "typography": "clean-sans",
+      "motifs": [
+        "paw silhouette",
+        "halo-free stars"
+      ],
+      "palette_options": [
+        "soft-neutral"
+      ],
+      "avoid": "generic icon packs and badge clutter"
+    },
+    {
+      "id": "botanical-keepsake",
+      "label": "Botanical keepsake",
+      "commercial_role": "warm personalized gift",
+      "description": "A name ribbon and restrained botanical treatment for intimate keepsakes.",
+      "typography": "hand-lettered-accent",
+      "motifs": [
+        "botanical sprig",
+        "name ribbon"
+      ],
+      "palette_options": [
+        "warm-keepsake"
+      ],
+      "avoid": "funeral wreath clichés and excessive script"
+    },
+    {
+      "id": "night-sky-memorial",
+      "label": "Night-sky memorial",
+      "commercial_role": "reflective continuing-bond tribute",
+      "description": "Small stars and pathway forms on a quiet dark-light system without a literal scene.",
+      "typography": "quiet-serif",
+      "motifs": [
+        "halo-free stars",
+        "pathway"
+      ],
+      "palette_options": [
+        "night-remembrance"
+      ],
+      "avoid": "galaxy scenes, halos, or afterlife certainty"
+    },
+    {
+      "id": "portrait-tribute",
+      "label": "Portrait tribute",
+      "commercial_role": "premium family memorial",
+      "description": "A user-supplied pet portrait in a controlled medallion with name and optional dates.",
+      "typography": "quiet-serif",
+      "motifs": [
+        "portrait medallion",
+        "name ribbon"
+      ],
+      "palette_options": [
+        "warm-keepsake",
+        "soft-neutral"
+      ],
+      "avoid": "invented portrait details or copied competitor frames"
+    }
+  ],
+  "idea_archetypes": [
+    {
+      "id": "personalized-name-memorial",
+      "label": "Personalized name memorial",
+      "purchase_logic": "A pet name, optional dates, and one specific memory turn a keepsake into a personal memorial.",
+      "persona_ids": [
+        "bereaved-dog-owner",
+        "bereaved-cat-owner",
+        "family-pet-memorial-buyer"
+      ],
+      "occasion_ids": [
+        "recent-loss",
+        "pet-anniversary",
+        "holiday-remembrance"
+      ],
+      "product_names": [
+        "ornament",
+        "poster",
+        "mug",
+        "blanket"
+      ],
+      "hook_ids": [
+        "name-memory",
+        "dates-and-paw",
+        "forever-companion"
+      ],
+      "required_variation_axes": [
+        "personalization",
+        "composition",
+        "typography"
+      ],
+      "avoid": [
+        "invented names, dates, or memories"
+      ]
+    },
+    {
+      "id": "sympathy-without-prescription",
+      "label": "Sympathy without prescription",
+      "purchase_logic": "A friend or relative offers support without defining grief, recovery, or spiritual meaning for the recipient.",
+      "persona_ids": [
+        "bereaved-dog-owner",
+        "bereaved-cat-owner",
+        "family-pet-memorial-buyer"
+      ],
+      "occasion_ids": [
+        "recent-loss",
+        "sympathy-gift"
+      ],
+      "product_names": [
+        "poster",
+        "mug",
+        "ornament"
+      ],
+      "hook_ids": [
+        "gentle-thanks",
+        "name-memory"
+      ],
+      "required_variation_axes": [
+        "hook",
+        "composition",
+        "palette"
+      ],
+      "avoid": [
+        "grief advice, timelines, or guaranteed comfort"
+      ]
+    },
+    {
+      "id": "text-free-remembrance",
+      "label": "Text-free remembrance",
+      "purchase_logic": "A single original symbol creates a private memorial for buyers who do not want explicit loss copy.",
+      "persona_ids": [
+        "bereaved-dog-owner",
+        "bereaved-cat-owner"
+      ],
+      "occasion_ids": [
+        "pet-anniversary",
+        "holiday-remembrance"
+      ],
+      "product_names": [
+        "ornament",
+        "poster",
+        "mug"
+      ],
+      "hook_ids": [
+        "text-free-symbol"
+      ],
+      "required_variation_axes": [
+        "motif",
+        "palette",
+        "composition"
+      ],
+      "avoid": [
+        "pseudo-text, copied bridge art, or generic clip-art badges"
+      ]
+    }
+  ],
+  "creative_controls": {
+    "required_variation_axes": [
+      "composition",
+      "typography",
+      "motif",
+      "palette",
+      "hook",
+      "personalization"
+    ],
+    "minimum_distinct_axes_per_variant": 2,
+    "anti_generic_phrases": [
+      "best pet ever",
+      "rainbow bridge bestseller",
+      "just a girl who loves dogs"
+    ]
+  },
+  "combination_rules": [
+    {
+      "id": "recent-loss-portrait-review",
+      "persona_ids": [],
+      "occasion_ids": [
+        "recent-loss"
+      ],
+      "product_names": [
+        "poster",
+        "blanket"
+      ],
+      "style_variant_ids": [
+        "portrait-tribute"
+      ],
+      "idea_archetype_ids": [
+        "sympathy-without-prescription"
+      ],
+      "outcome": "review",
+      "reason": "Confirm image rights, portrait fidelity, spelling, and emotional tone before producing a recent-loss portrait gift."
+    }
+  ],
+  "concept_fit_calibration": {
+    "go_score": 21,
+    "refine_score": 17,
+    "rework_score": 13,
+    "replace_score": 12,
+    "high_fit_signals": [
+      "specific buyer-recipient relationship",
+      "pet name or specific routine",
+      "one respectful emotional job",
+      "product suited to the memorial intensity"
+    ],
+    "weak_fit_signals": [
+      "generic loss slogan",
+      "unrequested spiritual certainty",
+      "copied rainbow-bridge layout",
+      "grief promise",
+      "unverified portrait rights"
+    ]
+  },
+  "ip_safety": {
+    "niche_specific_avoid": [
+      "copied rainbow-bridge illustrations",
+      "licensed pet characters",
+      "rescue, clinic, or breeder logos",
+      "celebrity pet likenesses",
+      "copied memorial poems",
+      "competitor listing layouts"
+    ],
+    "safe_substitutions": [
+      {
+        "risky": "copied rainbow-bridge scene",
+        "replace_with": "original pathway, stars, or home-memory symbolism"
+      },
+      {
+        "risky": "clinic or rescue logo",
+        "replace_with": "generic care or home motif without institutional marks"
+      },
+      {
+        "risky": "copied memorial poem",
+        "replace_with": "short original gratitude or continuing-bond copy"
+      }
+    ],
+    "human_review_triggers": [
+      "real pet portrait without clear rights",
+      "organization, rescue, clinic, or breeder name",
+      "unverified slogan or poem",
+      "religious or afterlife claim",
+      "real-person or celebrity attribution"
+    ]
+  },
+  "sensitivity_rules": [
+    {
+      "id": "ip-licensed-character-copy",
+      "trigger_terms": [
+        "snoopy",
+        "paw patrol",
+        "disney"
+      ],
+      "persona_ids": [],
+      "occasion_ids": [],
+      "action": "refuse",
+      "constraints": [
+        "Replace named licensed characters or brands with original generic motifs and new wording. Do not infer legal clearance from a non-match."
+      ],
+      "rationale": "Conservative illustrative copy-risk screen, not a trademark registry or visual copyright check; human IP review remains mandatory."
+    },
+    {
+      "id": "no-blame-language",
+      "trigger_terms": [
+        "your fault",
+        "you should have",
+        "if only you had"
+      ],
+      "persona_ids": [],
+      "occasion_ids": [],
+      "action": "refuse",
+      "constraints": [
+        "Remove blame, accusation, and counterfactual responsibility language."
+      ],
+      "rationale": "A memorial product must not assign responsibility for a pet's death."
+    },
+    {
+      "id": "no-medical-or-afterlife-certainty",
+      "trigger_terms": [
+        "cures grief",
+        "guaranteed afterlife",
+        "clinically proven comfort"
+      ],
+      "persona_ids": [],
+      "occasion_ids": [],
+      "action": "refuse",
+      "constraints": [
+        "Remove clinical promises and guaranteed spiritual claims."
+      ],
+      "rationale": "The system cannot make medical or metaphysical guarantees."
+    },
+    {
+      "id": "grief-humor-constraint",
+      "trigger_terms": [
+        "funny death",
+        "dead pet joke",
+        "get over it"
+      ],
+      "persona_ids": [],
+      "occasion_ids": [
+        "recent-loss",
+        "sympathy-gift"
+      ],
+      "action": "constrain",
+      "constraints": [
+        "Remove humor and use respectful, non-prescriptive support language."
+      ],
+      "rationale": "Recent-loss and sympathy designs must not trivialize grief."
+    }
+  ],
+  "output_profiles": [
+    {
+      "id": "keepsake-square",
+      "products": [
+        "ornament"
+      ],
+      "aspect_ratio": "1:1",
+      "file_format": "PNG",
+      "dpi": 300,
+      "width_px": null,
+      "height_px": null,
+      "alpha_preferred": true,
+      "safe_zone": "Keep text and faces away from trim edges and the hanging hole.",
+      "bleed": "Use the exact ornament template.",
+      "marketplace_template_required": true
+    },
+    {
+      "id": "wall-art-portrait",
+      "products": [
+        "poster"
+      ],
+      "aspect_ratio": "2:3",
+      "file_format": "PNG",
+      "dpi": 300,
+      "width_px": null,
+      "height_px": null,
+      "alpha_preferred": true,
+      "safe_zone": "Keep essential content inside the central 85% with trim-safe margins.",
+      "bleed": "Use the exact wall-art size and bleed template.",
+      "marketplace_template_required": true
+    },
+    {
+      "id": "drinkware-wrap",
+      "products": [
+        "mug"
+      ],
+      "aspect_ratio": "2:1",
+      "file_format": "PNG",
+      "dpi": 300,
+      "width_px": null,
+      "height_px": null,
+      "alpha_preferred": true,
+      "safe_zone": "Protect handle zones and keep critical copy in the visible center.",
+      "bleed": "Use the printer wrap template.",
+      "marketplace_template_required": true
+    },
+    {
+      "id": "large-format-portrait",
+      "products": [
+        "blanket"
+      ],
+      "aspect_ratio": "4:5",
+      "file_format": "PNG",
+      "dpi": 300,
+      "width_px": null,
+      "height_px": null,
+      "alpha_preferred": true,
+      "safe_zone": "Keep names and faces inside the central 75% and away from stitched edges.",
+      "bleed": "Use the exact blanket template and provider bleed.",
+      "marketplace_template_required": true
+    }
+  ],
+  "output_defaults": {
+    "background": {
+      "preferred_mode": "transparent",
+      "transparent_format": "PNG",
+      "require_real_alpha": true,
+      "capability_policy": "capability-gated",
+      "supported_model_route": "transparent-required-no-fallback",
+      "unknown_model_route": "probe-then-fallback",
+      "unsupported_model_route": "flat-solid-remove-to-alpha",
+      "max_transparent_attempts": 3,
+      "unknown_probe_attempts": 2,
+      "fallback_condition": "confirmed-transparent-unavailable-only",
+      "require_native_transparency_option_when_available": true,
+      "hard_fail_supported_after_attempts": true,
+      "final_output_must_have_alpha": true,
+      "fallback_enabled": true,
+      "safe_palette": [
+        "#000000",
+        "#FFFFFF",
+        "#808080",
+        "#3A3A3A",
+        "#C0C0C0"
+      ],
+      "selection_method": "max-color-distance-from-artwork",
+      "mandatory_prompt": "MANDATORY FLAT SOLID COLOR. NO SHADOWS.",
+      "forbidden": [
+        "green chroma key",
+        "neon background",
+        "gradient",
+        "texture",
+        "shadow",
+        "glow",
+        "vignette",
+        "checkerboard",
+        "fake transparency"
+      ]
+    },
+    "product_contrast": {
+      "dark_surface_use": "light",
+      "light_surface_use": "dark",
+      "mid_surface_use": "high-contrast-dual-tone",
+      "minimum_contrast_ratio": 4.5,
+      "unknown_surface_action": "request-color-or-use-dual-outline"
+    },
+    "variant_count_default": 4,
+    "variant_count_min": 1,
+    "variant_count_max": 4,
+    "copy_mode_default": "proposed"
+  },
+  "qa_rules": {
+    "max_colors": 7,
+    "min_text_legibility": "Main phrase remains readable at a 300 px thumbnail.",
+    "copy_modes": [
+      "exact",
+      "none",
+      "proposed"
+    ],
+    "alpha_validation_required": true,
+    "rerender_on_alpha_failure": true,
+    "fallback_on_supported_alpha_failure": false,
+    "isolated_artwork": true,
+    "no_shadows": true,
+    "product_contrast_required": true,
+    "minimum_contrast_ratio": 4.5,
+    "minimum_fully_transparent_ratio": 0.01,
+    "minimum_transparent_border_ratio": 0.99,
+    "minimum_visible_ratio": 0.001,
+    "maximum_significant_visible_ratio": 0.9,
+    "maximum_significant_bbox_fill_ratio": 0.92,
+    "minimum_significant_margin_ratio": 0.005,
+    "significant_alpha_threshold": 8,
+    "background_edge_rule": "Final delivery edges must be transparent; a solid fallback is only a temporary removal canvas."
+  },
+  "sample_briefs": [
+    {
+      "id": "dog-anniversary-ornament",
+      "title": "Dog anniversary ornament",
+      "persona_id": "bereaved-dog-owner",
+      "buyer_recipient_pair_id": "self-to-pet-memory",
+      "buyer": "bereaved pet owner",
+      "recipient": "self or household",
+      "occasion_id": "pet-anniversary",
+      "emotion_id": "continuing-bond",
+      "style_variant_id": "botanical-keepsake",
+      "product": "ornament",
+      "output_profile_id": "keepsake-square",
+      "copy": {
+        "mode": "exact",
+        "text": "Milo • Loved in Every Room",
+        "language": "en-US"
+      },
+      "personalization": [
+        "pet-name",
+        "memorial-date"
+      ],
+      "visual_direction": "Name ribbon, one botanical sprig, and a small paw with generous clear margin.",
+      "why_it_fits": "A self-purchased ornament connects a specific name and home memory to an annual remembrance.",
+      "ip_notes": "Use original symbols; do not copy rainbow-bridge layouts.",
+      "product_surface": {
+        "tone": "dark",
+        "color": "#111111"
+      }
+    },
+    {
+      "id": "cat-sympathy-poster",
+      "title": "Cat sympathy poster",
+      "persona_id": "bereaved-cat-owner",
+      "buyer_recipient_pair_id": "friend-to-bereaved-owner",
+      "buyer": "friend of bereaved owner",
+      "recipient": "bereaved pet owner",
+      "occasion_id": "sympathy-gift",
+      "emotion_id": "quiet-comfort",
+      "style_variant_id": "night-sky-memorial",
+      "product": "poster",
+      "output_profile_id": "wall-art-portrait",
+      "copy": {
+        "mode": "proposed",
+        "text": "Luna, Always Part of Home",
+        "language": "en-US"
+      },
+      "personalization": [
+        "pet-name",
+        "short-dedication"
+      ],
+      "visual_direction": "Quiet serif name, small stars, and an abstract pathway without a literal sky scene.",
+      "why_it_fits": "A friend offers non-prescriptive support through a calm, personalized wall tribute.",
+      "ip_notes": "No poem, clinic mark, or copied scene.",
+      "product_surface": {
+        "tone": "light",
+        "color": "#FFFFFF"
+      }
+    },
+    {
+      "id": "family-memorial-blanket",
+      "title": "Family memorial blanket",
+      "persona_id": "family-pet-memorial-buyer",
+      "buyer_recipient_pair_id": "family-to-household",
+      "buyer": "family member",
+      "recipient": "bereaved household",
+      "occasion_id": "recent-loss",
+      "emotion_id": "gratitude-for-companionship",
+      "style_variant_id": "portrait-tribute",
+      "product": "blanket",
+      "output_profile_id": "large-format-portrait",
+      "copy": {
+        "mode": "exact",
+        "text": "Loved in Every Room",
+        "language": "en-US"
+      },
+      "personalization": [
+        "pet-name",
+        "short-dedication"
+      ],
+      "visual_direction": "User-supplied portrait medallion, restrained name line, and warm neutral frame.",
+      "why_it_fits": "A family blanket ties a shared household memory to a high-emotion keepsake while requiring portrait review.",
+      "ip_notes": "Confirm portrait rights and do not invent markings.",
+      "product_surface": {
+        "tone": "dark",
+        "color": "#222222"
+      }
+    },
+    {
+      "id": "text-free-holiday-mug",
+      "title": "Text-free holiday remembrance mug",
+      "persona_id": "bereaved-dog-owner",
+      "buyer_recipient_pair_id": "self-to-pet-memory",
+      "buyer": "bereaved pet owner",
+      "recipient": "self or household",
+      "occasion_id": "holiday-remembrance",
+      "emotion_id": "gentle-remembrance",
+      "style_variant_id": "minimal-symbolic",
+      "product": "mug",
+      "output_profile_id": "drinkware-wrap",
+      "copy": {
+        "mode": "none",
+        "text": "",
+        "language": "en-US"
+      },
+      "personalization": [],
+      "visual_direction": "One original paw silhouette and a small pathway; no text or pseudo-text.",
+      "why_it_fits": "A private no-text mug offers remembrance without explicit grief copy during a family holiday period.",
+      "ip_notes": "Use an original symbol, not stock or copied bridge art.",
+      "product_surface": {
+        "tone": "light",
+        "color": "#FFFFFF"
+      }
+    }
+  ]
+}

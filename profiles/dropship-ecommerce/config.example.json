@@ -1,0 +1,11 @@
+{
+  "schema": "dropship-store/1",
+  "store_id": "replace-store",
+  "currency": "USD",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "mode": "draft-only",
+  "markets": [
+    "US"
+  ],
+  "max_source_age_hours": 24
+}

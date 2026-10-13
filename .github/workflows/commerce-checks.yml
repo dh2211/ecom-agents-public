@@ -1,0 +1,63 @@
+name: Commerce app checks
+on:
+  pull_request:
+  push:
+    branches: [main, 'commerce-*']
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        node: [22, 24]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Install media checks on Linux
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - name: Original, POD, Dropship and Commerce tests
+        run: npm test
+      - name: Original SEO/AEO contract
+        run: node .github/scripts/aeo-check.mjs
+      - name: Check diff whitespace
+        run: git diff --check HEAD^ HEAD
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install CI-only browser tooling outside the repository
+        run: |
+          npm install --prefix "$RUNNER_TEMP/commerce-browser" playwright@1.55.0
+          node "$RUNNER_TEMP/commerce-browser/node_modules/playwright/cli.js" install --with-deps chromium
+      - name: Run browser workflow without AI
+        run: node .github/scripts/commerce-browser.mjs
+      - name: Retain demo screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: commerce-ui-screenshots
+          path: ${{ runner.temp }}/commerce-screenshots
+          retention-days: 7
+      - name: Archive verified source without private workspace data
+        run: git archive --format=zip --prefix=ecom-agents-commerce/ --output=commerce-source.zip HEAD
+      - name: Retain exact source snapshot
+        uses: actions/upload-artifact@v4
+        with:
+          name: commerce-source
+          path: commerce-source.zip
+          retention-days: 7

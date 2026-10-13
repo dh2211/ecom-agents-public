@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {spawnSync} from 'node:child_process';
+const root=fileURLToPath(new URL('../../',import.meta.url));
+const dir=path.join(root,'tests/dropship');
+const files=fs.readdirSync(dir).filter(f=>f.endsWith('.test.mjs')).sort().map(f=>path.join(dir,f));
+if(!files.length)throw new Error('No Dropship tests found');
+const r=spawnSync(process.execPath,['--test',...files],{cwd:root,stdio:'inherit',shell:false});
+process.exitCode=r.status??1;

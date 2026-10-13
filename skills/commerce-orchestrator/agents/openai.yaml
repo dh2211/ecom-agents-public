@@ -1,0 +1,3 @@
+interface:
+  display_name: "Commerce Orchestrator"
+  short_description: "Coordinate reviewed POD, Dropship and creative workflows"

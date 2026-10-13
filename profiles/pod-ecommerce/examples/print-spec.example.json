@@ -1,0 +1,8 @@
+{
+  "supplier_template_ref": "EXAMPLE-ONLY-replace-with-real-provider-template",
+  "width_px": 64,
+  "height_px": 64,
+  "background": "transparent",
+  "min_transparent_fraction": 0.01,
+  "generator_supports_transparency": true
+}

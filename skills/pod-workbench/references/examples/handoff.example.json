@@ -1,0 +1,13 @@
+{
+  "schema": "pod-handoff/1",
+  "artifact_id": "replace-with-stable-sha256",
+  "store_id": "demo-store",
+  "producer": "pod-workbench",
+  "intended_consumer": "ads-creative-studio",
+  "source_refs": ["local-verified-design-brief"],
+  "observed_at": "2026-09-21T00:00:00Z",
+  "coverage": "one-reviewed-design-not-a-store-total",
+  "payload_path": "pod/out/pod-workbench/2026-09-21/brief.json",
+  "payload_sha256": "replace-with-payload-sha256",
+  "review_status": "pending"
+}

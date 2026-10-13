@@ -1,0 +1,36 @@
+{
+  "artifact_id": "art-2026-10-02-retro-rocket-gardeners-01",
+  "producer": "pod-design-agent",
+  "producer_version": "1.0.0",
+  "niche_slug": "retro-rocket-gardeners",
+  "skill_dir": "skills/pod-design-retro-rocket-gardeners",
+  "skill_data_sha256": "fictional-sha256-example-only",
+  "skill_commit": "fictional-commit-sha-example-only",
+  "store_id": "store-example",
+  "payload": {
+    "master_png": {
+      "path": "out/req-2026-10-02-01/master.png",
+      "sha256": "fictional-png-sha256-example-only",
+      "width": 4500,
+      "height": 5400
+    }
+  },
+  "brief_receipt": {
+    "path": "out/req-2026-10-02-01/brief-receipt.json",
+    "data_sha256": "fictional-data-sha256-example-only",
+    "request_sha256": "fictional-request-sha256-example-only"
+  },
+  "alpha_qa": {
+    "path": "out/req-2026-10-02-01/alpha-qa.json",
+    "result": "pass"
+  },
+  "print_qa": {
+    "command": "node \"<repo_path>/scripts/pod/cli.mjs\" print-qa out/req-2026-10-02-01/master.png <supplier-spec>",
+    "result": "pass",
+    "path": "out/req-2026-10-02-01/print-qa.json"
+  },
+  "sources": [],
+  "review_status": "ready-for-pod-workbench",
+  "created": "2026-10-02T09:31:44+07:00",
+  "notes": "Fictional example of a finished receipt. Human rights, spelling, contrast, mockup and placement reviews still belong downstream."
+}

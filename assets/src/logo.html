@@ -1,0 +1,24 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+<style>
+/* The README wordmark. Nine tiles for the nine agents, the last one lit in signal
+   blue and ticked: the step the owner has just approved. Open with #dark for the cream
+   version GitHub's dark theme gets; the default is navy for the light theme. */
+html,body{margin:0;padding:0;background:transparent}
+:root{--ink:#0d161b;--sub:#4a5a64;--blue:#0b7fc7;--tick:#fff}
+.dark{--ink:#f1e8cb;--sub:#9fb0ba;--blue:#2f9fe3;--tick:#0d161b}
+.l{width:840px;height:200px;display:flex;align-items:center;justify-content:center;gap:30px}
+.mark{display:grid;grid-template-columns:repeat(3,30px);grid-template-rows:repeat(3,30px);gap:8px}
+.mark i{display:block;border-radius:8px;background:var(--ink)}
+.mark i:last-child{background:var(--blue);position:relative}
+.mark i:last-child:after{content:"";position:absolute;left:10px;top:5px;width:7px;height:14px;border:solid var(--tick);border-width:0 4px 4px 0;transform:rotate(45deg)}
+.w{display:flex;flex-direction:column;gap:10px}
+.name{font-family:Montserrat,system-ui,sans-serif;font-weight:800;font-size:68px;line-height:1;letter-spacing:-.03em;color:var(--ink);white-space:nowrap}
+.tag{font-family:"JetBrains Mono",monospace;font-weight:500;font-size:17px;letter-spacing:.2em;color:var(--sub);padding-left:4px}
+</style></head><body>
+<div class="l" id="l">
+<div class="mark"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<div class="w"><div class="name">Ecom Agents</div><div class="tag">POD · DROPSHIP · MIT</div></div>
+</div>
+<script>if(location.hash==="#dark")document.getElementById("l").classList.add("dark")</script>
+</body></html>

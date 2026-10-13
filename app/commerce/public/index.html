@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ecom Agents Commerce</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body><header><div><h1>Ecom Agents Commerce</h1><p>POD · Dropship · UGC & Banner</p></div><a href="/guide" target="_blank" rel="noopener">Hướng dẫn sử dụng ↗</a></header>
+<main><section class="hero"><div><h2>Một nơi giao việc.<br>Mỗi bước có kết quả để duyệt.</h2><p>Chọn mô hình, giao mục tiêu và theo dõi bộ điều phối chuyển việc qua từng vai trò.</p></div><button id="demo" class="primary">Thử demo không dùng AI</button></section>
+<div id="error" role="alert" class="notice error hidden"></div>
+<div class="notice">Bản dùng trên máy cá nhân. Chưa kết nối AI vẫn dùng được chế độ giao việc thủ công. Không tự đăng sản phẩm, chi tiền quảng cáo hay đặt hàng.</div><br>
+<div class="grid"><aside class="sidebar">
+<section class="card"><h2>Công việc của bạn</h2><div id="projects"></div></section>
+<details class="card" id="settings"><summary>Trợ lý thực hiện</summary><p class="subtle">Bộ điều phối chạy bằng code. Trợ lý AI xử lý nội dung từng bước. Chọn một lần; không cần thuê Agent hoặc cài profile riêng.</p><div id="settings-form"></div></details>
+<section class="card"><h3>Giám sát độc lập</h3><p class="subtle">Đọc trạng thái và kiểm tra hồ sơ đã lưu. Không sửa task hoặc tự duyệt thay bạn.</p><button id="audit">Xem báo cáo kiểm soát</button><div id="audit-output"></div></section>
+</aside><section>
+<details class="card" id="create" open><summary>Tạo công việc mới</summary><form id="create-form">
+<div class="row"><label>Mô hình<select name="model"><option value="pod">POD</option><option value="dropship">Dropship</option></select></label><label>Quy trình<select name="workflow" id="workflow"></select></label></div>
+<label>Tên công việc<input name="title" required maxlength="120" placeholder="Ví dụ: Áo farmer cho mùa quà tặng"></label>
+<div class="row"><label>Mã store nội bộ<input name="store_id" required value="my-store" pattern="[a-z0-9][a-z0-9-]{1,63}" title="Chữ thường, số và dấu gạch nối; không phải mật khẩu"></label><label>Thị trường<select name="market"><option value="US">Mỹ</option><option value="AU">Úc</option><option value="GB">Anh</option><option value="CA">Canada</option><option value="VN">Việt Nam</option><option value="DE">Đức</option></select></label></div>
+<div class="row"><label>Tiền tệ<select name="currency"><option>USD</option><option>AUD</option><option>GBP</option><option>CAD</option><option>VND</option><option>EUR</option></select></label><label>Múi giờ<input name="timezone" required value="Asia/Ho_Chi_Minh"></label></div>
+<label>Mục tiêu và dữ liệu bạn đã có<textarea name="brief" required maxlength="20000" rows="5" placeholder="Sản phẩm/niche, đối tượng mua, điều cần làm, nguồn và ngày quan sát. Không điền mật khẩu hoặc thông tin cá nhân khách hàng."></textarea></label>
+<label class="checks"><input name="auto" type="checkbox">Tự giao bước kế tiếp sau khi tôi duyệt (không tự thử lại khi lỗi).</label>
+<button class="primary" type="submit">Tạo công việc</button><span class="subtle">Chưa gọi AI ở bước này.</span>
+</form></details>
+<div id="detail" class="card"><h2>Bắt đầu với một công việc</h2><p>Tạo dự án hoặc bấm “Thử demo” để xem giao việc, duyệt kết quả và chuyển bước.</p></div>
+</section></div>
+<p class="foot" id="workspace"></p><p class="foot">Các hồ sơ và phê duyệt được lưu cục bộ, không phải chữ ký xác thực hoặc quyền đăng quảng cáo. Quyền công cụ thật phụ thuộc trợ lý bạn sử dụng. Đóng terminal sẽ dừng bộ điều phối.</p>
+</main><div id="toast" class="hidden" role="status"></div></body></html>

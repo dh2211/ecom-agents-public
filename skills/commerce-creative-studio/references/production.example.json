@@ -1,0 +1,67 @@
+{
+  "note": "Templates, not approved assets. Fill with actual files, hashes, recorded rights and review evidence. Do not publish these placeholders.",
+  "asset": {
+    "file": "raw/product.png",
+    "sha256": null,
+    "kind": "product-image",
+    "product_id": "replace-product",
+    "variant_id": "replace-variant",
+    "contains_real_person": false,
+    "ai_generated": false,
+    "rights": {
+      "status": "pending",
+      "uses": [
+        "paid-ads",
+        "editing"
+      ],
+      "markets": [
+        "US"
+      ],
+      "perpetual": false,
+      "expires_at": null,
+      "evidence_ref": null,
+      "likeness_consent_ref": null,
+      "ai_derivatives": false
+    }
+  },
+  "timeline": {
+    "target_seconds": 30,
+    "shots": [
+      {
+        "file": "raw/demo.mp4",
+        "start_s": 0,
+        "duration_s": 30
+      }
+    ],
+    "voiceover_file": "raw/voice.wav"
+  },
+  "export_manifest": {
+    "store_id": "replace-store",
+    "product_id": "replace-product",
+    "variant_id": "replace-variant",
+    "market": "US",
+    "exports": [
+      {
+        "file": "final/video.mp4",
+        "sha256": null,
+        "kind": "video",
+        "width": 1080,
+        "height": 1920,
+        "duration_s": 30,
+        "source_asset_hashes": [],
+        "human_review": {
+          "status": "pending",
+          "reviewer": null,
+          "reviewed_at": null,
+          "asset_sha256": null,
+          "product_fidelity": false,
+          "claims": false,
+          "rights": false,
+          "disclosures": false,
+          "safe_zone": false,
+          "landing_match": false
+        }
+      }
+    ]
+  }
+}

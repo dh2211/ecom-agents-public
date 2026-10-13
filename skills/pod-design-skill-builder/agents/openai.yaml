@@ -1,0 +1,5 @@
+interface:
+  display_name: "POD Design Skill Builder"
+  short_description: "Build validated niche POD design-agent skills"
+  brand_color: "#334155"
+  default_prompt: "Use $pod-design-skill-builder to build and package a schema 3.2 niche POD agent with traceable master data, executable design-brief receipts, production constraints, sensitivity gates, and verified transparent PNG output."

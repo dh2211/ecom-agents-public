@@ -1,0 +1,29 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+<style>
+/* One harness icon per screenshot, driven by the URL hash: #claude-code,
+   #openclaw and so on. The tile is a letter monogram on the harness's own
+   hue, so the strip never hotlinks a brand asset. Render at two times
+   scale into assets/icons/<slug>.png. */
+html,body{margin:0;padding:0;background:transparent}
+.i{width:96px;height:96px;border-radius:22px;display:flex;align-items:center;justify-content:center;box-sizing:border-box;border:1px solid rgba(0,0,0,.18);font-family:Montserrat,Inter,system-ui,sans-serif;font-weight:800;font-size:40px;letter-spacing:-.02em;color:#fff}
+</style></head><body>
+<div id="m"></div>
+<script>
+const B={
+  "claude-code":["#D97757","CC"],
+  "openclaw":["#DC2626","OC"],
+  "hermes":["#0D9488","HE"],
+  "opencode":["#1F2937","OP"],
+  "grokbot":["#111111","G"],
+  "codex":["#10A37F","CX"],
+  "antigravity":["#6366F1","AG"],
+  "pi":["#EC4899","\u03C0"],
+  "cline":["#7C3AED","CL"],
+  "qwen-code":["#615CED","Q"],
+  "deepseek":["#4D6BFE","DS"],
+};
+const [c,t]=B[location.hash.slice(1)]||["#0d161b","EA"];
+document.getElementById("m").innerHTML=`<div class="i" style="background:${c}">${t}</div>`;
+</script>
+</body></html>

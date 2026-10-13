@@ -1,0 +1,27 @@
+{
+  "schema": "commerce-creative/1",
+  "business_model": "dropship",
+  "store_id": "replace-store",
+  "product_id": "replace-product",
+  "variant_id": "replace-variant",
+  "market": "US",
+  "locale": "en-US",
+  "ugc_mode": "product-demo",
+  "target_seconds": 30,
+  "headline": "Replace with approved headline",
+  "cta": "See product details",
+  "disclosure_text": "Advertisement",
+  "ai_disclosure_text": null,
+  "hooks": [
+    "Replace with a sourced angle hypothesis"
+  ],
+  "facts": [
+    {
+      "text": "Replace with verified product fact",
+      "source_ref": null,
+      "observed_at": null
+    }
+  ],
+  "testimonial": null,
+  "assets": []
+}
