@@ -23,7 +23,7 @@ App không tự đăng sản phẩm, đặt hàng, gửi tin hay chi tiền qu�
 Cài Node.js 22 trở lên. Clone hoặc tải ZIP của repository, mở terminal tại thư mục có `package.json` rồi chạy:
 
 ```sh
-git clone https://github.com/AoThunDao/ecom-agents-public.git
+git clone https://github.com/dh2211/ecom-agents-public.git
 cd ecom-agents-public
 npm start
 ```

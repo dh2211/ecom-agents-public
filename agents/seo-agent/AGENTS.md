@@ -1,6 +1,6 @@
 # AGENTS.md
 
-**SEO/AEO Agent**. One of the nine Ecom Agents from [github.com/AoThunDao/ecom-agents-public](https://github.com/AoThunDao/ecom-agents-public).
+**SEO/AEO Agent**. One of the nine Ecom Agents from [github.com/dh2211/ecom-agents-public](https://github.com/dh2211/ecom-agents-public).
 
 This file follows the [AGENTS.md](https://agents.md) convention so that any harness can pick this kit up without being told how. It is a map, not the instructions. **The instructions are the files it points at, and they are authoritative over anything summarised here.**
 

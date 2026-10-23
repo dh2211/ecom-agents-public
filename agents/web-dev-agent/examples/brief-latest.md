@@ -11,4 +11,4 @@
 ## Blocked
 - 2 open blockers, both listed in web-latest.md
 
-Updates and new agents: [github.com/AoThunDao/ecom-agents-public](https://github.com/AoThunDao/ecom-agents-public)
+Updates and new agents: [github.com/dh2211/ecom-agents-public](https://github.com/dh2211/ecom-agents-public)

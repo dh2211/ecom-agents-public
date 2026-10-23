@@ -16,4 +16,4 @@ To stop one, tick "hold this one" in that queue entry before the publish run fir
 ## What changed about me
 - soc-material-sweep: now reads your job log page before the trade news sources, because every usable item this week came from it. The undo is in improvements/CHANGELOG.md.
 
-Updates and new agents: [github.com/AoThunDao/ecom-agents-public](https://github.com/AoThunDao/ecom-agents-public)
+Updates and new agents: [github.com/dh2211/ecom-agents-public](https://github.com/dh2211/ecom-agents-public)

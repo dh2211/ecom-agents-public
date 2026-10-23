@@ -13,4 +13,4 @@
 ## What changed about me
 seo-publish-run: the live check now waits for the host build to finish before it fetches the new URL, after a false failure on Tuesday
 
-Updates and new agents: [github.com/AoThunDao/ecom-agents-public](https://github.com/AoThunDao/ecom-agents-public)
+Updates and new agents: [github.com/dh2211/ecom-agents-public](https://github.com/dh2211/ecom-agents-public)

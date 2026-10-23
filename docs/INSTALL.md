@@ -39,7 +39,7 @@ distribution path for this repository.
 **Path B, a clone:**
 
 ```
-git clone https://github.com/AoThunDao/ecom-agents-public.git
+git clone https://github.com/dh2211/ecom-agents-public.git
 ```
 
 Then copy `agents/gtm-engineer` to a folder outside cloud sync. Do not run an agent from inside the clone if the clone sits in a synced folder.

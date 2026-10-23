@@ -75,8 +75,8 @@ A member who does not want either check writes one line in this file's `## Corre
 
 1. Read `«DESIGN_ROOT»/VERSION`. That is `installed`. If the file is missing, put one line in `assumptions[]`, skip this check, and go to 5a.2.
 2. Through `web.fetch`, read the canonical source `VERSION` for this kit, first route first:
-   - `https://raw.githubusercontent.com/AoThunDao/ecom-agents-public/main/agents/pod-design-agent/VERSION`
-   - `https://github.com/AoThunDao/ecom-agents-public/raw/refs/heads/main/agents/pod-design-agent/VERSION`
+   - `https://raw.githubusercontent.com/dh2211/ecom-agents-public/main/agents/pod-design-agent/VERSION`
+   - `https://github.com/dh2211/ecom-agents-public/raw/refs/heads/main/agents/pod-design-agent/VERSION`
 
    Both read this project's canonical source, not a registry package. A newer source version is a candidate for member review, not a published release or permission to execute it. The member obtains a reviewed checkout and backs up the paused install before applying changes. Accept a trimmed body only when it is three numbers joined by dots; anything else is a failed fetch.
 3. **A failed fetch is not a blocker.** Offline, refused, timed out, or a body that is not a version: write one line in `assumptions[]`, `kit version check could not reach the canonical source`, leave `state/kit-update.json` exactly as it is, and carry on. It never turns an `ok` run into a `partial` one, and it is never retried inside the run.
@@ -115,7 +115,7 @@ Every suggestion a routine in this kit records is a line under `## Suggestions` 
 
 Nothing in this file has been sent anywhere. Your POD Design Agent wrote it because «n» of the suggestions it recorded look like defects in the kit itself, which means everybody else running it still has them.
 
-To get them fixed for everyone: read this file, change anything you like, and paste it into a new issue at https://github.com/AoThunDao/ecom-agents-public/issues/new. A pull request is welcome too, and CONTRIBUTING.md in that repository says what one needs, including a sign off only a person can give. If you would rather not, delete this file. Nothing reads it.
+To get them fixed for everyone: read this file, change anything you like, and paste it into a new issue at https://github.com/dh2211/ecom-agents-public/issues/new. A pull request is welcome too, and CONTRIBUTING.md in that repository says what one needs, including a sign off only a person can give. If you would rather not, delete this file. Nothing reads it.
 
 Kit: pod-design-agent «installed». Harness: «harness name».
 

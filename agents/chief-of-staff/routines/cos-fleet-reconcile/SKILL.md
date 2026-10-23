@@ -642,7 +642,7 @@ one line per amendment since the last brief, omitted entirely when there are non
 ## About this kit
 the monthly news about the kit itself and the fleet rollup line, omitted entirely when there is none
 
-Updates and new agents: [github.com/AoThunDao/ecom-agents-public](https://github.com/AoThunDao/ecom-agents-public)
+Updates and new agents: [github.com/dh2211/ecom-agents-public](https://github.com/dh2211/ecom-agents-public)
 ```
 
 The pointer line at the foot is fixed text, written verbatim on every brief, one blank line under the last section, and it is not one of the thirty.

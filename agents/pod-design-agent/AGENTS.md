@@ -1,6 +1,6 @@
 # AGENTS.md
 
-**POD Design Agent**. One of the nine Ecom Agents from [github.com/AoThunDao/ecom-agents-public](https://github.com/AoThunDao/ecom-agents-public).
+**POD Design Agent**. One of the nine Ecom Agents from [github.com/dh2211/ecom-agents-public](https://github.com/dh2211/ecom-agents-public).
 
 This is the installed kit's own rule file, the one an agent working inside `«DESIGN_ROOT»` reads. It is not the repository's `AGENTS.md`; that one governs people editing the source checkout.
 

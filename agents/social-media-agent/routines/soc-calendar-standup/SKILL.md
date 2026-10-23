@@ -493,7 +493,7 @@ rendered only when a routine amended itself since the last brief
 ## About this kit
 rendered only in the one brief after a monthly check of the kit itself found something to say
 
-Updates and new agents: [github.com/AoThunDao/ecom-agents-public](https://github.com/AoThunDao/ecom-agents-public)
+Updates and new agents: [github.com/dh2211/ecom-agents-public](https://github.com/dh2211/ecom-agents-public)
 ```
 
 The pointer line at the foot is fixed text, written verbatim on every brief, one blank line under the last section, and it is not one of the thirty.

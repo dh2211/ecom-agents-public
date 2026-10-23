@@ -23,7 +23,7 @@ This is a public MIT repository. Use it, fork it, and run it locally. There is n
 Install Node.js 22 or newer. Clone or download the ZIP, open a terminal in the folder that contains `package.json`, then run:
 
 ```sh
-git clone https://github.com/AoThunDao/ecom-agents-public.git
+git clone https://github.com/dh2211/ecom-agents-public.git
 cd ecom-agents-public
 npm start
 ```

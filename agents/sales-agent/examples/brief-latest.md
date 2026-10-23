@@ -14,4 +14,4 @@
 ## Blocked
 - sales-prospect-sweep, open since 2026-03-03: the trade directory asked for a sign in, nothing entered
 
-Updates and new agents: [github.com/AoThunDao/ecom-agents-public](https://github.com/AoThunDao/ecom-agents-public)
+Updates and new agents: [github.com/dh2211/ecom-agents-public](https://github.com/dh2211/ecom-agents-public)

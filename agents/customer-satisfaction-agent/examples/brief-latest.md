@@ -14,4 +14,4 @@
 ## Blocked
 - csat-inbox-sweep, open since 2026-03-03: the review platform asked for a sign in, nothing entered
 
-Updates and new agents: [github.com/AoThunDao/ecom-agents-public](https://github.com/AoThunDao/ecom-agents-public)
+Updates and new agents: [github.com/dh2211/ecom-agents-public](https://github.com/dh2211/ecom-agents-public)
